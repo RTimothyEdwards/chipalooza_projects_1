@@ -1,21 +1,20 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1714065493
+timestamp 1714074591
+<< error_p >>
+rect 533837 254840 533891 254841
+rect 533891 254780 533941 254781
+rect 534127 254780 534211 254781
+rect 534157 49262 534211 49263
+rect 534211 49202 534261 49203
+rect 534447 49202 534531 49203
 << error_s >>
 rect 559977 586408 560345 586442
 rect 562653 586408 563021 586442
 rect 559977 583824 560345 583858
 rect 562653 583824 563021 583858
 rect 16596 356260 16600 356288
-rect 37675 52615 37681 52621
-rect 38032 52615 38038 52621
-rect 37669 52609 37675 52615
-rect 38038 52609 38044 52615
-rect 37669 52486 37675 52492
-rect 38038 52486 38044 52492
-rect 37675 52480 37681 52486
-rect 38032 52480 38038 52486
 << metal1 >>
 rect 513415 609778 520733 610315
 rect 508780 594670 510602 595116
@@ -3395,6 +3394,10 @@ rect 38245 56225 38314 57050
 rect 39229 56225 39320 57050
 rect 38245 56149 39320 56225
 rect 128832 56959 132832 84353
+rect 37654 52615 38056 52628
+rect 37654 52486 37675 52615
+rect 38038 52486 38056 52615
+rect 37654 52475 38056 52486
 rect 38257 50035 38497 56149
 rect 37356 49795 38497 50035
 rect 128832 53284 128967 56959
@@ -6586,11 +6589,11 @@ timestamp 1714065493
 transform 0 1 3477 1 0 39710
 box -5530 -288 4452 6736
 use bandgap  bandgap_0
-timestamp 1714065493
+timestamp 1497896836
 transform 1 0 38649 0 -1 57102
 box -365 0 42048 14825
 use bias_basis_current  bias_basis_current_0
-timestamp 1714065493
+timestamp 1497896836
 transform 1 0 33289 0 1 49435
 box 0 0 4520 6741
 use bias_generator  bias_generator_0
@@ -6674,7 +6677,7 @@ timestamp 1714065493
 transform -1 0 7186 0 -1 384878
 box 0 0 4162 6736
 use lpopamp  lpopamp_0 ../../chipalooza/sky130_rodovalho_ip__lpopamp/mag
-timestamp 1714065493
+timestamp 1713056477
 transform 0 -1 48697 -1 0 299887
 box -7000 -26 81800 36300
 use lvl_shift_invert  lvl_shift_invert_0
@@ -6692,15 +6695,15 @@ timestamp 1713984708
 transform 0 1 351850 1 0 120408
 box -89200 -44204 -9499 66802
 use sky130_ajc_ip__brownout  sky130_ajc_ip__brownout_0 ../../chipalooza/sky130_ajc_ip__brownout/mag
-timestamp 1714065493
+timestamp 1713416110
 transform 0 -1 557384 -1 0 89090
 box -1604 -1987 43293 41283
 use sky130_ajc_ip__overvoltage  sky130_ajc_ip__overvoltage_0 ../../chipalooza/sky130_ajc_ip__overvoltage/mag
-timestamp 1714065493
+timestamp 1713207120
 transform 0 -1 550164 -1 0 176882
 box -2433 -2390 42464 28880
 use sky130_ajc_ip__por  sky130_ajc_ip__por_0 ../../chipalooza/sky130_ajc_ip__por/mag
-timestamp 1714065493
+timestamp 1713186815
 transform 0 -1 557064 -1 0 294668
 box -1604 -1987 43293 41283
 use sky130_ak_ip__comparator  sky130_ak_ip__comparator_0 ../../chipalooza/sky130_ak_ip__comparator/mag
@@ -6708,7 +6711,7 @@ timestamp 1713602081
 transform 0 -1 28376 1 0 319360
 box -1900 -33700 39700 13700
 use sky130_be_ip__lsxo  sky130_be_ip__lsxo_0 ../../chipalooza/sky130_be_ip__lsxo/mag
-timestamp 1714065493
+timestamp 1713362978
 transform 0 -1 558491 1 0 410746
 box 1626 -23704 25570 -812
 use sky130_ht_ip__hsxo_cpz1  sky130_ht_ip__hsxo_cpz1_0 ../../chipalooza/hsxo-cpz1/mag
