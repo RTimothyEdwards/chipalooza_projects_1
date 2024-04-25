@@ -15,13 +15,11 @@ gds read ../../chipalooza/sky130_ajc_ip__overvoltage/gds/sky130_ajc_ip__overvolt
 gds unique false
 gds read ../../chipalooza/sky130_be_ip__lsxo/gds/sky130_be_ip__lsxo.gds
 gds read ../../chipalooza/sky130_rodovalho_ip__lpopamp/gds/lpopamp.gds
-gds read ../../chipalooza/sky130_ac3e_ip__temp_sdc/modules/SDC/layout/SDC.gds
+gds read ../../chipalooza/sky130_ac3e_ip__temp_sdc/modules/SDC_DIGITAL/layout/SDC_DIGITAL.gds
 
 # Non-chipalooza items
-# (Will not do these---need to take time to understand bias and trim)
-# gds read ../../weiser_analog_mpw7/gds/bandgap.gds
-# gds read ../../weiser_analog_mpw7/gds/regulator.gds
-# gds read ../../weiser_analog_mpw7/gds/sar_10b.gds
+gds read ../../weiser_analog_mpw7/gds/bandgap.gds
+gds read ../../weiser_analog_mpw7/gds/bias_basis_current.gds
 
 # Not from .mag . . .
 # addpath ../../chipalooza/sky130_ac3e_ip__temp_sdc/modules

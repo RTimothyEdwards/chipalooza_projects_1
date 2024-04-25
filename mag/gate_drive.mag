@@ -2484,22 +2484,22 @@ rect -7483 -959 -7423 -934
 rect -7483 -994 -7366 -959
 rect -7483 -1038 -7423 -994
 rect -8012 -1098 -7423 -1038
-use sky130_fd_pr__pfet_g5v0d10v5_RTDP6L  xm4  paramcells
-timestamp 1624430562
-transform 1 0 -7552 0 1 864
-box -411 -500 411 500
-use sky130_fd_pr__nfet_g5v0d10v5_3BH9ZH  xm3  paramcells
-timestamp 1624430562
-transform 1 0 -7552 0 1 -655
-box -345 -288 345 288
-use sky130_fd_pr__pfet_g5v0d10v5_7WGKBW  xm2  paramcells
-timestamp 1624430562
-transform 1 0 0 0 1 1964
-box -7047 -1600 7047 1600
-use sky130_fd_pr__nfet_g5v0d10v5_WQT6C6  xm1  paramcells
+use sky130_fd_pr__nfet_g5v0d10v5_WQT6C6  xm1 paramcells
 timestamp 1624430562
 transform 1 0 0 0 1 -1155
 box -6981 -788 6981 788
+use sky130_fd_pr__pfet_g5v0d10v5_7WGKBW  xm2 paramcells
+timestamp 1624430562
+transform 1 0 0 0 1 1964
+box -7047 -1600 7047 1600
+use sky130_fd_pr__nfet_g5v0d10v5_3BH9ZH  xm3 paramcells
+timestamp 1624430562
+transform 1 0 -7552 0 1 -655
+box -345 -288 345 288
+use sky130_fd_pr__pfet_g5v0d10v5_RTDP6L  xm4 paramcells
+timestamp 1624430562
+transform 1 0 -7552 0 1 864
+box -411 -500 411 500
 << labels >>
 flabel metal2 7500 -431 7500 440 1 FreeSans 240 0 0 0 out
 port 3 n

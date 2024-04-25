@@ -5,7 +5,7 @@ if {[catch {set PDK_PATH $::env(PDK_PATH)}]} {
     set PDK_PATH /usr/share/pdk
 }
 if {[catch {set PDK $::env(PDK)}]} {
-    set PDK_PATH sky130A
+    set PDK sky130A
 }
 
 set circuit1 [readnet spice ../netlist/layout/analog_mux_sel1v8.spice]

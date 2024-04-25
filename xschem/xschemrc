@@ -297,3 +297,5 @@ set SKYWATER_STDCELLS $PDKPATH/libs.ref/sky130_fd_sc_hd/spice
 
 # Add Chipalooza symbols pulled in from projects
 append XSCHEM_LIBRARY_PATH :chipalooza
+# Add symbol for the bandgap from Weiser's MPW7 project
+append XSCHEM_LIBRARY_PATH :weiser
