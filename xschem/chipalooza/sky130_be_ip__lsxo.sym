@@ -1,0 +1,46 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 0 -80 0 -60 {}
+L 4 -130 -20 -110 -20 {}
+L 4 -130 20 -110 20 {}
+L 4 110 0 130 0 {}
+L 4 -40 60 -40 80 {}
+L 4 40 60 40 80 {}
+L 4 -110 -60 -110 60 {}
+L 4 110 -60 110 60 {}
+L 4 -110 -60 110 -60 {}
+L 4 -110 60 110 60 {}
+L 7 80 -80 80 -60 {}
+L 7 80 60 80 80 {}
+L 7 -80 -80 -80 -60 {}
+L 7 -80 60 -80 80 {}
+B 5 -82.5 -82.5 -77.5 -77.5 {name=avdd dir=inout}
+B 5 -82.5 77.5 -77.5 82.5 {name=avss dir=inout}
+B 5 77.5 -82.5 82.5 -77.5 {name=dvdd dir=inout}
+B 5 77.5 77.5 82.5 82.5 {name=dvss dir=inout}
+B 5 -2.5 -82.5 2.5 -77.5 {name=ibias dir=in}
+B 5 -132.5 -22.5 -127.5 -17.5 {name=ena dir=in}
+B 5 -132.5 17.5 -127.5 22.5 {name=standby dir=in}
+B 5 127.5 -2.5 132.5 2.5 {name=dout dir=out}
+B 5 -42.5 77.5 -37.5 82.5 {name=xin dir=in}
+B 5 37.5 77.5 42.5 82.5 {name=xout dir=out}
+T {@symname} -74 -16 0 0 0.3 0.3 {}
+T {@name} 85 -72 0 0 0.2 0.2 {}
+T {avdd} -65 -54 0 1 0.2 0.2 {}
+T {avss} -65 46 0 1 0.2 0.2 {}
+T {dvdd} 85 -54 0 1 0.2 0.2 {}
+T {dvss} 85 46 0 1 0.2 0.2 {}
+T {ibias} -15 -54 0 0 0.2 0.2 {}
+T {ena} -105 -24 0 0 0.2 0.2 {}
+T {standby} -105 16 0 0 0.2 0.2 {}
+T {dout} 105 -4 0 1 0.2 0.2 {}
+T {xin} -45 46 0 0 0.2 0.2 {}
+T {xout} 45 46 0 1 0.2 0.2 {}

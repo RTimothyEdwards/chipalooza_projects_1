@@ -1,0 +1,35 @@
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/analog_mux_sel1v8.sch
+.subckt analog_mux_sel1v8 avss selA inA avdd inB out dvdd dvss
+*.PININFO selA:I avss:B out:B inA:B avdd:B inB:B dvdd:B dvss:B
+x1 net1 avss inA out avdd isolated_switch
+x2 selA dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
+x3 net2 avss inB out avdd isolated_switch
+x4 net1 dvss dvss avdd avdd net2 sky130_fd_sc_hvl__inv_2
+.ends
+
+* expanding   symbol:  isolated_switch.sym # of pins=5
+** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/isolated_switch.sym
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/isolated_switch.sch
+.subckt isolated_switch on vss out in vdd
+*.PININFO on:I out:B vdd:B vss:B in:B
+XM1 in onp net1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=8 nf=2 m=1
+XM2 in onb net1 vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=2 m=1
+XM3 net1 onb net1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM4 net1 onp net1 vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM5 in onb in vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM6 in onp in vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM7 onb on vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM8 onb on vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM9 onp onb vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM10 onp onb vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XXD1 vss on sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+XM11 net1 onp out vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=8 nf=2 m=1
+XM12 net1 onb out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=2 m=1
+XM13 out onb out vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM14 out onp out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM15 net1 onb net1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM16 net1 onp net1 vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM17 vss onb net1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+.ends
+
+.end

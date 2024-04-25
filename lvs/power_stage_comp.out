@@ -1,0 +1,84 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_WQT6C6 in circuit gate_drive (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3BH9ZH in circuit gate_drive (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7WGKBW in circuit gate_drive (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_RTDP6L in circuit gate_drive (0)(1 instance)
+
+Class gate_drive (0):  Merged 172 parallel devices.
+Subcircuit summary:
+Circuit 1: gate_drive                      |Circuit 2: gate_drive                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (92->6)       |sky130_fd_pr__nfet_g5v0d10v5 (92->6)       
+sky130_fd_pr__pfet_g5v0d10v5 (92->6)       |sky130_fd_pr__pfet_g5v0d10v5 (92->6)       
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gate_drive                      |Circuit 2: gate_drive                      
+-------------------------------------------|-------------------------------------------
+in_p                                       |IN_P                                       
+in_m                                       |IN_M                                       
+out                                        |OUT                                        
+vss                                        |VSS                                        
+vdd                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gate_drive and gate_drive are equivalent.
+Flattening unmatched subcell pmos_waffle_48x48 in circuit power_stage (0)(1 instance)
+
+Class power_stage (0):  Merged 4511 parallel devices.
+Subcircuit summary:
+Circuit 1: power_stage                     |Circuit 2: power_stage                     
+-------------------------------------------|-------------------------------------------
+gate_drive (1)                             |gate_drive (1)                             
+sky130_fd_pr__pfet_g5v0d10v5 (4512->1)     |sky130_fd_pr__pfet_g5v0d10v5 (4512->1)     
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: power_stage                     |Circuit 2: power_stage                     
+-------------------------------------------|-------------------------------------------
+vdd_pwr                                    |VDD_PWR                                    
+sw_node                                    |SW_NODE                                    
+p_in                                       |P_IN                                       
+p_in_n                                     |P_IN_N                                     
+vss                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes power_stage and power_stage are equivalent.
+
+Final result: Circuits match uniquely.
+.

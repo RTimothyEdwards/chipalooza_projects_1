@@ -1,0 +1,2 @@
+1. Start magic without reading anything from the command line
+2. Source "construct_testchip.tcl"

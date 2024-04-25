@@ -1,0 +1,7 @@
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/lvl_shift_invert.sch
+.subckt lvl_shift_invert in1v8 out3v3 outb3v3 dvdd dvss avdd
+*.PININFO in1v8:I dvdd:B dvss:B avdd:B out3v3:O outb3v3:O
+x2 in1v8 dvdd dvss dvss avdd avdd out3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x4 out3v3 dvss dvss avdd avdd outb3v3 sky130_fd_sc_hvl__inv_2
+.ends
+.end

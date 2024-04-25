@@ -1,0 +1,27 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1713901186
+<< metal1 >>
+rect -1198 2546 -860 2819
+rect -280 2546 38 2819
+rect -5948 2135 -5069 2335
+rect 3945 2135 4718 2335
+rect -1342 1543 217 1747
+rect -666 -948 -462 1543
+<< via1 >>
+rect -860 2546 -280 2819
+<< metal2 >>
+rect -5346 4570 4204 4986
+rect -860 2819 -280 4570
+rect -860 2526 -280 2546
+rect -5380 -146 4170 270
+use isolated_switch  isolated_switch_0
+timestamp 1713821214
+transform -1 0 -823 0 1 2911
+box 301 -2911 4463 1830
+use isolated_switch  isolated_switch_1
+timestamp 1713821214
+transform 1 0 -301 0 1 2911
+box 301 -2911 4463 1830
+<< end >>

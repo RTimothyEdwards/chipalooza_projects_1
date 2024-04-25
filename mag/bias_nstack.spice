@@ -1,0 +1,7 @@
+* SPICE3 file created from bias_nstack.ext - technology: sky130A
+
+X0 m1_3726_n2502# nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X1 avss ena sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+X2 m1_3726_n2502# nbias m1_3392_n1514# avss sky130_fd_pr__nfet_05v0_nvt ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X3 itail ena m1_3392_n1514# avss sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+C0 nbias avss 2.250952f

@@ -1,0 +1,192 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__diode_pw2nd_05v5 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_05v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__diode_pw2nd_05v5  |Circuit 2: sky130_fd_pr__diode_pw2nd_05v5  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__diode_pw2nd_05v5 and sky130_fd_pr__diode_pw2nd_05v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_05v0_nvt and Circuit 2 cell sky130_fd_pr__nfet_05v0_nvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_05v0_nvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_05v0_nvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_05v0_nvt     |Circuit 2: sky130_fd_pr__nfet_05v0_nvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_05v0_nvt and sky130_fd_pr__nfet_05v0_nvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ in circuit bias_nstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RK in circuit bias_nstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_QRKT8P in circuit bias_nstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P in circuit bias_nstack (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: bias_nstack                     |Circuit 2: bias_nstack                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (2)           |sky130_fd_pr__nfet_g5v0d10v5 (2)           
+sky130_fd_pr__diode_pw2nd_05v5 (1)         |sky130_fd_pr__diode_pw2nd_05v5 (1)         
+sky130_fd_pr__nfet_05v0_nvt (1)            |sky130_fd_pr__nfet_05v0_nvt (1)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bias_nstack                     |Circuit 2: bias_nstack                     
+-------------------------------------------|-------------------------------------------
+itail                                      |itail                                      
+nbias                                      |nbias                                      
+vcasc                                      |vcasc                                      
+ena                                        |ena                                        
+avss                                       |avss                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_nstack and bias_nstack are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ in circuit bias_pstack (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RK in circuit bias_pstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_H75TTW in circuit bias_pstack (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: bias_pstack                     |Circuit 2: bias_pstack                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (3)           |sky130_fd_pr__pfet_g5v0d10v5 (3)           
+sky130_fd_pr__diode_pw2nd_05v5 (1)         |sky130_fd_pr__diode_pw2nd_05v5 (1)         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bias_pstack                     |Circuit 2: bias_pstack                     
+-------------------------------------------|-------------------------------------------
+pbias                                      |pbias                                      
+itail                                      |itail                                      
+pcasc                                      |pcasc                                      
+avss                                       |avss                                       
+enb                                        |enb                                        
+vcasc                                      |vcasc                                      
+avdd                                       |avdd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_pstack and bias_pstack are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_P35QVK in circuit bias_generator (0)(1 instance)
+
+Class bias_generator (0):  Merged 78 series devices.
+Subcircuit summary:
+Circuit 1: bias_generator                  |Circuit 2: bias_generator                  
+-------------------------------------------|-------------------------------------------
+bias_nstack (440)                          |bias_nstack (440)                          
+sky130_fd_pr__res_high_po_0p35 (80->2)     |sky130_fd_pr__res_high_po_0p35 (2)         
+bias_pstack (440)                          |bias_pstack (440)                          
+Number of devices: 882                     |Number of devices: 882                     
+Number of nets: 905                        |Number of nets: 905                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 35 symmetries.
+
+Subcircuit pins:
+Circuit 1: bias_generator                  |Circuit 2: bias_generator                  
+-------------------------------------------|-------------------------------------------
+enb_200_2                                  |enb_200_2                                  
+enb_200_1                                  |enb_200_1                                  
+enb_200_0                                  |enb_200_0                                  
+src_200_2                                  |src_200_2                                  
+src_200_1                                  |src_200_1                                  
+src_200_0                                  |src_200_0                                  
+enb_400                                    |enb_400                                    
+src_400                                    |src_400                                    
+enb_600                                    |enb_600                                    
+src_600                                    |src_600                                    
+enb_10000_1                                |enb_10000_1                                
+enb_10000_0                                |enb_10000_0                                
+src_10000_1                                |src_10000_1                                
+src_10000_0                                |src_10000_0                                
+avdd                                       |avdd                                       
+snk_3700                                   |snk_3700                                   
+ena_3700                                   |ena_3700                                   
+snk_5000_2                                 |snk_5000_2                                 
+snk_5000_1                                 |snk_5000_1                                 
+snk_5000_0                                 |snk_5000_0                                 
+ena_5000_2                                 |ena_5000_2                                 
+ena_5000_1                                 |ena_5000_1                                 
+ena_5000_0                                 |ena_5000_0                                 
+ena                                        |ena                                        
+snk_2000                                   |snk_2000                                   
+ena_2000                                   |ena_2000                                   
+ref_in                                     |ref_in                                     
+enb                                        |enb                                        
+enb_50                                     |enb_50                                     
+src_50                                     |src_50                                     
+avss                                       |avss                                       
+snk_test1                                  |snk_test1                                  
+snk_test0                                  |snk_test0                                  
+ena_test1                                  |ena_test1                                  
+ena_test0                                  |ena_test0                                  
+enb_test1                                  |enb_test1                                  
+enb_100                                    |enb_100                                    
+enb_test0                                  |enb_test0                                  
+src_test1                                  |src_test1                                  
+src_100                                    |src_100                                    
+src_test0                                  |src_test0                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_generator and bias_generator are equivalent.
+
+Final result: Circuits match uniquely.
+.

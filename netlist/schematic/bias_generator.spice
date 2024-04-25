@@ -1,0 +1,917 @@
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_generator.sch
+.subckt bias_generator avdd ref_in enb enb_200_2 enb_400 enb_100 enb_200_1 enb_test1 enb_10000_1 enb_10000_0 enb_test0 enb_600
++ enb_50 enb_200_0 src_200_0 src_10000_0 src_400 src_600 src_test1 src_200_1 src_100 src_10000_1 src_50 src_test0 src_200_2 ena_test0
++ ena_2000 ena_test1 ena_5000_2 ena_5000_1 ena_3700 ena_5000_0 snk_5000_2 snk_2000 snk_5000_1 snk_test1 snk_3700 snk_5000_0 snk_test0 ena
++ avss
+*.PININFO ref_in:I avss:B ena:I enb:I avdd:B enb_test0:I ena_test0:I src_test0:B snk_test0:B ena_test1:I snk_test1:B enb_test1:I
+*+ src_test1:B enb_10000_0:I src_10000_0:B ena_5000_0:I snk_5000_0:B enb_10000_1:I src_10000_1:B ena_5000_1:I snk_5000_1:B ena_5000_2:I
+*+ snk_5000_2:B enb_600:I src_600:B enb_400:I src_400:B enb_200_0:I src_200_0:B enb_200_1:I src_200_1:B enb_200_2:I src_200_2:B enb_100:I
+*+ src_100:B enb_50:I src_50:B ena_3700:I snk_3700:B ena_2000:I snk_2000:B
+x2[19] net1 ena nbias nbias avss bias_nstack
+x2[18] net1 ena nbias nbias avss bias_nstack
+x2[17] net1 ena nbias nbias avss bias_nstack
+x2[16] net1 ena nbias nbias avss bias_nstack
+x2[15] net1 ena nbias nbias avss bias_nstack
+x2[14] net1 ena nbias nbias avss bias_nstack
+x2[13] net1 ena nbias nbias avss bias_nstack
+x2[12] net1 ena nbias nbias avss bias_nstack
+x2[11] net1 ena nbias nbias avss bias_nstack
+x2[10] net1 ena nbias nbias avss bias_nstack
+x2[9] net1 ena nbias nbias avss bias_nstack
+x2[8] net1 ena nbias nbias avss bias_nstack
+x2[7] net1 ena nbias nbias avss bias_nstack
+x2[6] net1 ena nbias nbias avss bias_nstack
+x2[5] net1 ena nbias nbias avss bias_nstack
+x2[4] net1 ena nbias nbias avss bias_nstack
+x2[3] net1 ena nbias nbias avss bias_nstack
+x2[2] net1 ena nbias nbias avss bias_nstack
+x2[1] net1 ena nbias nbias avss bias_nstack
+x2[0] net1 ena nbias nbias avss bias_nstack
+XR3 net1 pcasc avss sky130_fd_pr__res_high_po_0p35 L=900 mult=1 m=1
+XR4 pcasc ref_in avss sky130_fd_pr__res_high_po_0p35 L=1500 mult=1 m=1
+x4 net2 ena net3 nbias avss bias_nstack
+x2 avdd pbias pcasc pbias enb avss net2 bias_pstack
+x13[1] avdd pbias pcasc net4[1] enb_test0 avss src_test0 bias_pstack
+x13[0] avdd pbias pcasc net4[0] enb_test0 avss src_test0 bias_pstack
+x17[1] snk_test0 ena_test0 net5[1] nbias avss bias_nstack
+x17[0] snk_test0 ena_test0 net5[0] nbias avss bias_nstack
+x18[1] snk_test1 ena_test1 net6[1] nbias avss bias_nstack
+x18[0] snk_test1 ena_test1 net6[0] nbias avss bias_nstack
+x16[1] avdd pbias pcasc net7[1] enb_test1 avss src_test1 bias_pstack
+x16[0] avdd pbias pcasc net7[0] enb_test1 avss src_test1 bias_pstack
+x8[199] avdd pbias pcasc net8[199] enb_10000_0 avss src_10000_0 bias_pstack
+x8[198] avdd pbias pcasc net8[198] enb_10000_0 avss src_10000_0 bias_pstack
+x8[197] avdd pbias pcasc net8[197] enb_10000_0 avss src_10000_0 bias_pstack
+x8[196] avdd pbias pcasc net8[196] enb_10000_0 avss src_10000_0 bias_pstack
+x8[195] avdd pbias pcasc net8[195] enb_10000_0 avss src_10000_0 bias_pstack
+x8[194] avdd pbias pcasc net8[194] enb_10000_0 avss src_10000_0 bias_pstack
+x8[193] avdd pbias pcasc net8[193] enb_10000_0 avss src_10000_0 bias_pstack
+x8[192] avdd pbias pcasc net8[192] enb_10000_0 avss src_10000_0 bias_pstack
+x8[191] avdd pbias pcasc net8[191] enb_10000_0 avss src_10000_0 bias_pstack
+x8[190] avdd pbias pcasc net8[190] enb_10000_0 avss src_10000_0 bias_pstack
+x8[189] avdd pbias pcasc net8[189] enb_10000_0 avss src_10000_0 bias_pstack
+x8[188] avdd pbias pcasc net8[188] enb_10000_0 avss src_10000_0 bias_pstack
+x8[187] avdd pbias pcasc net8[187] enb_10000_0 avss src_10000_0 bias_pstack
+x8[186] avdd pbias pcasc net8[186] enb_10000_0 avss src_10000_0 bias_pstack
+x8[185] avdd pbias pcasc net8[185] enb_10000_0 avss src_10000_0 bias_pstack
+x8[184] avdd pbias pcasc net8[184] enb_10000_0 avss src_10000_0 bias_pstack
+x8[183] avdd pbias pcasc net8[183] enb_10000_0 avss src_10000_0 bias_pstack
+x8[182] avdd pbias pcasc net8[182] enb_10000_0 avss src_10000_0 bias_pstack
+x8[181] avdd pbias pcasc net8[181] enb_10000_0 avss src_10000_0 bias_pstack
+x8[180] avdd pbias pcasc net8[180] enb_10000_0 avss src_10000_0 bias_pstack
+x8[179] avdd pbias pcasc net8[179] enb_10000_0 avss src_10000_0 bias_pstack
+x8[178] avdd pbias pcasc net8[178] enb_10000_0 avss src_10000_0 bias_pstack
+x8[177] avdd pbias pcasc net8[177] enb_10000_0 avss src_10000_0 bias_pstack
+x8[176] avdd pbias pcasc net8[176] enb_10000_0 avss src_10000_0 bias_pstack
+x8[175] avdd pbias pcasc net8[175] enb_10000_0 avss src_10000_0 bias_pstack
+x8[174] avdd pbias pcasc net8[174] enb_10000_0 avss src_10000_0 bias_pstack
+x8[173] avdd pbias pcasc net8[173] enb_10000_0 avss src_10000_0 bias_pstack
+x8[172] avdd pbias pcasc net8[172] enb_10000_0 avss src_10000_0 bias_pstack
+x8[171] avdd pbias pcasc net8[171] enb_10000_0 avss src_10000_0 bias_pstack
+x8[170] avdd pbias pcasc net8[170] enb_10000_0 avss src_10000_0 bias_pstack
+x8[169] avdd pbias pcasc net8[169] enb_10000_0 avss src_10000_0 bias_pstack
+x8[168] avdd pbias pcasc net8[168] enb_10000_0 avss src_10000_0 bias_pstack
+x8[167] avdd pbias pcasc net8[167] enb_10000_0 avss src_10000_0 bias_pstack
+x8[166] avdd pbias pcasc net8[166] enb_10000_0 avss src_10000_0 bias_pstack
+x8[165] avdd pbias pcasc net8[165] enb_10000_0 avss src_10000_0 bias_pstack
+x8[164] avdd pbias pcasc net8[164] enb_10000_0 avss src_10000_0 bias_pstack
+x8[163] avdd pbias pcasc net8[163] enb_10000_0 avss src_10000_0 bias_pstack
+x8[162] avdd pbias pcasc net8[162] enb_10000_0 avss src_10000_0 bias_pstack
+x8[161] avdd pbias pcasc net8[161] enb_10000_0 avss src_10000_0 bias_pstack
+x8[160] avdd pbias pcasc net8[160] enb_10000_0 avss src_10000_0 bias_pstack
+x8[159] avdd pbias pcasc net8[159] enb_10000_0 avss src_10000_0 bias_pstack
+x8[158] avdd pbias pcasc net8[158] enb_10000_0 avss src_10000_0 bias_pstack
+x8[157] avdd pbias pcasc net8[157] enb_10000_0 avss src_10000_0 bias_pstack
+x8[156] avdd pbias pcasc net8[156] enb_10000_0 avss src_10000_0 bias_pstack
+x8[155] avdd pbias pcasc net8[155] enb_10000_0 avss src_10000_0 bias_pstack
+x8[154] avdd pbias pcasc net8[154] enb_10000_0 avss src_10000_0 bias_pstack
+x8[153] avdd pbias pcasc net8[153] enb_10000_0 avss src_10000_0 bias_pstack
+x8[152] avdd pbias pcasc net8[152] enb_10000_0 avss src_10000_0 bias_pstack
+x8[151] avdd pbias pcasc net8[151] enb_10000_0 avss src_10000_0 bias_pstack
+x8[150] avdd pbias pcasc net8[150] enb_10000_0 avss src_10000_0 bias_pstack
+x8[149] avdd pbias pcasc net8[149] enb_10000_0 avss src_10000_0 bias_pstack
+x8[148] avdd pbias pcasc net8[148] enb_10000_0 avss src_10000_0 bias_pstack
+x8[147] avdd pbias pcasc net8[147] enb_10000_0 avss src_10000_0 bias_pstack
+x8[146] avdd pbias pcasc net8[146] enb_10000_0 avss src_10000_0 bias_pstack
+x8[145] avdd pbias pcasc net8[145] enb_10000_0 avss src_10000_0 bias_pstack
+x8[144] avdd pbias pcasc net8[144] enb_10000_0 avss src_10000_0 bias_pstack
+x8[143] avdd pbias pcasc net8[143] enb_10000_0 avss src_10000_0 bias_pstack
+x8[142] avdd pbias pcasc net8[142] enb_10000_0 avss src_10000_0 bias_pstack
+x8[141] avdd pbias pcasc net8[141] enb_10000_0 avss src_10000_0 bias_pstack
+x8[140] avdd pbias pcasc net8[140] enb_10000_0 avss src_10000_0 bias_pstack
+x8[139] avdd pbias pcasc net8[139] enb_10000_0 avss src_10000_0 bias_pstack
+x8[138] avdd pbias pcasc net8[138] enb_10000_0 avss src_10000_0 bias_pstack
+x8[137] avdd pbias pcasc net8[137] enb_10000_0 avss src_10000_0 bias_pstack
+x8[136] avdd pbias pcasc net8[136] enb_10000_0 avss src_10000_0 bias_pstack
+x8[135] avdd pbias pcasc net8[135] enb_10000_0 avss src_10000_0 bias_pstack
+x8[134] avdd pbias pcasc net8[134] enb_10000_0 avss src_10000_0 bias_pstack
+x8[133] avdd pbias pcasc net8[133] enb_10000_0 avss src_10000_0 bias_pstack
+x8[132] avdd pbias pcasc net8[132] enb_10000_0 avss src_10000_0 bias_pstack
+x8[131] avdd pbias pcasc net8[131] enb_10000_0 avss src_10000_0 bias_pstack
+x8[130] avdd pbias pcasc net8[130] enb_10000_0 avss src_10000_0 bias_pstack
+x8[129] avdd pbias pcasc net8[129] enb_10000_0 avss src_10000_0 bias_pstack
+x8[128] avdd pbias pcasc net8[128] enb_10000_0 avss src_10000_0 bias_pstack
+x8[127] avdd pbias pcasc net8[127] enb_10000_0 avss src_10000_0 bias_pstack
+x8[126] avdd pbias pcasc net8[126] enb_10000_0 avss src_10000_0 bias_pstack
+x8[125] avdd pbias pcasc net8[125] enb_10000_0 avss src_10000_0 bias_pstack
+x8[124] avdd pbias pcasc net8[124] enb_10000_0 avss src_10000_0 bias_pstack
+x8[123] avdd pbias pcasc net8[123] enb_10000_0 avss src_10000_0 bias_pstack
+x8[122] avdd pbias pcasc net8[122] enb_10000_0 avss src_10000_0 bias_pstack
+x8[121] avdd pbias pcasc net8[121] enb_10000_0 avss src_10000_0 bias_pstack
+x8[120] avdd pbias pcasc net8[120] enb_10000_0 avss src_10000_0 bias_pstack
+x8[119] avdd pbias pcasc net8[119] enb_10000_0 avss src_10000_0 bias_pstack
+x8[118] avdd pbias pcasc net8[118] enb_10000_0 avss src_10000_0 bias_pstack
+x8[117] avdd pbias pcasc net8[117] enb_10000_0 avss src_10000_0 bias_pstack
+x8[116] avdd pbias pcasc net8[116] enb_10000_0 avss src_10000_0 bias_pstack
+x8[115] avdd pbias pcasc net8[115] enb_10000_0 avss src_10000_0 bias_pstack
+x8[114] avdd pbias pcasc net8[114] enb_10000_0 avss src_10000_0 bias_pstack
+x8[113] avdd pbias pcasc net8[113] enb_10000_0 avss src_10000_0 bias_pstack
+x8[112] avdd pbias pcasc net8[112] enb_10000_0 avss src_10000_0 bias_pstack
+x8[111] avdd pbias pcasc net8[111] enb_10000_0 avss src_10000_0 bias_pstack
+x8[110] avdd pbias pcasc net8[110] enb_10000_0 avss src_10000_0 bias_pstack
+x8[109] avdd pbias pcasc net8[109] enb_10000_0 avss src_10000_0 bias_pstack
+x8[108] avdd pbias pcasc net8[108] enb_10000_0 avss src_10000_0 bias_pstack
+x8[107] avdd pbias pcasc net8[107] enb_10000_0 avss src_10000_0 bias_pstack
+x8[106] avdd pbias pcasc net8[106] enb_10000_0 avss src_10000_0 bias_pstack
+x8[105] avdd pbias pcasc net8[105] enb_10000_0 avss src_10000_0 bias_pstack
+x8[104] avdd pbias pcasc net8[104] enb_10000_0 avss src_10000_0 bias_pstack
+x8[103] avdd pbias pcasc net8[103] enb_10000_0 avss src_10000_0 bias_pstack
+x8[102] avdd pbias pcasc net8[102] enb_10000_0 avss src_10000_0 bias_pstack
+x8[101] avdd pbias pcasc net8[101] enb_10000_0 avss src_10000_0 bias_pstack
+x8[100] avdd pbias pcasc net8[100] enb_10000_0 avss src_10000_0 bias_pstack
+x8[99] avdd pbias pcasc net8[99] enb_10000_0 avss src_10000_0 bias_pstack
+x8[98] avdd pbias pcasc net8[98] enb_10000_0 avss src_10000_0 bias_pstack
+x8[97] avdd pbias pcasc net8[97] enb_10000_0 avss src_10000_0 bias_pstack
+x8[96] avdd pbias pcasc net8[96] enb_10000_0 avss src_10000_0 bias_pstack
+x8[95] avdd pbias pcasc net8[95] enb_10000_0 avss src_10000_0 bias_pstack
+x8[94] avdd pbias pcasc net8[94] enb_10000_0 avss src_10000_0 bias_pstack
+x8[93] avdd pbias pcasc net8[93] enb_10000_0 avss src_10000_0 bias_pstack
+x8[92] avdd pbias pcasc net8[92] enb_10000_0 avss src_10000_0 bias_pstack
+x8[91] avdd pbias pcasc net8[91] enb_10000_0 avss src_10000_0 bias_pstack
+x8[90] avdd pbias pcasc net8[90] enb_10000_0 avss src_10000_0 bias_pstack
+x8[89] avdd pbias pcasc net8[89] enb_10000_0 avss src_10000_0 bias_pstack
+x8[88] avdd pbias pcasc net8[88] enb_10000_0 avss src_10000_0 bias_pstack
+x8[87] avdd pbias pcasc net8[87] enb_10000_0 avss src_10000_0 bias_pstack
+x8[86] avdd pbias pcasc net8[86] enb_10000_0 avss src_10000_0 bias_pstack
+x8[85] avdd pbias pcasc net8[85] enb_10000_0 avss src_10000_0 bias_pstack
+x8[84] avdd pbias pcasc net8[84] enb_10000_0 avss src_10000_0 bias_pstack
+x8[83] avdd pbias pcasc net8[83] enb_10000_0 avss src_10000_0 bias_pstack
+x8[82] avdd pbias pcasc net8[82] enb_10000_0 avss src_10000_0 bias_pstack
+x8[81] avdd pbias pcasc net8[81] enb_10000_0 avss src_10000_0 bias_pstack
+x8[80] avdd pbias pcasc net8[80] enb_10000_0 avss src_10000_0 bias_pstack
+x8[79] avdd pbias pcasc net8[79] enb_10000_0 avss src_10000_0 bias_pstack
+x8[78] avdd pbias pcasc net8[78] enb_10000_0 avss src_10000_0 bias_pstack
+x8[77] avdd pbias pcasc net8[77] enb_10000_0 avss src_10000_0 bias_pstack
+x8[76] avdd pbias pcasc net8[76] enb_10000_0 avss src_10000_0 bias_pstack
+x8[75] avdd pbias pcasc net8[75] enb_10000_0 avss src_10000_0 bias_pstack
+x8[74] avdd pbias pcasc net8[74] enb_10000_0 avss src_10000_0 bias_pstack
+x8[73] avdd pbias pcasc net8[73] enb_10000_0 avss src_10000_0 bias_pstack
+x8[72] avdd pbias pcasc net8[72] enb_10000_0 avss src_10000_0 bias_pstack
+x8[71] avdd pbias pcasc net8[71] enb_10000_0 avss src_10000_0 bias_pstack
+x8[70] avdd pbias pcasc net8[70] enb_10000_0 avss src_10000_0 bias_pstack
+x8[69] avdd pbias pcasc net8[69] enb_10000_0 avss src_10000_0 bias_pstack
+x8[68] avdd pbias pcasc net8[68] enb_10000_0 avss src_10000_0 bias_pstack
+x8[67] avdd pbias pcasc net8[67] enb_10000_0 avss src_10000_0 bias_pstack
+x8[66] avdd pbias pcasc net8[66] enb_10000_0 avss src_10000_0 bias_pstack
+x8[65] avdd pbias pcasc net8[65] enb_10000_0 avss src_10000_0 bias_pstack
+x8[64] avdd pbias pcasc net8[64] enb_10000_0 avss src_10000_0 bias_pstack
+x8[63] avdd pbias pcasc net8[63] enb_10000_0 avss src_10000_0 bias_pstack
+x8[62] avdd pbias pcasc net8[62] enb_10000_0 avss src_10000_0 bias_pstack
+x8[61] avdd pbias pcasc net8[61] enb_10000_0 avss src_10000_0 bias_pstack
+x8[60] avdd pbias pcasc net8[60] enb_10000_0 avss src_10000_0 bias_pstack
+x8[59] avdd pbias pcasc net8[59] enb_10000_0 avss src_10000_0 bias_pstack
+x8[58] avdd pbias pcasc net8[58] enb_10000_0 avss src_10000_0 bias_pstack
+x8[57] avdd pbias pcasc net8[57] enb_10000_0 avss src_10000_0 bias_pstack
+x8[56] avdd pbias pcasc net8[56] enb_10000_0 avss src_10000_0 bias_pstack
+x8[55] avdd pbias pcasc net8[55] enb_10000_0 avss src_10000_0 bias_pstack
+x8[54] avdd pbias pcasc net8[54] enb_10000_0 avss src_10000_0 bias_pstack
+x8[53] avdd pbias pcasc net8[53] enb_10000_0 avss src_10000_0 bias_pstack
+x8[52] avdd pbias pcasc net8[52] enb_10000_0 avss src_10000_0 bias_pstack
+x8[51] avdd pbias pcasc net8[51] enb_10000_0 avss src_10000_0 bias_pstack
+x8[50] avdd pbias pcasc net8[50] enb_10000_0 avss src_10000_0 bias_pstack
+x8[49] avdd pbias pcasc net8[49] enb_10000_0 avss src_10000_0 bias_pstack
+x8[48] avdd pbias pcasc net8[48] enb_10000_0 avss src_10000_0 bias_pstack
+x8[47] avdd pbias pcasc net8[47] enb_10000_0 avss src_10000_0 bias_pstack
+x8[46] avdd pbias pcasc net8[46] enb_10000_0 avss src_10000_0 bias_pstack
+x8[45] avdd pbias pcasc net8[45] enb_10000_0 avss src_10000_0 bias_pstack
+x8[44] avdd pbias pcasc net8[44] enb_10000_0 avss src_10000_0 bias_pstack
+x8[43] avdd pbias pcasc net8[43] enb_10000_0 avss src_10000_0 bias_pstack
+x8[42] avdd pbias pcasc net8[42] enb_10000_0 avss src_10000_0 bias_pstack
+x8[41] avdd pbias pcasc net8[41] enb_10000_0 avss src_10000_0 bias_pstack
+x8[40] avdd pbias pcasc net8[40] enb_10000_0 avss src_10000_0 bias_pstack
+x8[39] avdd pbias pcasc net8[39] enb_10000_0 avss src_10000_0 bias_pstack
+x8[38] avdd pbias pcasc net8[38] enb_10000_0 avss src_10000_0 bias_pstack
+x8[37] avdd pbias pcasc net8[37] enb_10000_0 avss src_10000_0 bias_pstack
+x8[36] avdd pbias pcasc net8[36] enb_10000_0 avss src_10000_0 bias_pstack
+x8[35] avdd pbias pcasc net8[35] enb_10000_0 avss src_10000_0 bias_pstack
+x8[34] avdd pbias pcasc net8[34] enb_10000_0 avss src_10000_0 bias_pstack
+x8[33] avdd pbias pcasc net8[33] enb_10000_0 avss src_10000_0 bias_pstack
+x8[32] avdd pbias pcasc net8[32] enb_10000_0 avss src_10000_0 bias_pstack
+x8[31] avdd pbias pcasc net8[31] enb_10000_0 avss src_10000_0 bias_pstack
+x8[30] avdd pbias pcasc net8[30] enb_10000_0 avss src_10000_0 bias_pstack
+x8[29] avdd pbias pcasc net8[29] enb_10000_0 avss src_10000_0 bias_pstack
+x8[28] avdd pbias pcasc net8[28] enb_10000_0 avss src_10000_0 bias_pstack
+x8[27] avdd pbias pcasc net8[27] enb_10000_0 avss src_10000_0 bias_pstack
+x8[26] avdd pbias pcasc net8[26] enb_10000_0 avss src_10000_0 bias_pstack
+x8[25] avdd pbias pcasc net8[25] enb_10000_0 avss src_10000_0 bias_pstack
+x8[24] avdd pbias pcasc net8[24] enb_10000_0 avss src_10000_0 bias_pstack
+x8[23] avdd pbias pcasc net8[23] enb_10000_0 avss src_10000_0 bias_pstack
+x8[22] avdd pbias pcasc net8[22] enb_10000_0 avss src_10000_0 bias_pstack
+x8[21] avdd pbias pcasc net8[21] enb_10000_0 avss src_10000_0 bias_pstack
+x8[20] avdd pbias pcasc net8[20] enb_10000_0 avss src_10000_0 bias_pstack
+x8[19] avdd pbias pcasc net8[19] enb_10000_0 avss src_10000_0 bias_pstack
+x8[18] avdd pbias pcasc net8[18] enb_10000_0 avss src_10000_0 bias_pstack
+x8[17] avdd pbias pcasc net8[17] enb_10000_0 avss src_10000_0 bias_pstack
+x8[16] avdd pbias pcasc net8[16] enb_10000_0 avss src_10000_0 bias_pstack
+x8[15] avdd pbias pcasc net8[15] enb_10000_0 avss src_10000_0 bias_pstack
+x8[14] avdd pbias pcasc net8[14] enb_10000_0 avss src_10000_0 bias_pstack
+x8[13] avdd pbias pcasc net8[13] enb_10000_0 avss src_10000_0 bias_pstack
+x8[12] avdd pbias pcasc net8[12] enb_10000_0 avss src_10000_0 bias_pstack
+x8[11] avdd pbias pcasc net8[11] enb_10000_0 avss src_10000_0 bias_pstack
+x8[10] avdd pbias pcasc net8[10] enb_10000_0 avss src_10000_0 bias_pstack
+x8[9] avdd pbias pcasc net8[9] enb_10000_0 avss src_10000_0 bias_pstack
+x8[8] avdd pbias pcasc net8[8] enb_10000_0 avss src_10000_0 bias_pstack
+x8[7] avdd pbias pcasc net8[7] enb_10000_0 avss src_10000_0 bias_pstack
+x8[6] avdd pbias pcasc net8[6] enb_10000_0 avss src_10000_0 bias_pstack
+x8[5] avdd pbias pcasc net8[5] enb_10000_0 avss src_10000_0 bias_pstack
+x8[4] avdd pbias pcasc net8[4] enb_10000_0 avss src_10000_0 bias_pstack
+x8[3] avdd pbias pcasc net8[3] enb_10000_0 avss src_10000_0 bias_pstack
+x8[2] avdd pbias pcasc net8[2] enb_10000_0 avss src_10000_0 bias_pstack
+x8[1] avdd pbias pcasc net8[1] enb_10000_0 avss src_10000_0 bias_pstack
+x8[0] avdd pbias pcasc net8[0] enb_10000_0 avss src_10000_0 bias_pstack
+x9[99] snk_5000_0 ena_5000_0 net9[99] nbias avss bias_nstack
+x9[98] snk_5000_0 ena_5000_0 net9[98] nbias avss bias_nstack
+x9[97] snk_5000_0 ena_5000_0 net9[97] nbias avss bias_nstack
+x9[96] snk_5000_0 ena_5000_0 net9[96] nbias avss bias_nstack
+x9[95] snk_5000_0 ena_5000_0 net9[95] nbias avss bias_nstack
+x9[94] snk_5000_0 ena_5000_0 net9[94] nbias avss bias_nstack
+x9[93] snk_5000_0 ena_5000_0 net9[93] nbias avss bias_nstack
+x9[92] snk_5000_0 ena_5000_0 net9[92] nbias avss bias_nstack
+x9[91] snk_5000_0 ena_5000_0 net9[91] nbias avss bias_nstack
+x9[90] snk_5000_0 ena_5000_0 net9[90] nbias avss bias_nstack
+x9[89] snk_5000_0 ena_5000_0 net9[89] nbias avss bias_nstack
+x9[88] snk_5000_0 ena_5000_0 net9[88] nbias avss bias_nstack
+x9[87] snk_5000_0 ena_5000_0 net9[87] nbias avss bias_nstack
+x9[86] snk_5000_0 ena_5000_0 net9[86] nbias avss bias_nstack
+x9[85] snk_5000_0 ena_5000_0 net9[85] nbias avss bias_nstack
+x9[84] snk_5000_0 ena_5000_0 net9[84] nbias avss bias_nstack
+x9[83] snk_5000_0 ena_5000_0 net9[83] nbias avss bias_nstack
+x9[82] snk_5000_0 ena_5000_0 net9[82] nbias avss bias_nstack
+x9[81] snk_5000_0 ena_5000_0 net9[81] nbias avss bias_nstack
+x9[80] snk_5000_0 ena_5000_0 net9[80] nbias avss bias_nstack
+x9[79] snk_5000_0 ena_5000_0 net9[79] nbias avss bias_nstack
+x9[78] snk_5000_0 ena_5000_0 net9[78] nbias avss bias_nstack
+x9[77] snk_5000_0 ena_5000_0 net9[77] nbias avss bias_nstack
+x9[76] snk_5000_0 ena_5000_0 net9[76] nbias avss bias_nstack
+x9[75] snk_5000_0 ena_5000_0 net9[75] nbias avss bias_nstack
+x9[74] snk_5000_0 ena_5000_0 net9[74] nbias avss bias_nstack
+x9[73] snk_5000_0 ena_5000_0 net9[73] nbias avss bias_nstack
+x9[72] snk_5000_0 ena_5000_0 net9[72] nbias avss bias_nstack
+x9[71] snk_5000_0 ena_5000_0 net9[71] nbias avss bias_nstack
+x9[70] snk_5000_0 ena_5000_0 net9[70] nbias avss bias_nstack
+x9[69] snk_5000_0 ena_5000_0 net9[69] nbias avss bias_nstack
+x9[68] snk_5000_0 ena_5000_0 net9[68] nbias avss bias_nstack
+x9[67] snk_5000_0 ena_5000_0 net9[67] nbias avss bias_nstack
+x9[66] snk_5000_0 ena_5000_0 net9[66] nbias avss bias_nstack
+x9[65] snk_5000_0 ena_5000_0 net9[65] nbias avss bias_nstack
+x9[64] snk_5000_0 ena_5000_0 net9[64] nbias avss bias_nstack
+x9[63] snk_5000_0 ena_5000_0 net9[63] nbias avss bias_nstack
+x9[62] snk_5000_0 ena_5000_0 net9[62] nbias avss bias_nstack
+x9[61] snk_5000_0 ena_5000_0 net9[61] nbias avss bias_nstack
+x9[60] snk_5000_0 ena_5000_0 net9[60] nbias avss bias_nstack
+x9[59] snk_5000_0 ena_5000_0 net9[59] nbias avss bias_nstack
+x9[58] snk_5000_0 ena_5000_0 net9[58] nbias avss bias_nstack
+x9[57] snk_5000_0 ena_5000_0 net9[57] nbias avss bias_nstack
+x9[56] snk_5000_0 ena_5000_0 net9[56] nbias avss bias_nstack
+x9[55] snk_5000_0 ena_5000_0 net9[55] nbias avss bias_nstack
+x9[54] snk_5000_0 ena_5000_0 net9[54] nbias avss bias_nstack
+x9[53] snk_5000_0 ena_5000_0 net9[53] nbias avss bias_nstack
+x9[52] snk_5000_0 ena_5000_0 net9[52] nbias avss bias_nstack
+x9[51] snk_5000_0 ena_5000_0 net9[51] nbias avss bias_nstack
+x9[50] snk_5000_0 ena_5000_0 net9[50] nbias avss bias_nstack
+x9[49] snk_5000_0 ena_5000_0 net9[49] nbias avss bias_nstack
+x9[48] snk_5000_0 ena_5000_0 net9[48] nbias avss bias_nstack
+x9[47] snk_5000_0 ena_5000_0 net9[47] nbias avss bias_nstack
+x9[46] snk_5000_0 ena_5000_0 net9[46] nbias avss bias_nstack
+x9[45] snk_5000_0 ena_5000_0 net9[45] nbias avss bias_nstack
+x9[44] snk_5000_0 ena_5000_0 net9[44] nbias avss bias_nstack
+x9[43] snk_5000_0 ena_5000_0 net9[43] nbias avss bias_nstack
+x9[42] snk_5000_0 ena_5000_0 net9[42] nbias avss bias_nstack
+x9[41] snk_5000_0 ena_5000_0 net9[41] nbias avss bias_nstack
+x9[40] snk_5000_0 ena_5000_0 net9[40] nbias avss bias_nstack
+x9[39] snk_5000_0 ena_5000_0 net9[39] nbias avss bias_nstack
+x9[38] snk_5000_0 ena_5000_0 net9[38] nbias avss bias_nstack
+x9[37] snk_5000_0 ena_5000_0 net9[37] nbias avss bias_nstack
+x9[36] snk_5000_0 ena_5000_0 net9[36] nbias avss bias_nstack
+x9[35] snk_5000_0 ena_5000_0 net9[35] nbias avss bias_nstack
+x9[34] snk_5000_0 ena_5000_0 net9[34] nbias avss bias_nstack
+x9[33] snk_5000_0 ena_5000_0 net9[33] nbias avss bias_nstack
+x9[32] snk_5000_0 ena_5000_0 net9[32] nbias avss bias_nstack
+x9[31] snk_5000_0 ena_5000_0 net9[31] nbias avss bias_nstack
+x9[30] snk_5000_0 ena_5000_0 net9[30] nbias avss bias_nstack
+x9[29] snk_5000_0 ena_5000_0 net9[29] nbias avss bias_nstack
+x9[28] snk_5000_0 ena_5000_0 net9[28] nbias avss bias_nstack
+x9[27] snk_5000_0 ena_5000_0 net9[27] nbias avss bias_nstack
+x9[26] snk_5000_0 ena_5000_0 net9[26] nbias avss bias_nstack
+x9[25] snk_5000_0 ena_5000_0 net9[25] nbias avss bias_nstack
+x9[24] snk_5000_0 ena_5000_0 net9[24] nbias avss bias_nstack
+x9[23] snk_5000_0 ena_5000_0 net9[23] nbias avss bias_nstack
+x9[22] snk_5000_0 ena_5000_0 net9[22] nbias avss bias_nstack
+x9[21] snk_5000_0 ena_5000_0 net9[21] nbias avss bias_nstack
+x9[20] snk_5000_0 ena_5000_0 net9[20] nbias avss bias_nstack
+x9[19] snk_5000_0 ena_5000_0 net9[19] nbias avss bias_nstack
+x9[18] snk_5000_0 ena_5000_0 net9[18] nbias avss bias_nstack
+x9[17] snk_5000_0 ena_5000_0 net9[17] nbias avss bias_nstack
+x9[16] snk_5000_0 ena_5000_0 net9[16] nbias avss bias_nstack
+x9[15] snk_5000_0 ena_5000_0 net9[15] nbias avss bias_nstack
+x9[14] snk_5000_0 ena_5000_0 net9[14] nbias avss bias_nstack
+x9[13] snk_5000_0 ena_5000_0 net9[13] nbias avss bias_nstack
+x9[12] snk_5000_0 ena_5000_0 net9[12] nbias avss bias_nstack
+x9[11] snk_5000_0 ena_5000_0 net9[11] nbias avss bias_nstack
+x9[10] snk_5000_0 ena_5000_0 net9[10] nbias avss bias_nstack
+x9[9] snk_5000_0 ena_5000_0 net9[9] nbias avss bias_nstack
+x9[8] snk_5000_0 ena_5000_0 net9[8] nbias avss bias_nstack
+x9[7] snk_5000_0 ena_5000_0 net9[7] nbias avss bias_nstack
+x9[6] snk_5000_0 ena_5000_0 net9[6] nbias avss bias_nstack
+x9[5] snk_5000_0 ena_5000_0 net9[5] nbias avss bias_nstack
+x9[4] snk_5000_0 ena_5000_0 net9[4] nbias avss bias_nstack
+x9[3] snk_5000_0 ena_5000_0 net9[3] nbias avss bias_nstack
+x9[2] snk_5000_0 ena_5000_0 net9[2] nbias avss bias_nstack
+x9[1] snk_5000_0 ena_5000_0 net9[1] nbias avss bias_nstack
+x9[0] snk_5000_0 ena_5000_0 net9[0] nbias avss bias_nstack
+x10[199] avdd pbias pcasc net10[199] enb_10000_1 avss src_10000_1 bias_pstack
+x10[198] avdd pbias pcasc net10[198] enb_10000_1 avss src_10000_1 bias_pstack
+x10[197] avdd pbias pcasc net10[197] enb_10000_1 avss src_10000_1 bias_pstack
+x10[196] avdd pbias pcasc net10[196] enb_10000_1 avss src_10000_1 bias_pstack
+x10[195] avdd pbias pcasc net10[195] enb_10000_1 avss src_10000_1 bias_pstack
+x10[194] avdd pbias pcasc net10[194] enb_10000_1 avss src_10000_1 bias_pstack
+x10[193] avdd pbias pcasc net10[193] enb_10000_1 avss src_10000_1 bias_pstack
+x10[192] avdd pbias pcasc net10[192] enb_10000_1 avss src_10000_1 bias_pstack
+x10[191] avdd pbias pcasc net10[191] enb_10000_1 avss src_10000_1 bias_pstack
+x10[190] avdd pbias pcasc net10[190] enb_10000_1 avss src_10000_1 bias_pstack
+x10[189] avdd pbias pcasc net10[189] enb_10000_1 avss src_10000_1 bias_pstack
+x10[188] avdd pbias pcasc net10[188] enb_10000_1 avss src_10000_1 bias_pstack
+x10[187] avdd pbias pcasc net10[187] enb_10000_1 avss src_10000_1 bias_pstack
+x10[186] avdd pbias pcasc net10[186] enb_10000_1 avss src_10000_1 bias_pstack
+x10[185] avdd pbias pcasc net10[185] enb_10000_1 avss src_10000_1 bias_pstack
+x10[184] avdd pbias pcasc net10[184] enb_10000_1 avss src_10000_1 bias_pstack
+x10[183] avdd pbias pcasc net10[183] enb_10000_1 avss src_10000_1 bias_pstack
+x10[182] avdd pbias pcasc net10[182] enb_10000_1 avss src_10000_1 bias_pstack
+x10[181] avdd pbias pcasc net10[181] enb_10000_1 avss src_10000_1 bias_pstack
+x10[180] avdd pbias pcasc net10[180] enb_10000_1 avss src_10000_1 bias_pstack
+x10[179] avdd pbias pcasc net10[179] enb_10000_1 avss src_10000_1 bias_pstack
+x10[178] avdd pbias pcasc net10[178] enb_10000_1 avss src_10000_1 bias_pstack
+x10[177] avdd pbias pcasc net10[177] enb_10000_1 avss src_10000_1 bias_pstack
+x10[176] avdd pbias pcasc net10[176] enb_10000_1 avss src_10000_1 bias_pstack
+x10[175] avdd pbias pcasc net10[175] enb_10000_1 avss src_10000_1 bias_pstack
+x10[174] avdd pbias pcasc net10[174] enb_10000_1 avss src_10000_1 bias_pstack
+x10[173] avdd pbias pcasc net10[173] enb_10000_1 avss src_10000_1 bias_pstack
+x10[172] avdd pbias pcasc net10[172] enb_10000_1 avss src_10000_1 bias_pstack
+x10[171] avdd pbias pcasc net10[171] enb_10000_1 avss src_10000_1 bias_pstack
+x10[170] avdd pbias pcasc net10[170] enb_10000_1 avss src_10000_1 bias_pstack
+x10[169] avdd pbias pcasc net10[169] enb_10000_1 avss src_10000_1 bias_pstack
+x10[168] avdd pbias pcasc net10[168] enb_10000_1 avss src_10000_1 bias_pstack
+x10[167] avdd pbias pcasc net10[167] enb_10000_1 avss src_10000_1 bias_pstack
+x10[166] avdd pbias pcasc net10[166] enb_10000_1 avss src_10000_1 bias_pstack
+x10[165] avdd pbias pcasc net10[165] enb_10000_1 avss src_10000_1 bias_pstack
+x10[164] avdd pbias pcasc net10[164] enb_10000_1 avss src_10000_1 bias_pstack
+x10[163] avdd pbias pcasc net10[163] enb_10000_1 avss src_10000_1 bias_pstack
+x10[162] avdd pbias pcasc net10[162] enb_10000_1 avss src_10000_1 bias_pstack
+x10[161] avdd pbias pcasc net10[161] enb_10000_1 avss src_10000_1 bias_pstack
+x10[160] avdd pbias pcasc net10[160] enb_10000_1 avss src_10000_1 bias_pstack
+x10[159] avdd pbias pcasc net10[159] enb_10000_1 avss src_10000_1 bias_pstack
+x10[158] avdd pbias pcasc net10[158] enb_10000_1 avss src_10000_1 bias_pstack
+x10[157] avdd pbias pcasc net10[157] enb_10000_1 avss src_10000_1 bias_pstack
+x10[156] avdd pbias pcasc net10[156] enb_10000_1 avss src_10000_1 bias_pstack
+x10[155] avdd pbias pcasc net10[155] enb_10000_1 avss src_10000_1 bias_pstack
+x10[154] avdd pbias pcasc net10[154] enb_10000_1 avss src_10000_1 bias_pstack
+x10[153] avdd pbias pcasc net10[153] enb_10000_1 avss src_10000_1 bias_pstack
+x10[152] avdd pbias pcasc net10[152] enb_10000_1 avss src_10000_1 bias_pstack
+x10[151] avdd pbias pcasc net10[151] enb_10000_1 avss src_10000_1 bias_pstack
+x10[150] avdd pbias pcasc net10[150] enb_10000_1 avss src_10000_1 bias_pstack
+x10[149] avdd pbias pcasc net10[149] enb_10000_1 avss src_10000_1 bias_pstack
+x10[148] avdd pbias pcasc net10[148] enb_10000_1 avss src_10000_1 bias_pstack
+x10[147] avdd pbias pcasc net10[147] enb_10000_1 avss src_10000_1 bias_pstack
+x10[146] avdd pbias pcasc net10[146] enb_10000_1 avss src_10000_1 bias_pstack
+x10[145] avdd pbias pcasc net10[145] enb_10000_1 avss src_10000_1 bias_pstack
+x10[144] avdd pbias pcasc net10[144] enb_10000_1 avss src_10000_1 bias_pstack
+x10[143] avdd pbias pcasc net10[143] enb_10000_1 avss src_10000_1 bias_pstack
+x10[142] avdd pbias pcasc net10[142] enb_10000_1 avss src_10000_1 bias_pstack
+x10[141] avdd pbias pcasc net10[141] enb_10000_1 avss src_10000_1 bias_pstack
+x10[140] avdd pbias pcasc net10[140] enb_10000_1 avss src_10000_1 bias_pstack
+x10[139] avdd pbias pcasc net10[139] enb_10000_1 avss src_10000_1 bias_pstack
+x10[138] avdd pbias pcasc net10[138] enb_10000_1 avss src_10000_1 bias_pstack
+x10[137] avdd pbias pcasc net10[137] enb_10000_1 avss src_10000_1 bias_pstack
+x10[136] avdd pbias pcasc net10[136] enb_10000_1 avss src_10000_1 bias_pstack
+x10[135] avdd pbias pcasc net10[135] enb_10000_1 avss src_10000_1 bias_pstack
+x10[134] avdd pbias pcasc net10[134] enb_10000_1 avss src_10000_1 bias_pstack
+x10[133] avdd pbias pcasc net10[133] enb_10000_1 avss src_10000_1 bias_pstack
+x10[132] avdd pbias pcasc net10[132] enb_10000_1 avss src_10000_1 bias_pstack
+x10[131] avdd pbias pcasc net10[131] enb_10000_1 avss src_10000_1 bias_pstack
+x10[130] avdd pbias pcasc net10[130] enb_10000_1 avss src_10000_1 bias_pstack
+x10[129] avdd pbias pcasc net10[129] enb_10000_1 avss src_10000_1 bias_pstack
+x10[128] avdd pbias pcasc net10[128] enb_10000_1 avss src_10000_1 bias_pstack
+x10[127] avdd pbias pcasc net10[127] enb_10000_1 avss src_10000_1 bias_pstack
+x10[126] avdd pbias pcasc net10[126] enb_10000_1 avss src_10000_1 bias_pstack
+x10[125] avdd pbias pcasc net10[125] enb_10000_1 avss src_10000_1 bias_pstack
+x10[124] avdd pbias pcasc net10[124] enb_10000_1 avss src_10000_1 bias_pstack
+x10[123] avdd pbias pcasc net10[123] enb_10000_1 avss src_10000_1 bias_pstack
+x10[122] avdd pbias pcasc net10[122] enb_10000_1 avss src_10000_1 bias_pstack
+x10[121] avdd pbias pcasc net10[121] enb_10000_1 avss src_10000_1 bias_pstack
+x10[120] avdd pbias pcasc net10[120] enb_10000_1 avss src_10000_1 bias_pstack
+x10[119] avdd pbias pcasc net10[119] enb_10000_1 avss src_10000_1 bias_pstack
+x10[118] avdd pbias pcasc net10[118] enb_10000_1 avss src_10000_1 bias_pstack
+x10[117] avdd pbias pcasc net10[117] enb_10000_1 avss src_10000_1 bias_pstack
+x10[116] avdd pbias pcasc net10[116] enb_10000_1 avss src_10000_1 bias_pstack
+x10[115] avdd pbias pcasc net10[115] enb_10000_1 avss src_10000_1 bias_pstack
+x10[114] avdd pbias pcasc net10[114] enb_10000_1 avss src_10000_1 bias_pstack
+x10[113] avdd pbias pcasc net10[113] enb_10000_1 avss src_10000_1 bias_pstack
+x10[112] avdd pbias pcasc net10[112] enb_10000_1 avss src_10000_1 bias_pstack
+x10[111] avdd pbias pcasc net10[111] enb_10000_1 avss src_10000_1 bias_pstack
+x10[110] avdd pbias pcasc net10[110] enb_10000_1 avss src_10000_1 bias_pstack
+x10[109] avdd pbias pcasc net10[109] enb_10000_1 avss src_10000_1 bias_pstack
+x10[108] avdd pbias pcasc net10[108] enb_10000_1 avss src_10000_1 bias_pstack
+x10[107] avdd pbias pcasc net10[107] enb_10000_1 avss src_10000_1 bias_pstack
+x10[106] avdd pbias pcasc net10[106] enb_10000_1 avss src_10000_1 bias_pstack
+x10[105] avdd pbias pcasc net10[105] enb_10000_1 avss src_10000_1 bias_pstack
+x10[104] avdd pbias pcasc net10[104] enb_10000_1 avss src_10000_1 bias_pstack
+x10[103] avdd pbias pcasc net10[103] enb_10000_1 avss src_10000_1 bias_pstack
+x10[102] avdd pbias pcasc net10[102] enb_10000_1 avss src_10000_1 bias_pstack
+x10[101] avdd pbias pcasc net10[101] enb_10000_1 avss src_10000_1 bias_pstack
+x10[100] avdd pbias pcasc net10[100] enb_10000_1 avss src_10000_1 bias_pstack
+x10[99] avdd pbias pcasc net10[99] enb_10000_1 avss src_10000_1 bias_pstack
+x10[98] avdd pbias pcasc net10[98] enb_10000_1 avss src_10000_1 bias_pstack
+x10[97] avdd pbias pcasc net10[97] enb_10000_1 avss src_10000_1 bias_pstack
+x10[96] avdd pbias pcasc net10[96] enb_10000_1 avss src_10000_1 bias_pstack
+x10[95] avdd pbias pcasc net10[95] enb_10000_1 avss src_10000_1 bias_pstack
+x10[94] avdd pbias pcasc net10[94] enb_10000_1 avss src_10000_1 bias_pstack
+x10[93] avdd pbias pcasc net10[93] enb_10000_1 avss src_10000_1 bias_pstack
+x10[92] avdd pbias pcasc net10[92] enb_10000_1 avss src_10000_1 bias_pstack
+x10[91] avdd pbias pcasc net10[91] enb_10000_1 avss src_10000_1 bias_pstack
+x10[90] avdd pbias pcasc net10[90] enb_10000_1 avss src_10000_1 bias_pstack
+x10[89] avdd pbias pcasc net10[89] enb_10000_1 avss src_10000_1 bias_pstack
+x10[88] avdd pbias pcasc net10[88] enb_10000_1 avss src_10000_1 bias_pstack
+x10[87] avdd pbias pcasc net10[87] enb_10000_1 avss src_10000_1 bias_pstack
+x10[86] avdd pbias pcasc net10[86] enb_10000_1 avss src_10000_1 bias_pstack
+x10[85] avdd pbias pcasc net10[85] enb_10000_1 avss src_10000_1 bias_pstack
+x10[84] avdd pbias pcasc net10[84] enb_10000_1 avss src_10000_1 bias_pstack
+x10[83] avdd pbias pcasc net10[83] enb_10000_1 avss src_10000_1 bias_pstack
+x10[82] avdd pbias pcasc net10[82] enb_10000_1 avss src_10000_1 bias_pstack
+x10[81] avdd pbias pcasc net10[81] enb_10000_1 avss src_10000_1 bias_pstack
+x10[80] avdd pbias pcasc net10[80] enb_10000_1 avss src_10000_1 bias_pstack
+x10[79] avdd pbias pcasc net10[79] enb_10000_1 avss src_10000_1 bias_pstack
+x10[78] avdd pbias pcasc net10[78] enb_10000_1 avss src_10000_1 bias_pstack
+x10[77] avdd pbias pcasc net10[77] enb_10000_1 avss src_10000_1 bias_pstack
+x10[76] avdd pbias pcasc net10[76] enb_10000_1 avss src_10000_1 bias_pstack
+x10[75] avdd pbias pcasc net10[75] enb_10000_1 avss src_10000_1 bias_pstack
+x10[74] avdd pbias pcasc net10[74] enb_10000_1 avss src_10000_1 bias_pstack
+x10[73] avdd pbias pcasc net10[73] enb_10000_1 avss src_10000_1 bias_pstack
+x10[72] avdd pbias pcasc net10[72] enb_10000_1 avss src_10000_1 bias_pstack
+x10[71] avdd pbias pcasc net10[71] enb_10000_1 avss src_10000_1 bias_pstack
+x10[70] avdd pbias pcasc net10[70] enb_10000_1 avss src_10000_1 bias_pstack
+x10[69] avdd pbias pcasc net10[69] enb_10000_1 avss src_10000_1 bias_pstack
+x10[68] avdd pbias pcasc net10[68] enb_10000_1 avss src_10000_1 bias_pstack
+x10[67] avdd pbias pcasc net10[67] enb_10000_1 avss src_10000_1 bias_pstack
+x10[66] avdd pbias pcasc net10[66] enb_10000_1 avss src_10000_1 bias_pstack
+x10[65] avdd pbias pcasc net10[65] enb_10000_1 avss src_10000_1 bias_pstack
+x10[64] avdd pbias pcasc net10[64] enb_10000_1 avss src_10000_1 bias_pstack
+x10[63] avdd pbias pcasc net10[63] enb_10000_1 avss src_10000_1 bias_pstack
+x10[62] avdd pbias pcasc net10[62] enb_10000_1 avss src_10000_1 bias_pstack
+x10[61] avdd pbias pcasc net10[61] enb_10000_1 avss src_10000_1 bias_pstack
+x10[60] avdd pbias pcasc net10[60] enb_10000_1 avss src_10000_1 bias_pstack
+x10[59] avdd pbias pcasc net10[59] enb_10000_1 avss src_10000_1 bias_pstack
+x10[58] avdd pbias pcasc net10[58] enb_10000_1 avss src_10000_1 bias_pstack
+x10[57] avdd pbias pcasc net10[57] enb_10000_1 avss src_10000_1 bias_pstack
+x10[56] avdd pbias pcasc net10[56] enb_10000_1 avss src_10000_1 bias_pstack
+x10[55] avdd pbias pcasc net10[55] enb_10000_1 avss src_10000_1 bias_pstack
+x10[54] avdd pbias pcasc net10[54] enb_10000_1 avss src_10000_1 bias_pstack
+x10[53] avdd pbias pcasc net10[53] enb_10000_1 avss src_10000_1 bias_pstack
+x10[52] avdd pbias pcasc net10[52] enb_10000_1 avss src_10000_1 bias_pstack
+x10[51] avdd pbias pcasc net10[51] enb_10000_1 avss src_10000_1 bias_pstack
+x10[50] avdd pbias pcasc net10[50] enb_10000_1 avss src_10000_1 bias_pstack
+x10[49] avdd pbias pcasc net10[49] enb_10000_1 avss src_10000_1 bias_pstack
+x10[48] avdd pbias pcasc net10[48] enb_10000_1 avss src_10000_1 bias_pstack
+x10[47] avdd pbias pcasc net10[47] enb_10000_1 avss src_10000_1 bias_pstack
+x10[46] avdd pbias pcasc net10[46] enb_10000_1 avss src_10000_1 bias_pstack
+x10[45] avdd pbias pcasc net10[45] enb_10000_1 avss src_10000_1 bias_pstack
+x10[44] avdd pbias pcasc net10[44] enb_10000_1 avss src_10000_1 bias_pstack
+x10[43] avdd pbias pcasc net10[43] enb_10000_1 avss src_10000_1 bias_pstack
+x10[42] avdd pbias pcasc net10[42] enb_10000_1 avss src_10000_1 bias_pstack
+x10[41] avdd pbias pcasc net10[41] enb_10000_1 avss src_10000_1 bias_pstack
+x10[40] avdd pbias pcasc net10[40] enb_10000_1 avss src_10000_1 bias_pstack
+x10[39] avdd pbias pcasc net10[39] enb_10000_1 avss src_10000_1 bias_pstack
+x10[38] avdd pbias pcasc net10[38] enb_10000_1 avss src_10000_1 bias_pstack
+x10[37] avdd pbias pcasc net10[37] enb_10000_1 avss src_10000_1 bias_pstack
+x10[36] avdd pbias pcasc net10[36] enb_10000_1 avss src_10000_1 bias_pstack
+x10[35] avdd pbias pcasc net10[35] enb_10000_1 avss src_10000_1 bias_pstack
+x10[34] avdd pbias pcasc net10[34] enb_10000_1 avss src_10000_1 bias_pstack
+x10[33] avdd pbias pcasc net10[33] enb_10000_1 avss src_10000_1 bias_pstack
+x10[32] avdd pbias pcasc net10[32] enb_10000_1 avss src_10000_1 bias_pstack
+x10[31] avdd pbias pcasc net10[31] enb_10000_1 avss src_10000_1 bias_pstack
+x10[30] avdd pbias pcasc net10[30] enb_10000_1 avss src_10000_1 bias_pstack
+x10[29] avdd pbias pcasc net10[29] enb_10000_1 avss src_10000_1 bias_pstack
+x10[28] avdd pbias pcasc net10[28] enb_10000_1 avss src_10000_1 bias_pstack
+x10[27] avdd pbias pcasc net10[27] enb_10000_1 avss src_10000_1 bias_pstack
+x10[26] avdd pbias pcasc net10[26] enb_10000_1 avss src_10000_1 bias_pstack
+x10[25] avdd pbias pcasc net10[25] enb_10000_1 avss src_10000_1 bias_pstack
+x10[24] avdd pbias pcasc net10[24] enb_10000_1 avss src_10000_1 bias_pstack
+x10[23] avdd pbias pcasc net10[23] enb_10000_1 avss src_10000_1 bias_pstack
+x10[22] avdd pbias pcasc net10[22] enb_10000_1 avss src_10000_1 bias_pstack
+x10[21] avdd pbias pcasc net10[21] enb_10000_1 avss src_10000_1 bias_pstack
+x10[20] avdd pbias pcasc net10[20] enb_10000_1 avss src_10000_1 bias_pstack
+x10[19] avdd pbias pcasc net10[19] enb_10000_1 avss src_10000_1 bias_pstack
+x10[18] avdd pbias pcasc net10[18] enb_10000_1 avss src_10000_1 bias_pstack
+x10[17] avdd pbias pcasc net10[17] enb_10000_1 avss src_10000_1 bias_pstack
+x10[16] avdd pbias pcasc net10[16] enb_10000_1 avss src_10000_1 bias_pstack
+x10[15] avdd pbias pcasc net10[15] enb_10000_1 avss src_10000_1 bias_pstack
+x10[14] avdd pbias pcasc net10[14] enb_10000_1 avss src_10000_1 bias_pstack
+x10[13] avdd pbias pcasc net10[13] enb_10000_1 avss src_10000_1 bias_pstack
+x10[12] avdd pbias pcasc net10[12] enb_10000_1 avss src_10000_1 bias_pstack
+x10[11] avdd pbias pcasc net10[11] enb_10000_1 avss src_10000_1 bias_pstack
+x10[10] avdd pbias pcasc net10[10] enb_10000_1 avss src_10000_1 bias_pstack
+x10[9] avdd pbias pcasc net10[9] enb_10000_1 avss src_10000_1 bias_pstack
+x10[8] avdd pbias pcasc net10[8] enb_10000_1 avss src_10000_1 bias_pstack
+x10[7] avdd pbias pcasc net10[7] enb_10000_1 avss src_10000_1 bias_pstack
+x10[6] avdd pbias pcasc net10[6] enb_10000_1 avss src_10000_1 bias_pstack
+x10[5] avdd pbias pcasc net10[5] enb_10000_1 avss src_10000_1 bias_pstack
+x10[4] avdd pbias pcasc net10[4] enb_10000_1 avss src_10000_1 bias_pstack
+x10[3] avdd pbias pcasc net10[3] enb_10000_1 avss src_10000_1 bias_pstack
+x10[2] avdd pbias pcasc net10[2] enb_10000_1 avss src_10000_1 bias_pstack
+x10[1] avdd pbias pcasc net10[1] enb_10000_1 avss src_10000_1 bias_pstack
+x10[0] avdd pbias pcasc net10[0] enb_10000_1 avss src_10000_1 bias_pstack
+x1[99] snk_5000_1 ena_5000_1 net11[99] nbias avss bias_nstack
+x1[98] snk_5000_1 ena_5000_1 net11[98] nbias avss bias_nstack
+x1[97] snk_5000_1 ena_5000_1 net11[97] nbias avss bias_nstack
+x1[96] snk_5000_1 ena_5000_1 net11[96] nbias avss bias_nstack
+x1[95] snk_5000_1 ena_5000_1 net11[95] nbias avss bias_nstack
+x1[94] snk_5000_1 ena_5000_1 net11[94] nbias avss bias_nstack
+x1[93] snk_5000_1 ena_5000_1 net11[93] nbias avss bias_nstack
+x1[92] snk_5000_1 ena_5000_1 net11[92] nbias avss bias_nstack
+x1[91] snk_5000_1 ena_5000_1 net11[91] nbias avss bias_nstack
+x1[90] snk_5000_1 ena_5000_1 net11[90] nbias avss bias_nstack
+x1[89] snk_5000_1 ena_5000_1 net11[89] nbias avss bias_nstack
+x1[88] snk_5000_1 ena_5000_1 net11[88] nbias avss bias_nstack
+x1[87] snk_5000_1 ena_5000_1 net11[87] nbias avss bias_nstack
+x1[86] snk_5000_1 ena_5000_1 net11[86] nbias avss bias_nstack
+x1[85] snk_5000_1 ena_5000_1 net11[85] nbias avss bias_nstack
+x1[84] snk_5000_1 ena_5000_1 net11[84] nbias avss bias_nstack
+x1[83] snk_5000_1 ena_5000_1 net11[83] nbias avss bias_nstack
+x1[82] snk_5000_1 ena_5000_1 net11[82] nbias avss bias_nstack
+x1[81] snk_5000_1 ena_5000_1 net11[81] nbias avss bias_nstack
+x1[80] snk_5000_1 ena_5000_1 net11[80] nbias avss bias_nstack
+x1[79] snk_5000_1 ena_5000_1 net11[79] nbias avss bias_nstack
+x1[78] snk_5000_1 ena_5000_1 net11[78] nbias avss bias_nstack
+x1[77] snk_5000_1 ena_5000_1 net11[77] nbias avss bias_nstack
+x1[76] snk_5000_1 ena_5000_1 net11[76] nbias avss bias_nstack
+x1[75] snk_5000_1 ena_5000_1 net11[75] nbias avss bias_nstack
+x1[74] snk_5000_1 ena_5000_1 net11[74] nbias avss bias_nstack
+x1[73] snk_5000_1 ena_5000_1 net11[73] nbias avss bias_nstack
+x1[72] snk_5000_1 ena_5000_1 net11[72] nbias avss bias_nstack
+x1[71] snk_5000_1 ena_5000_1 net11[71] nbias avss bias_nstack
+x1[70] snk_5000_1 ena_5000_1 net11[70] nbias avss bias_nstack
+x1[69] snk_5000_1 ena_5000_1 net11[69] nbias avss bias_nstack
+x1[68] snk_5000_1 ena_5000_1 net11[68] nbias avss bias_nstack
+x1[67] snk_5000_1 ena_5000_1 net11[67] nbias avss bias_nstack
+x1[66] snk_5000_1 ena_5000_1 net11[66] nbias avss bias_nstack
+x1[65] snk_5000_1 ena_5000_1 net11[65] nbias avss bias_nstack
+x1[64] snk_5000_1 ena_5000_1 net11[64] nbias avss bias_nstack
+x1[63] snk_5000_1 ena_5000_1 net11[63] nbias avss bias_nstack
+x1[62] snk_5000_1 ena_5000_1 net11[62] nbias avss bias_nstack
+x1[61] snk_5000_1 ena_5000_1 net11[61] nbias avss bias_nstack
+x1[60] snk_5000_1 ena_5000_1 net11[60] nbias avss bias_nstack
+x1[59] snk_5000_1 ena_5000_1 net11[59] nbias avss bias_nstack
+x1[58] snk_5000_1 ena_5000_1 net11[58] nbias avss bias_nstack
+x1[57] snk_5000_1 ena_5000_1 net11[57] nbias avss bias_nstack
+x1[56] snk_5000_1 ena_5000_1 net11[56] nbias avss bias_nstack
+x1[55] snk_5000_1 ena_5000_1 net11[55] nbias avss bias_nstack
+x1[54] snk_5000_1 ena_5000_1 net11[54] nbias avss bias_nstack
+x1[53] snk_5000_1 ena_5000_1 net11[53] nbias avss bias_nstack
+x1[52] snk_5000_1 ena_5000_1 net11[52] nbias avss bias_nstack
+x1[51] snk_5000_1 ena_5000_1 net11[51] nbias avss bias_nstack
+x1[50] snk_5000_1 ena_5000_1 net11[50] nbias avss bias_nstack
+x1[49] snk_5000_1 ena_5000_1 net11[49] nbias avss bias_nstack
+x1[48] snk_5000_1 ena_5000_1 net11[48] nbias avss bias_nstack
+x1[47] snk_5000_1 ena_5000_1 net11[47] nbias avss bias_nstack
+x1[46] snk_5000_1 ena_5000_1 net11[46] nbias avss bias_nstack
+x1[45] snk_5000_1 ena_5000_1 net11[45] nbias avss bias_nstack
+x1[44] snk_5000_1 ena_5000_1 net11[44] nbias avss bias_nstack
+x1[43] snk_5000_1 ena_5000_1 net11[43] nbias avss bias_nstack
+x1[42] snk_5000_1 ena_5000_1 net11[42] nbias avss bias_nstack
+x1[41] snk_5000_1 ena_5000_1 net11[41] nbias avss bias_nstack
+x1[40] snk_5000_1 ena_5000_1 net11[40] nbias avss bias_nstack
+x1[39] snk_5000_1 ena_5000_1 net11[39] nbias avss bias_nstack
+x1[38] snk_5000_1 ena_5000_1 net11[38] nbias avss bias_nstack
+x1[37] snk_5000_1 ena_5000_1 net11[37] nbias avss bias_nstack
+x1[36] snk_5000_1 ena_5000_1 net11[36] nbias avss bias_nstack
+x1[35] snk_5000_1 ena_5000_1 net11[35] nbias avss bias_nstack
+x1[34] snk_5000_1 ena_5000_1 net11[34] nbias avss bias_nstack
+x1[33] snk_5000_1 ena_5000_1 net11[33] nbias avss bias_nstack
+x1[32] snk_5000_1 ena_5000_1 net11[32] nbias avss bias_nstack
+x1[31] snk_5000_1 ena_5000_1 net11[31] nbias avss bias_nstack
+x1[30] snk_5000_1 ena_5000_1 net11[30] nbias avss bias_nstack
+x1[29] snk_5000_1 ena_5000_1 net11[29] nbias avss bias_nstack
+x1[28] snk_5000_1 ena_5000_1 net11[28] nbias avss bias_nstack
+x1[27] snk_5000_1 ena_5000_1 net11[27] nbias avss bias_nstack
+x1[26] snk_5000_1 ena_5000_1 net11[26] nbias avss bias_nstack
+x1[25] snk_5000_1 ena_5000_1 net11[25] nbias avss bias_nstack
+x1[24] snk_5000_1 ena_5000_1 net11[24] nbias avss bias_nstack
+x1[23] snk_5000_1 ena_5000_1 net11[23] nbias avss bias_nstack
+x1[22] snk_5000_1 ena_5000_1 net11[22] nbias avss bias_nstack
+x1[21] snk_5000_1 ena_5000_1 net11[21] nbias avss bias_nstack
+x1[20] snk_5000_1 ena_5000_1 net11[20] nbias avss bias_nstack
+x1[19] snk_5000_1 ena_5000_1 net11[19] nbias avss bias_nstack
+x1[18] snk_5000_1 ena_5000_1 net11[18] nbias avss bias_nstack
+x1[17] snk_5000_1 ena_5000_1 net11[17] nbias avss bias_nstack
+x1[16] snk_5000_1 ena_5000_1 net11[16] nbias avss bias_nstack
+x1[15] snk_5000_1 ena_5000_1 net11[15] nbias avss bias_nstack
+x1[14] snk_5000_1 ena_5000_1 net11[14] nbias avss bias_nstack
+x1[13] snk_5000_1 ena_5000_1 net11[13] nbias avss bias_nstack
+x1[12] snk_5000_1 ena_5000_1 net11[12] nbias avss bias_nstack
+x1[11] snk_5000_1 ena_5000_1 net11[11] nbias avss bias_nstack
+x1[10] snk_5000_1 ena_5000_1 net11[10] nbias avss bias_nstack
+x1[9] snk_5000_1 ena_5000_1 net11[9] nbias avss bias_nstack
+x1[8] snk_5000_1 ena_5000_1 net11[8] nbias avss bias_nstack
+x1[7] snk_5000_1 ena_5000_1 net11[7] nbias avss bias_nstack
+x1[6] snk_5000_1 ena_5000_1 net11[6] nbias avss bias_nstack
+x1[5] snk_5000_1 ena_5000_1 net11[5] nbias avss bias_nstack
+x1[4] snk_5000_1 ena_5000_1 net11[4] nbias avss bias_nstack
+x1[3] snk_5000_1 ena_5000_1 net11[3] nbias avss bias_nstack
+x1[2] snk_5000_1 ena_5000_1 net11[2] nbias avss bias_nstack
+x1[1] snk_5000_1 ena_5000_1 net11[1] nbias avss bias_nstack
+x1[0] snk_5000_1 ena_5000_1 net11[0] nbias avss bias_nstack
+x3[99] snk_5000_2 ena_5000_2 net12[99] nbias avss bias_nstack
+x3[98] snk_5000_2 ena_5000_2 net12[98] nbias avss bias_nstack
+x3[97] snk_5000_2 ena_5000_2 net12[97] nbias avss bias_nstack
+x3[96] snk_5000_2 ena_5000_2 net12[96] nbias avss bias_nstack
+x3[95] snk_5000_2 ena_5000_2 net12[95] nbias avss bias_nstack
+x3[94] snk_5000_2 ena_5000_2 net12[94] nbias avss bias_nstack
+x3[93] snk_5000_2 ena_5000_2 net12[93] nbias avss bias_nstack
+x3[92] snk_5000_2 ena_5000_2 net12[92] nbias avss bias_nstack
+x3[91] snk_5000_2 ena_5000_2 net12[91] nbias avss bias_nstack
+x3[90] snk_5000_2 ena_5000_2 net12[90] nbias avss bias_nstack
+x3[89] snk_5000_2 ena_5000_2 net12[89] nbias avss bias_nstack
+x3[88] snk_5000_2 ena_5000_2 net12[88] nbias avss bias_nstack
+x3[87] snk_5000_2 ena_5000_2 net12[87] nbias avss bias_nstack
+x3[86] snk_5000_2 ena_5000_2 net12[86] nbias avss bias_nstack
+x3[85] snk_5000_2 ena_5000_2 net12[85] nbias avss bias_nstack
+x3[84] snk_5000_2 ena_5000_2 net12[84] nbias avss bias_nstack
+x3[83] snk_5000_2 ena_5000_2 net12[83] nbias avss bias_nstack
+x3[82] snk_5000_2 ena_5000_2 net12[82] nbias avss bias_nstack
+x3[81] snk_5000_2 ena_5000_2 net12[81] nbias avss bias_nstack
+x3[80] snk_5000_2 ena_5000_2 net12[80] nbias avss bias_nstack
+x3[79] snk_5000_2 ena_5000_2 net12[79] nbias avss bias_nstack
+x3[78] snk_5000_2 ena_5000_2 net12[78] nbias avss bias_nstack
+x3[77] snk_5000_2 ena_5000_2 net12[77] nbias avss bias_nstack
+x3[76] snk_5000_2 ena_5000_2 net12[76] nbias avss bias_nstack
+x3[75] snk_5000_2 ena_5000_2 net12[75] nbias avss bias_nstack
+x3[74] snk_5000_2 ena_5000_2 net12[74] nbias avss bias_nstack
+x3[73] snk_5000_2 ena_5000_2 net12[73] nbias avss bias_nstack
+x3[72] snk_5000_2 ena_5000_2 net12[72] nbias avss bias_nstack
+x3[71] snk_5000_2 ena_5000_2 net12[71] nbias avss bias_nstack
+x3[70] snk_5000_2 ena_5000_2 net12[70] nbias avss bias_nstack
+x3[69] snk_5000_2 ena_5000_2 net12[69] nbias avss bias_nstack
+x3[68] snk_5000_2 ena_5000_2 net12[68] nbias avss bias_nstack
+x3[67] snk_5000_2 ena_5000_2 net12[67] nbias avss bias_nstack
+x3[66] snk_5000_2 ena_5000_2 net12[66] nbias avss bias_nstack
+x3[65] snk_5000_2 ena_5000_2 net12[65] nbias avss bias_nstack
+x3[64] snk_5000_2 ena_5000_2 net12[64] nbias avss bias_nstack
+x3[63] snk_5000_2 ena_5000_2 net12[63] nbias avss bias_nstack
+x3[62] snk_5000_2 ena_5000_2 net12[62] nbias avss bias_nstack
+x3[61] snk_5000_2 ena_5000_2 net12[61] nbias avss bias_nstack
+x3[60] snk_5000_2 ena_5000_2 net12[60] nbias avss bias_nstack
+x3[59] snk_5000_2 ena_5000_2 net12[59] nbias avss bias_nstack
+x3[58] snk_5000_2 ena_5000_2 net12[58] nbias avss bias_nstack
+x3[57] snk_5000_2 ena_5000_2 net12[57] nbias avss bias_nstack
+x3[56] snk_5000_2 ena_5000_2 net12[56] nbias avss bias_nstack
+x3[55] snk_5000_2 ena_5000_2 net12[55] nbias avss bias_nstack
+x3[54] snk_5000_2 ena_5000_2 net12[54] nbias avss bias_nstack
+x3[53] snk_5000_2 ena_5000_2 net12[53] nbias avss bias_nstack
+x3[52] snk_5000_2 ena_5000_2 net12[52] nbias avss bias_nstack
+x3[51] snk_5000_2 ena_5000_2 net12[51] nbias avss bias_nstack
+x3[50] snk_5000_2 ena_5000_2 net12[50] nbias avss bias_nstack
+x3[49] snk_5000_2 ena_5000_2 net12[49] nbias avss bias_nstack
+x3[48] snk_5000_2 ena_5000_2 net12[48] nbias avss bias_nstack
+x3[47] snk_5000_2 ena_5000_2 net12[47] nbias avss bias_nstack
+x3[46] snk_5000_2 ena_5000_2 net12[46] nbias avss bias_nstack
+x3[45] snk_5000_2 ena_5000_2 net12[45] nbias avss bias_nstack
+x3[44] snk_5000_2 ena_5000_2 net12[44] nbias avss bias_nstack
+x3[43] snk_5000_2 ena_5000_2 net12[43] nbias avss bias_nstack
+x3[42] snk_5000_2 ena_5000_2 net12[42] nbias avss bias_nstack
+x3[41] snk_5000_2 ena_5000_2 net12[41] nbias avss bias_nstack
+x3[40] snk_5000_2 ena_5000_2 net12[40] nbias avss bias_nstack
+x3[39] snk_5000_2 ena_5000_2 net12[39] nbias avss bias_nstack
+x3[38] snk_5000_2 ena_5000_2 net12[38] nbias avss bias_nstack
+x3[37] snk_5000_2 ena_5000_2 net12[37] nbias avss bias_nstack
+x3[36] snk_5000_2 ena_5000_2 net12[36] nbias avss bias_nstack
+x3[35] snk_5000_2 ena_5000_2 net12[35] nbias avss bias_nstack
+x3[34] snk_5000_2 ena_5000_2 net12[34] nbias avss bias_nstack
+x3[33] snk_5000_2 ena_5000_2 net12[33] nbias avss bias_nstack
+x3[32] snk_5000_2 ena_5000_2 net12[32] nbias avss bias_nstack
+x3[31] snk_5000_2 ena_5000_2 net12[31] nbias avss bias_nstack
+x3[30] snk_5000_2 ena_5000_2 net12[30] nbias avss bias_nstack
+x3[29] snk_5000_2 ena_5000_2 net12[29] nbias avss bias_nstack
+x3[28] snk_5000_2 ena_5000_2 net12[28] nbias avss bias_nstack
+x3[27] snk_5000_2 ena_5000_2 net12[27] nbias avss bias_nstack
+x3[26] snk_5000_2 ena_5000_2 net12[26] nbias avss bias_nstack
+x3[25] snk_5000_2 ena_5000_2 net12[25] nbias avss bias_nstack
+x3[24] snk_5000_2 ena_5000_2 net12[24] nbias avss bias_nstack
+x3[23] snk_5000_2 ena_5000_2 net12[23] nbias avss bias_nstack
+x3[22] snk_5000_2 ena_5000_2 net12[22] nbias avss bias_nstack
+x3[21] snk_5000_2 ena_5000_2 net12[21] nbias avss bias_nstack
+x3[20] snk_5000_2 ena_5000_2 net12[20] nbias avss bias_nstack
+x3[19] snk_5000_2 ena_5000_2 net12[19] nbias avss bias_nstack
+x3[18] snk_5000_2 ena_5000_2 net12[18] nbias avss bias_nstack
+x3[17] snk_5000_2 ena_5000_2 net12[17] nbias avss bias_nstack
+x3[16] snk_5000_2 ena_5000_2 net12[16] nbias avss bias_nstack
+x3[15] snk_5000_2 ena_5000_2 net12[15] nbias avss bias_nstack
+x3[14] snk_5000_2 ena_5000_2 net12[14] nbias avss bias_nstack
+x3[13] snk_5000_2 ena_5000_2 net12[13] nbias avss bias_nstack
+x3[12] snk_5000_2 ena_5000_2 net12[12] nbias avss bias_nstack
+x3[11] snk_5000_2 ena_5000_2 net12[11] nbias avss bias_nstack
+x3[10] snk_5000_2 ena_5000_2 net12[10] nbias avss bias_nstack
+x3[9] snk_5000_2 ena_5000_2 net12[9] nbias avss bias_nstack
+x3[8] snk_5000_2 ena_5000_2 net12[8] nbias avss bias_nstack
+x3[7] snk_5000_2 ena_5000_2 net12[7] nbias avss bias_nstack
+x3[6] snk_5000_2 ena_5000_2 net12[6] nbias avss bias_nstack
+x3[5] snk_5000_2 ena_5000_2 net12[5] nbias avss bias_nstack
+x3[4] snk_5000_2 ena_5000_2 net12[4] nbias avss bias_nstack
+x3[3] snk_5000_2 ena_5000_2 net12[3] nbias avss bias_nstack
+x3[2] snk_5000_2 ena_5000_2 net12[2] nbias avss bias_nstack
+x3[1] snk_5000_2 ena_5000_2 net12[1] nbias avss bias_nstack
+x3[0] snk_5000_2 ena_5000_2 net12[0] nbias avss bias_nstack
+x4[11] avdd pbias pcasc net13[11] enb_600 avss src_600 bias_pstack
+x4[10] avdd pbias pcasc net13[10] enb_600 avss src_600 bias_pstack
+x4[9] avdd pbias pcasc net13[9] enb_600 avss src_600 bias_pstack
+x4[8] avdd pbias pcasc net13[8] enb_600 avss src_600 bias_pstack
+x4[7] avdd pbias pcasc net13[7] enb_600 avss src_600 bias_pstack
+x4[6] avdd pbias pcasc net13[6] enb_600 avss src_600 bias_pstack
+x4[5] avdd pbias pcasc net13[5] enb_600 avss src_600 bias_pstack
+x4[4] avdd pbias pcasc net13[4] enb_600 avss src_600 bias_pstack
+x4[3] avdd pbias pcasc net13[3] enb_600 avss src_600 bias_pstack
+x4[2] avdd pbias pcasc net13[2] enb_600 avss src_600 bias_pstack
+x4[1] avdd pbias pcasc net13[1] enb_600 avss src_600 bias_pstack
+x4[0] avdd pbias pcasc net13[0] enb_600 avss src_600 bias_pstack
+x5[7] avdd pbias pcasc net14[7] enb_400 avss src_400 bias_pstack
+x5[6] avdd pbias pcasc net14[6] enb_400 avss src_400 bias_pstack
+x5[5] avdd pbias pcasc net14[5] enb_400 avss src_400 bias_pstack
+x5[4] avdd pbias pcasc net14[4] enb_400 avss src_400 bias_pstack
+x5[3] avdd pbias pcasc net14[3] enb_400 avss src_400 bias_pstack
+x5[2] avdd pbias pcasc net14[2] enb_400 avss src_400 bias_pstack
+x5[1] avdd pbias pcasc net14[1] enb_400 avss src_400 bias_pstack
+x5[0] avdd pbias pcasc net14[0] enb_400 avss src_400 bias_pstack
+x6[3] avdd pbias pcasc net15[3] enb_200_0 avss src_200_0 bias_pstack
+x6[2] avdd pbias pcasc net15[2] enb_200_0 avss src_200_0 bias_pstack
+x6[1] avdd pbias pcasc net15[1] enb_200_0 avss src_200_0 bias_pstack
+x6[0] avdd pbias pcasc net15[0] enb_200_0 avss src_200_0 bias_pstack
+x7[3] avdd pbias pcasc net16[3] enb_200_1 avss src_200_1 bias_pstack
+x7[2] avdd pbias pcasc net16[2] enb_200_1 avss src_200_1 bias_pstack
+x7[1] avdd pbias pcasc net16[1] enb_200_1 avss src_200_1 bias_pstack
+x7[0] avdd pbias pcasc net16[0] enb_200_1 avss src_200_1 bias_pstack
+x11[3] avdd pbias pcasc net17[3] enb_200_2 avss src_200_2 bias_pstack
+x11[2] avdd pbias pcasc net17[2] enb_200_2 avss src_200_2 bias_pstack
+x11[1] avdd pbias pcasc net17[1] enb_200_2 avss src_200_2 bias_pstack
+x11[0] avdd pbias pcasc net17[0] enb_200_2 avss src_200_2 bias_pstack
+x12[1] avdd pbias pcasc net18[1] enb_100 avss src_100 bias_pstack
+x12[0] avdd pbias pcasc net18[0] enb_100 avss src_100 bias_pstack
+x13 avdd pbias pcasc net19 enb_50 avss src_50 bias_pstack
+x14[74] snk_3700 ena_3700 net20[74] nbias avss bias_nstack
+x14[73] snk_3700 ena_3700 net20[73] nbias avss bias_nstack
+x14[72] snk_3700 ena_3700 net20[72] nbias avss bias_nstack
+x14[71] snk_3700 ena_3700 net20[71] nbias avss bias_nstack
+x14[70] snk_3700 ena_3700 net20[70] nbias avss bias_nstack
+x14[69] snk_3700 ena_3700 net20[69] nbias avss bias_nstack
+x14[68] snk_3700 ena_3700 net20[68] nbias avss bias_nstack
+x14[67] snk_3700 ena_3700 net20[67] nbias avss bias_nstack
+x14[66] snk_3700 ena_3700 net20[66] nbias avss bias_nstack
+x14[65] snk_3700 ena_3700 net20[65] nbias avss bias_nstack
+x14[64] snk_3700 ena_3700 net20[64] nbias avss bias_nstack
+x14[63] snk_3700 ena_3700 net20[63] nbias avss bias_nstack
+x14[62] snk_3700 ena_3700 net20[62] nbias avss bias_nstack
+x14[61] snk_3700 ena_3700 net20[61] nbias avss bias_nstack
+x14[60] snk_3700 ena_3700 net20[60] nbias avss bias_nstack
+x14[59] snk_3700 ena_3700 net20[59] nbias avss bias_nstack
+x14[58] snk_3700 ena_3700 net20[58] nbias avss bias_nstack
+x14[57] snk_3700 ena_3700 net20[57] nbias avss bias_nstack
+x14[56] snk_3700 ena_3700 net20[56] nbias avss bias_nstack
+x14[55] snk_3700 ena_3700 net20[55] nbias avss bias_nstack
+x14[54] snk_3700 ena_3700 net20[54] nbias avss bias_nstack
+x14[53] snk_3700 ena_3700 net20[53] nbias avss bias_nstack
+x14[52] snk_3700 ena_3700 net20[52] nbias avss bias_nstack
+x14[51] snk_3700 ena_3700 net20[51] nbias avss bias_nstack
+x14[50] snk_3700 ena_3700 net20[50] nbias avss bias_nstack
+x14[49] snk_3700 ena_3700 net20[49] nbias avss bias_nstack
+x14[48] snk_3700 ena_3700 net20[48] nbias avss bias_nstack
+x14[47] snk_3700 ena_3700 net20[47] nbias avss bias_nstack
+x14[46] snk_3700 ena_3700 net20[46] nbias avss bias_nstack
+x14[45] snk_3700 ena_3700 net20[45] nbias avss bias_nstack
+x14[44] snk_3700 ena_3700 net20[44] nbias avss bias_nstack
+x14[43] snk_3700 ena_3700 net20[43] nbias avss bias_nstack
+x14[42] snk_3700 ena_3700 net20[42] nbias avss bias_nstack
+x14[41] snk_3700 ena_3700 net20[41] nbias avss bias_nstack
+x14[40] snk_3700 ena_3700 net20[40] nbias avss bias_nstack
+x14[39] snk_3700 ena_3700 net20[39] nbias avss bias_nstack
+x14[38] snk_3700 ena_3700 net20[38] nbias avss bias_nstack
+x14[37] snk_3700 ena_3700 net20[37] nbias avss bias_nstack
+x14[36] snk_3700 ena_3700 net20[36] nbias avss bias_nstack
+x14[35] snk_3700 ena_3700 net20[35] nbias avss bias_nstack
+x14[34] snk_3700 ena_3700 net20[34] nbias avss bias_nstack
+x14[33] snk_3700 ena_3700 net20[33] nbias avss bias_nstack
+x14[32] snk_3700 ena_3700 net20[32] nbias avss bias_nstack
+x14[31] snk_3700 ena_3700 net20[31] nbias avss bias_nstack
+x14[30] snk_3700 ena_3700 net20[30] nbias avss bias_nstack
+x14[29] snk_3700 ena_3700 net20[29] nbias avss bias_nstack
+x14[28] snk_3700 ena_3700 net20[28] nbias avss bias_nstack
+x14[27] snk_3700 ena_3700 net20[27] nbias avss bias_nstack
+x14[26] snk_3700 ena_3700 net20[26] nbias avss bias_nstack
+x14[25] snk_3700 ena_3700 net20[25] nbias avss bias_nstack
+x14[24] snk_3700 ena_3700 net20[24] nbias avss bias_nstack
+x14[23] snk_3700 ena_3700 net20[23] nbias avss bias_nstack
+x14[22] snk_3700 ena_3700 net20[22] nbias avss bias_nstack
+x14[21] snk_3700 ena_3700 net20[21] nbias avss bias_nstack
+x14[20] snk_3700 ena_3700 net20[20] nbias avss bias_nstack
+x14[19] snk_3700 ena_3700 net20[19] nbias avss bias_nstack
+x14[18] snk_3700 ena_3700 net20[18] nbias avss bias_nstack
+x14[17] snk_3700 ena_3700 net20[17] nbias avss bias_nstack
+x14[16] snk_3700 ena_3700 net20[16] nbias avss bias_nstack
+x14[15] snk_3700 ena_3700 net20[15] nbias avss bias_nstack
+x14[14] snk_3700 ena_3700 net20[14] nbias avss bias_nstack
+x14[13] snk_3700 ena_3700 net20[13] nbias avss bias_nstack
+x14[12] snk_3700 ena_3700 net20[12] nbias avss bias_nstack
+x14[11] snk_3700 ena_3700 net20[11] nbias avss bias_nstack
+x14[10] snk_3700 ena_3700 net20[10] nbias avss bias_nstack
+x14[9] snk_3700 ena_3700 net20[9] nbias avss bias_nstack
+x14[8] snk_3700 ena_3700 net20[8] nbias avss bias_nstack
+x14[7] snk_3700 ena_3700 net20[7] nbias avss bias_nstack
+x14[6] snk_3700 ena_3700 net20[6] nbias avss bias_nstack
+x14[5] snk_3700 ena_3700 net20[5] nbias avss bias_nstack
+x14[4] snk_3700 ena_3700 net20[4] nbias avss bias_nstack
+x14[3] snk_3700 ena_3700 net20[3] nbias avss bias_nstack
+x14[2] snk_3700 ena_3700 net20[2] nbias avss bias_nstack
+x14[1] snk_3700 ena_3700 net20[1] nbias avss bias_nstack
+x14[0] snk_3700 ena_3700 net20[0] nbias avss bias_nstack
+x15[39] snk_2000 ena_2000 net21[39] nbias avss bias_nstack
+x15[38] snk_2000 ena_2000 net21[38] nbias avss bias_nstack
+x15[37] snk_2000 ena_2000 net21[37] nbias avss bias_nstack
+x15[36] snk_2000 ena_2000 net21[36] nbias avss bias_nstack
+x15[35] snk_2000 ena_2000 net21[35] nbias avss bias_nstack
+x15[34] snk_2000 ena_2000 net21[34] nbias avss bias_nstack
+x15[33] snk_2000 ena_2000 net21[33] nbias avss bias_nstack
+x15[32] snk_2000 ena_2000 net21[32] nbias avss bias_nstack
+x15[31] snk_2000 ena_2000 net21[31] nbias avss bias_nstack
+x15[30] snk_2000 ena_2000 net21[30] nbias avss bias_nstack
+x15[29] snk_2000 ena_2000 net21[29] nbias avss bias_nstack
+x15[28] snk_2000 ena_2000 net21[28] nbias avss bias_nstack
+x15[27] snk_2000 ena_2000 net21[27] nbias avss bias_nstack
+x15[26] snk_2000 ena_2000 net21[26] nbias avss bias_nstack
+x15[25] snk_2000 ena_2000 net21[25] nbias avss bias_nstack
+x15[24] snk_2000 ena_2000 net21[24] nbias avss bias_nstack
+x15[23] snk_2000 ena_2000 net21[23] nbias avss bias_nstack
+x15[22] snk_2000 ena_2000 net21[22] nbias avss bias_nstack
+x15[21] snk_2000 ena_2000 net21[21] nbias avss bias_nstack
+x15[20] snk_2000 ena_2000 net21[20] nbias avss bias_nstack
+x15[19] snk_2000 ena_2000 net21[19] nbias avss bias_nstack
+x15[18] snk_2000 ena_2000 net21[18] nbias avss bias_nstack
+x15[17] snk_2000 ena_2000 net21[17] nbias avss bias_nstack
+x15[16] snk_2000 ena_2000 net21[16] nbias avss bias_nstack
+x15[15] snk_2000 ena_2000 net21[15] nbias avss bias_nstack
+x15[14] snk_2000 ena_2000 net21[14] nbias avss bias_nstack
+x15[13] snk_2000 ena_2000 net21[13] nbias avss bias_nstack
+x15[12] snk_2000 ena_2000 net21[12] nbias avss bias_nstack
+x15[11] snk_2000 ena_2000 net21[11] nbias avss bias_nstack
+x15[10] snk_2000 ena_2000 net21[10] nbias avss bias_nstack
+x15[9] snk_2000 ena_2000 net21[9] nbias avss bias_nstack
+x15[8] snk_2000 ena_2000 net21[8] nbias avss bias_nstack
+x15[7] snk_2000 ena_2000 net21[7] nbias avss bias_nstack
+x15[6] snk_2000 ena_2000 net21[6] nbias avss bias_nstack
+x15[5] snk_2000 ena_2000 net21[5] nbias avss bias_nstack
+x15[4] snk_2000 ena_2000 net21[4] nbias avss bias_nstack
+x15[3] snk_2000 ena_2000 net21[3] nbias avss bias_nstack
+x15[2] snk_2000 ena_2000 net21[2] nbias avss bias_nstack
+x15[1] snk_2000 ena_2000 net21[1] nbias avss bias_nstack
+x15[0] snk_2000 ena_2000 net21[0] nbias avss bias_nstack
+.ends
+
+* expanding   symbol:  bias_nstack.sym # of pins=5
+** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_nstack.sym
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_nstack.sch
+.subckt bias_nstack itail ena vcasc nbias avss
+*.PININFO avss:B ena:I nbias:I itail:B vcasc:B
+XM3 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM6 vcasc nbias net1 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=3 nf=1 m=1
+XM12 itail ena vcasc avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XD1 avss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+.ends
+
+
+* expanding   symbol:  bias_pstack.sym # of pins=7
+** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_pstack.sym
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_pstack.sch
+.subckt bias_pstack avdd pbias pcasc vcasc enb avss itail
+*.PININFO avdd:B itail:B enb:I pcasc:I vcasc:B pbias:I avss:B
+XM13 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM18 itail enb vcasc avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM14 vcasc pcasc net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XD1 avss enb sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+.ends
+
+.end

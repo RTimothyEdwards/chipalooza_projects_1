@@ -9,6 +9,10 @@
 
 ## Please fill in your project documentation in this README.md file 
 
+This is the first test chip from the Chipalooza challenge 2024.
+11 designs made it on the April tapeout.
+(Documentation to be completed)
+
 
 :warning: | Use this sample project for analog user projects. 
 :---: | :---

@@ -1,0 +1,27 @@
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/power_stage.sch
+.subckt power_stage P_IN P_IN_N VSS VDD_PWR SW_NODE
+*.PININFO P_IN:I P_IN_N:I SW_NODE:I VDD_PWR:I VSS:I
+XM14 SW_NODE P_DRIVE VDD_PWR VDD_PWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4.38 nf=1 m=4512
+x2 P_IN P_IN_N VDD_PWR VSS P_DRIVE gate_drive
+.ends
+
+* expanding   symbol:  gate_drive.sym # of pins=5
+** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/gate_drive.sym
+** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/gate_drive.sch
+.subckt gate_drive IN_P IN_M VDD VSS OUT
+*.PININFO IN_M:I IN_P:I VDD:I VSS:I OUT:O
+XM1 net1 IN_P VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
+XM2 net1 S1_N VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM3 S1_N IN_M VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
+XM4 S1_N net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM5 S2_N S1_N VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=15 nf=1 m=2
+XM6 S2_N S1_N VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=7 nf=1 m=2
+XM7 S3_N S2_N VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=15 nf=1 m=6
+XM8 S3_N S2_N VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=7 nf=1 m=6
+XM9 S4_N S3_N VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=15 nf=1 m=20
+XM10 S4_N S3_N VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=7 nf=1 m=20
+XM11 OUT S4_N VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=15 nf=1 m=60
+XM12 OUT S4_N VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=7 nf=1 m=60
+.ends
+
+.end

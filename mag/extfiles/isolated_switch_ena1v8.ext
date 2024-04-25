@@ -1,0 +1,271 @@
+timestamp 1713983242
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use isolated_switch isolated_switch_0 1 0 -301 0 1 2911
+use sky130_fd_sc_hvl__lsbuflv2hv_1 sky130_fd_sc_hvl__lsbuflv2hv_1_0 1 0 896 0 1 5065
+port "avss" 5 26 206 260 442 m1
+port "in" 3 12 1542 216 1750 m1
+port "out" 6 3944 2132 4146 2338 m1
+port "avdd" 4 24 2544 234 2820 m1
+port "dvdd" 2 40 5614 350 5924 m2
+port "dvss" 0 16 4890 348 5176 m1
+port "on" 1 30 5298 230 5498 m2
+node "avss" 0 198.709 26 206 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55224 940 0 0 0 0 0 0 0 0 0 0
+node "in" 0 151.272 12 1542 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42432 824 0 0 0 0 0 0 0 0 0 0
+node "out" 0 192.345 3944 2132 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41612 816 0 0 0 0 0 0 0 0 0 0
+node "avdd" 0 223.257 24 2544 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57960 972 0 0 0 0 0 0 0 0 0 0
+node "dvdd" 4 1285.55 40 5614 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166880 4332 899876 6528 0 0 0 0 0 0 0 0
+node "dvss" 4 3957.56 16 4890 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1553916 14064 0 0 0 0 0 0 0 0 0 0
+node "li_160_4632#" 415 6010.22 160 4632 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 259740 5952 2141840 17940 0 0 0 0 0 0 0 0 0 0
+node "on" 24 563.397 30 5298 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34440 772 34932 776 191320 3240 0 0 0 0 0 0 0 0
+node "li_2942_6112#" 61 1692.42 2942 6112 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30788 888 83056 1180 332712 9056 0 0 0 0 0 0 0 0
+node "w_315_317#" 18991 0.103728 315 317 pw 5189090 11658 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_315_3393#" 12088 47.1815 315 3393 pw 2437896 7060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_3348_3288#" 0 0 3348 3288 ppd 0 0 0 0 0 0 0 0 0 0 923680 4936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1277376 9800 0 0 0 0 0 0 0 0 0 0 0 0
+cap "avss" "in" 7.26957
+cap "on" "dvss" 443.389
+cap "w_315_3393#" "on" 21.5973
+cap "w_315_317#" "li_2942_6112#" 8.52679
+cap "dvdd" "dvss" 737.638
+cap "w_315_3393#" "dvdd" 13.6581
+cap "avdd" "in" 10.0095
+cap "li_160_4632#" "w_315_317#" 4.01442
+cap "in" "w_315_317#" 23.6364
+cap "li_160_4632#" "li_2942_6112#" 1026.59
+cap "dvdd" "li_2942_6112#" 109.424
+cap "avss" "w_315_317#" 19.2426
+cap "li_2942_6112#" "dvss" 88.5926
+cap "li_160_4632#" "on" 15.2947
+cap "w_315_3393#" "li_2942_6112#" 293.808
+cap "li_160_4632#" "dvdd" 2673.7
+cap "li_160_4632#" "dvss" 971.512
+cap "w_315_3393#" "li_160_4632#" 514.139
+cap "on" "dvdd" 476.159
+cap "isolated_switch_0/vss" "isolated_switch_0/in" -3.60864
+cap "isolated_switch_0/vss" "isolated_switch_0/vdd" 0.653624
+cap "isolated_switch_0/onp" "isolated_switch_0/in" 0.130435
+cap "isolated_switch_0/vdd" "isolated_switch_0/onp" -0.0147828
+cap "isolated_switch_0/vdd" "isolated_switch_0/onb" -0.0124345
+cap "isolated_switch_0/onb" "isolated_switch_0/in" 0.0753425
+cap "isolated_switch_0/vdd" "isolated_switch_0/vss" -0.320789
+cap "isolated_switch_0/in" "isolated_switch_0/vss" -25.5508
+cap "isolated_switch_0/vdd" "isolated_switch_0/XM1/a_129_n400#" 5.68434e-14
+cap "isolated_switch_0/vdd" "isolated_switch_0/in" -6.99322
+cap "isolated_switch_0/onp" "isolated_switch_0/vss" 5.68434e-14
+cap "isolated_switch_0/onb" "isolated_switch_0/vss" -5.68434e-14
+cap "isolated_switch_0/XM1/a_129_n400#" "isolated_switch_0/vdd" 9.09495e-13
+cap "isolated_switch_0/onp" "isolated_switch_0/on" 0.0155229
+cap "isolated_switch_0/out" "isolated_switch_0/vdd" 2.84217e-14
+cap "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" "isolated_switch_0/vdd" 0.00205669
+cap "w_315_317#" "isolated_switch_0/vdd" -4.01442
+cap "isolated_switch_0/on" "isolated_switch_0/out" 2.06093
+cap "isolated_switch_0/w_616_482#" "isolated_switch_0/out" 6.23322
+cap "isolated_switch_0/vdd" "isolated_switch_0/out" -1.74008
+cap "isolated_switch_0/XM1/a_n187_n400#" "isolated_switch_0/out" -2.27374e-13
+cap "isolated_switch_0/on" "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" 0.0970926
+cap "isolated_switch_0/sky130_fd_pr__pfet_g5v0d10v5_U6Z9Y6_1/a_n50_n261#" "isolated_switch_0/w_616_482#" 0.453968
+cap "isolated_switch_0/onb" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" 0.850124
+cap "isolated_switch_0/w_616_482#" "isolated_switch_0/vdd" 0.350477
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" 0.0741982
+cap "isolated_switch_0/on" "isolated_switch_0/w_616_482#" -0.000200026
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.0746393
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.00503085
+cap "isolated_switch_0/onp" "isolated_switch_0/vdd" 0.000305608
+cap "isolated_switch_0/on" "isolated_switch_0/vdd" -2.94345
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" 2.28249
+cap "isolated_switch_0/onb" "isolated_switch_0/vdd" 0.326255
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" 0.282384
+cap "isolated_switch_0/on" "isolated_switch_0/onb" 83.6445
+cap "isolated_switch_0/onb" "isolated_switch_0/vdd" 0.707615
+cap "isolated_switch_0/onb" "isolated_switch_0/w_616_482#" -12.4383
+cap "isolated_switch_0/onp" "isolated_switch_0/vdd" 7.49627
+cap "isolated_switch_0/onp" "isolated_switch_0/w_616_482#" -82.3327
+cap "isolated_switch_0/on" "isolated_switch_0/onp" 400.81
+cap "isolated_switch_0/XM4/a_n187_n164#" "isolated_switch_0/onp" -11.7938
+cap "isolated_switch_0/on" "isolated_switch_0/w_616_482#" 159.868
+cap "isolated_switch_0/onb" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" 0.739124
+cap "isolated_switch_0/onb" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 0.66407
+cap "isolated_switch_0/on" "isolated_switch_0/vdd" 2.91062
+cap "isolated_switch_0/vdd" "isolated_switch_0/w_616_482#" 31.2882
+cap "isolated_switch_0/onp" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" 0.816991
+cap "isolated_switch_0/XM4/a_n187_n164#" "isolated_switch_0/on" 51.2926
+cap "isolated_switch_0/on" "isolated_switch_0/w_616_n2594#" -8.52679
+cap "isolated_switch_0/onp" "isolated_switch_0/onb" -11.3963
+cap "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" "isolated_switch_0/w_616_482#" 1.08475
+cap "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" "isolated_switch_0/on" 66.0403
+cap "isolated_switch_0/w_616_n2594#" "isolated_switch_0/w_616_482#" -0.103728
+cap "isolated_switch_0/on" "isolated_switch_0/out" 2.06093
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/w_616_482#" 202.217
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 159.4
+cap "isolated_switch_0/w_616_482#" "w_315_3393#" -40.4199
+cap "isolated_switch_0/out" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" -0.00251141
+cap "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 8.66204
+cap "isolated_switch_0/sky130_fd_pr__pfet_g5v0d10v5_U6Z9Y6_1/a_n50_n261#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 14.7462
+cap "isolated_switch_0/on" "w_315_3393#" -23.8243
+cap "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" "w_315_3393#" -9.66037
+cap "isolated_switch_0/XM4/a_129_n164#" "isolated_switch_0/on" 0.857643
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "w_315_3393#" -13.3799
+cap "isolated_switch_0/XM4/a_129_n164#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.217633
+cap "isolated_switch_0/on" "isolated_switch_0/w_616_482#" -10.9134
+cap "isolated_switch_0/on" "isolated_switch_0/vdd" 0.359551
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 0.822231
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.159188
+cap "isolated_switch_0/vdd" "isolated_switch_0/w_616_n2594#" 11.6016
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 17.2107
+cap "isolated_switch_0/w_616_482#" "isolated_switch_0/w_616_n2594#" 5.07556
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "isolated_switch_0/w_616_n2594#" -20.5895
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/on" 0.717901
+cap "isolated_switch_0/vdd" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" 0.265719
+cap "isolated_switch_0/vdd" "isolated_switch_0/w_616_482#" 216.565
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "isolated_switch_0/w_616_n2594#" 0.287769
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "isolated_switch_0/w_616_n2594#" 0.652256
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/w_616_n2594#" 8.86754
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/w_616_n2594#" 1.32781
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/vdd" 9.50202
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/w_616_n2594#" 14.1532
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.000122804
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/onb" 0.916574
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/w_616_482#" 5.83464
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" -0.10635
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/onp" 0.242733
+cap "isolated_switch_0/on" "isolated_switch_0/w_616_n2594#" 0.607916
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/vdd" 1.387
+cap "isolated_switch_0/w_616_n2594#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 2.71273
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 1.84637
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "isolated_switch_0/on" 3.3679
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 10.717
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/on" 0.427959
+cap "isolated_switch_0/vdd" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 3.31928
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/onb" 0.66407
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "isolated_switch_0/vdd" 3.9756
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/vdd" 22.2279
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.000736824
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 1.44847
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "isolated_switch_0/on" 0.0666883
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n108_n100#" 0.151365
+cap "isolated_switch_0/vdd" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 2.27429
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 9.19876
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 2.17539
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 3.74675
+cap "isolated_switch_0/w_616_n2594#" "isolated_switch_0/on" 0.277264
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 14.4659
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 16.1506
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 24.3612
+cap "isolated_switch_0/vdd" "isolated_switch_0/w_616_n2594#" 2.01404
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 1.34698
+cap "isolated_switch_0/w_616_n2594#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" -0.232631
+cap "isolated_switch_0/w_616_482#" "isolated_switch_0/on" 0.169181
+cap "isolated_switch_0/w_616_n2594#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 3.26604
+cap "isolated_switch_0/w_616_482#" "isolated_switch_0/vdd" 172.392
+cap "isolated_switch_0/vdd" "isolated_switch_0/on" -1.47958
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "isolated_switch_0/w_616_n2594#" 3.57901
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/w_616_n2594#" 23.2982
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "isolated_switch_0/w_616_n2594#" -63.1665
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "isolated_switch_0/w_616_482#" -8.36093
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/w_616_482#" 99.2142
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/on" 0.247705
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 5.70543
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/sky130_fd_pr__nfet_g5v0d10v5_UNEQ3N_0/a_n50_n188#" 0.274407
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/w_616_482#" 0.0601369
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 3.80174
+cap "isolated_switch_0/on" "w_315_3393#" 4.98903
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.216524
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 2.55
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "isolated_switch_0/on" 0.29419
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 64.2556
+cap "isolated_switch_0/on" "isolated_switch_0/w_616_482#" 3.23311
+cap "w_315_3393#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 19.1137
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/on" 10.5573
+cap "w_315_3393#" "isolated_switch_0/w_616_482#" -6.76169
+cap "isolated_switch_0/on" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 11.2972
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.102693
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "isolated_switch_0/on" 0.870299
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" "isolated_switch_0/w_616_482#" 0.0434587
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 0.000322158
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 8.39933
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.445032
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 8.47756
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 1.12684
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "isolated_switch_0/w_616_482#" 3.08552
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 0.197087
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 0.292572
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" -183.339
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "isolated_switch_0/w_616_482#" -11.9385
+cap "isolated_switch_0/vdd" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 0.148664
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 0.000964947
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 4.23592
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" -0.19377
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "isolated_switch_0/w_616_482#" 0.0936432
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 3.34003
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.0256481
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" -96.7954
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" 0.929732
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 0.129699
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 20.0579
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 6.91594
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 0.0590092
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 5.8237
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.00193295
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" -571.816
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 19.7918
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 2.24305
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 59.3536
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" 0.653634
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "isolated_switch_0/w_616_482#" -12.2218
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 71.14
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 4.11105
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 1.776
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 87.8918
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 0.0229174
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "w_315_3393#" -6.37721
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.157005
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" 0.225848
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" "w_315_3393#" 0.0353386
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 0.00186847
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 68.4267
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.101592
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 9.87779
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" 12.4612
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "w_315_3393#" -0.0622219
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/w_616_482#" -17.7192
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" -6.71032
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 0.454216
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" 0.00913708
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 0.0183838
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 53.4413
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "isolated_switch_0/w_616_482#" 4.83233
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 0.0822859
+cap "w_315_3393#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 0.0235832
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" 0.0119529
+cap "isolated_switch_0/w_616_482#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 1.25478
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" -61.557
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_504_1221#" 23.6497
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_404_1133#" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" 3.33433
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" 63.4902
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" 5.17604
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1197_107#" 0.38232
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_772_151#" 0.0148603
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 2.98753
+cap "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/a_1711_885#" 8.68415
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VNB" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VGND" "dvss"
+merge "dvss" "isolated_switch_0/VSUBS"
+merge "isolated_switch_0/VSUBS" "a_3348_3288#"
+merge "isolated_switch_0/w_616_482#" "isolated_switch_0/w_616_n2594#" -3883.23 -8049629 -21224 0 0 0 0 0 0 0 0 0 0 0 0 -74436 -2474 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -177005 -6929 -503948 -18651 0 0 0 0 0 0 0 0 0 0
+merge "isolated_switch_0/w_616_n2594#" "w_315_3393#"
+merge "w_315_3393#" "isolated_switch_0/vss"
+merge "isolated_switch_0/vss" "avss"
+merge "avss" "w_315_317#"
+merge "isolated_switch_0/in" "in" -150.408 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41412 -814 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPB" "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" -3904.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -66378 -5818 -465579 -14662 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/VPWR" "isolated_switch_0/vdd"
+merge "isolated_switch_0/vdd" "li_160_4632#"
+merge "li_160_4632#" "avdd"
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/X" "isolated_switch_0/on" -785.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15752 -804 0 0 -8008 -412 0 0 0 0 0 0 0 0
+merge "isolated_switch_0/on" "li_2942_6112#"
+merge "isolated_switch_0/out" "out" -214.499 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40404 -808 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/A" "on" -183.247 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4690 -338 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hvl__lsbuflv2hv_1_0/LVPWR" "dvdd" -676.428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -85444 -4250 0 0 0 0 0 0 0 0 0 0
