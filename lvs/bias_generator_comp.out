@@ -118,9 +118,9 @@ pbias                                      |pbias
 itail                                      |itail                                      
 pcasc                                      |pcasc                                      
 avss                                       |avss                                       
+avdd                                       |avdd                                       
 enb                                        |enb                                        
 vcasc                                      |vcasc                                      
-avdd                                       |avdd                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes bias_pstack and bias_pstack are equivalent.

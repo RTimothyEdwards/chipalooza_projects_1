@@ -292,15 +292,15 @@ pbias                                      |pbias
 itail                                      |itail                                      
 pcasc                                      |pcasc                                      
 avss                                       |avss                                       
+avdd                                       |avdd                                       
 enb                                        |enb                                        
 vcasc                                      |vcasc                                      
-avdd                                       |avdd                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes bias_pstack and bias_pstack are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_WQT6C6 in circuit gate_drive (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3BH9ZH in circuit gate_drive (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7WGKBW in circuit gate_drive (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3BH9ZH in circuit gate_drive (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_RTDP6L in circuit gate_drive (0)(1 instance)
 
 Class gate_drive (0):  Merged 172 parallel devices.
@@ -404,7 +404,7 @@ Flattening unmatched subcell sky130_fd_sc_hd__dfrbp_1 in circuit sky130_be_ip__l
 Flattening unmatched subcell sky130_fd_sc_hd__a221o_1 in circuit sky130_be_ip__lsxo (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__einvn_0 in circuit sky130_be_ip__lsxo (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_AHZR5K in circuit sky130_be_ip__lsxo (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z in circuit sky130_be_ip__lsxo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z#1 in circuit sky130_be_ip__lsxo (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_68VL2P in circuit sky130_be_ip__lsxo (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_UY343Z in circuit sky130_be_ip__lsxo (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_EDYT7U in circuit sky130_be_ip__lsxo (0)(2 instances)
@@ -553,97 +553,94 @@ Cell pin lists are equivalent.
 Device classes power_stage and power_stage are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_PXF6AN in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell brownout_dig in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_6_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__and3_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_6 in circuit sky130_ajc_ip__brownout (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and3_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__dfstp_1 in circuit sky130_ajc_ip__brownout (0)(13 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_2_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_4_1 in circuit sky130_ajc_ip__brownout (0)(9 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__buf_2_1 in circuit sky130_ajc_ip__brownout (0)(12 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_3_1 in circuit sky130_ajc_ip__brownout (0)(36 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__and3b_1_1 in circuit sky130_ajc_ip__brownout (0)(7 instances)
-Flattening unmatched subcell sky130_ef_sc_hd__decap_12_1 in circuit sky130_ajc_ip__brownout (0)(17 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_4_1 in circuit sky130_ajc_ip__brownout (0)(13 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_8_1 in circuit sky130_ajc_ip__brownout (0)(14 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_2 in circuit sky130_ajc_ip__brownout (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_4 in circuit sky130_ajc_ip__brownout (0)(9 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit sky130_ajc_ip__brownout (0)(12 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_3 in circuit sky130_ajc_ip__brownout (0)(36 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and3b_1 in circuit sky130_ajc_ip__brownout (0)(7 instances)
+Flattening unmatched subcell sky130_ef_sc_hd__decap_12 in circuit sky130_ajc_ip__brownout (0)(17 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_4 in circuit sky130_ajc_ip__brownout (0)(13 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_8 in circuit sky130_ajc_ip__brownout (0)(14 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__a21o_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__conb_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__conb_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__o21a_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__xor2_1_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__a21oi_1_1 in circuit sky130_ajc_ip__brownout (0)(10 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__xor2_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a21oi_1 in circuit sky130_ajc_ip__brownout (0)(10 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__xnor2_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__nand2_1_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__or2_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__buf_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__nor3b_1_1 in circuit sky130_ajc_ip__brownout (0)(6 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_1_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_2_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__or2_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nor3b_1 in circuit sky130_ajc_ip__brownout (0)(6 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_2 in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__nor2_2 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__and2_1_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__a31o_1_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__nor3_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__or3b_1_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__and2b_1_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__dlymetal6s2s_1_1 in circuit sky130_ajc_ip__brownout (0)(6 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and2_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a31o_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nor3_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__or3b_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__and2b_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__dlymetal6s2s_1 in circuit sky130_ajc_ip__brownout (0)(6 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__and4_2 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_16_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_16 in circuit sky130_ajc_ip__brownout (0)(3 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__o31a_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__and4_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1 in circuit sky130_ajc_ip__brownout (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and4_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__a21boi_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__dlygate4sd3_1_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__a22o_1_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__nor2_1_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__dlygate4sd3_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a22o_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__nand2b_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_V6EN4F in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XTZQRT in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell brownout_ana in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_16_1 in circuit sky130_ajc_ip__brownout (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hvl__lsbufhv2lv_1_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell rstring_mux_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hvl__inv_1_1 in circuit sky130_ajc_ip__brownout (0)(17 instances)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_9VZRJ2_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_4_1 in circuit sky130_ajc_ip__brownout (0)(5 instances)
-Flattening unmatched subcell schmitt_trigger_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SCV3UK_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BZXTE7_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hvl__lsbuflv2hv_1_1 in circuit sky130_ajc_ip__brownout (0)(18 instances)
-Flattening unmatched subcell rc_osc_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MA8JJJ_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit sky130_ajc_ip__brownout (0)(4 instances)
+Flattening unmatched subcell rstring_mux in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_9VZRJ2 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit sky130_ajc_ip__brownout (0)(5 instances)
+Flattening unmatched subcell schmitt_trigger in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SCV3UK in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BZXTE7 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell rc_osc in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MA8JJJ in circuit sky130_ajc_ip__brownout (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_V6VPPZ in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LAUYMQ_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C64SS5_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C68ZY6_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C6GQGA_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9QCJ55_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MLERZ7_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell ibias_gen_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XZ4X25_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9S9FP_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_62W3XE_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EC8RE7_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9J9EP_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QZVU2P_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JLQGA_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3DCHX4_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_75J6LY_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_1 in circuit sky130_ajc_ip__brownout (0)(1 instance)
-Flattening unmatched subcell comparator_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3HV7M9_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T82T27_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HVT2F_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZV8547_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HV9F5_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W8MWAU_1 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LAUYMQ in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C64SS5 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C68ZY6 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C6GQGA in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9QCJ55 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MLERZ7 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell ibias_gen in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XZ4X25 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9S9FP in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_62W3XE in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EC8RE7 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9J9EP in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QZVU2P in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JLQGA in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3DCHX4 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_75J6LY in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 in circuit sky130_ajc_ip__brownout (0)(1 instance)
+Flattening unmatched subcell comparator in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T82T27 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3HV7M9 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HVT2F in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZV8547 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HV9F5 in circuit sky130_ajc_ip__brownout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W8MWAU in circuit sky130_ajc_ip__brownout (0)(2 instances)
 
 Cell sky130_ajc_ip__brownout (1) disconnected node: avdd
 Cell sky130_ajc_ip__brownout (1) disconnected node: avss
@@ -671,7 +668,7 @@ Cell sky130_ajc_ip__brownout (1) disconnected node: vunder
 Cell sky130_ajc_ip__brownout (1) disconnected node: force_short_oneshot
 Cell sky130_ajc_ip__brownout (1) disconnected node: isrc_sel
 Cell sky130_ajc_ip__brownout (1) disconnected node: ibg_200n
-Class sky130_ajc_ip__brownout (0):  Merged 1098 parallel devices.
+Class sky130_ajc_ip__brownout (0):  Merged 942 parallel devices.
 Class sky130_ajc_ip__brownout (0):  Merged 108 series devices.
 
 Subcircuit pins:
@@ -709,40 +706,39 @@ brownout_ana_0/comparator_0/vt             |(no matching pin)
 Cell pin lists are equivalent.
 Device classes sky130_ajc_ip__brownout and sky130_ajc_ip__brownout are equivalent.
 Flattening unmatched subcell overvoltage_ana in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell rstring_mux in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_CZUCEE in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell schmitt_trigger in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SCV3UK in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BZXTE7 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell ibias_gen in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XZ4X25 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9S9FP in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_62W3XE in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EC8RE7 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell ibias_gen_1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XZ4X25#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9S9FP#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_62W3XE#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EC8RE7#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_75AJMX in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9J9EP in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QZVU2P in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JLQGA in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3DCHX4 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell comparator in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9J9EP#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QZVU2P#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA#1 in circuit sky130_ajc_ip__overvoltage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JLQGA#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3DCHX4#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell comparator_1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GLAJGT in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3HV7M9 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T82T27 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T82T27#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3HV7M9#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_8FRRWQ in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W8MWAU in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W8MWAU#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell schmitt_trigger_1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SCV3UK#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BZXTE7#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell rstring_mux_1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ#1 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_CZUCEE in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z#3 in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell overvoltage_dig in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__decap_8 in circuit sky130_ajc_ip__overvoltage (0)(10 instances)
 Flattening unmatched subcell sky130_ef_sc_hd__decap_12 in circuit sky130_ajc_ip__overvoltage (0)(74 instances)
@@ -792,12 +788,12 @@ ena                                        |ena
 vbg_1v2                                    |vbg_1v2                                    
 ovout                                      |ovout                                      
 dvss                                       |dvss                                       
-avss                                       |avss                                       
 otrip[0]                                   |otrip[0]                                   
 otrip[1]                                   |otrip[1]                                   
+avss                                       |avss                                       
 (no matching pin)                          |itest                                      
 (no matching pin)                          |vin                                        
-overvoltage_ana_0/comparator_0/vt          |(no matching pin)                          
+overvoltage_ana_0/comparator_1_0/vt        |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_ajc_ip__overvoltage and sky130_ajc_ip__overvoltage are equivalent.
@@ -1011,12 +1007,12 @@ Subcircuit pins:
 Circuit 1: isolated_switch_ena1v8          |Circuit 2: isolated_switch_ena1v8          
 -------------------------------------------|-------------------------------------------
 avdd                                       |avdd                                       
+dvss                                       |dvss                                       
 avss                                       |avss                                       
 out                                        |out                                        
 in                                         |in                                         
 on                                         |on                                         
 dvdd                                       |dvdd                                       
-dvss                                       |dvss                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes isolated_switch_ena1v8 and isolated_switch_ena1v8 are equivalent.
@@ -1047,7 +1043,7 @@ Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C2YSV5 in circuit sky130_vb
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_J2L9E5 in circuit sky130_vbl_ip__overvoltage (0)(20 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GGMWVD in circuit sky130_vbl_ip__overvoltage (0)(5 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_CDT3CS in circuit sky130_vbl_ip__overvoltage (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z in circuit sky130_vbl_ip__overvoltage (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z#0 in circuit sky130_vbl_ip__overvoltage (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_F6RBXN in circuit sky130_vbl_ip__overvoltage (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_3HBZVM in circuit sky130_vbl_ip__overvoltage (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_697RXD in circuit sky130_vbl_ip__overvoltage (0)(1 instance)
@@ -1207,12 +1203,12 @@ Device classes lvl_shift_invert and lvl_shift_invert are equivalent.
 Flattening unmatched subcell buffer in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QXBCRM in circuit sky130_od_ip__tempsensor_ext_vp (0)(7 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_B5H3CA in circuit sky130_od_ip__tempsensor_ext_vp (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit sky130_od_ip__tempsensor_ext_vp (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ#0 in circuit sky130_od_ip__tempsensor_ext_vp (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_6VRZAW in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_3VR9VM in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_3HMWVM in circuit sky130_od_ip__tempsensor_ext_vp (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_69TQ3K in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_3HMWVM#0 in circuit sky130_od_ip__tempsensor_ext_vp (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_69TQ3K#0 in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
 
 Cell sky130_od_ip__tempsensor_ext_vp (1) disconnected node: vbe1_out
 Cell sky130_od_ip__tempsensor_ext_vp (1) disconnected node: vdd
@@ -1236,69 +1232,67 @@ Cell pin lists are equivalent.
 Device classes sky130_od_ip__tempsensor_ext_vp and sky130_od_ip__tempsensor_ext_vp are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_RBNV2H in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell por_ana in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_16_2 in circuit sky130_ajc_ip__por (0)(4 instances)
-Flattening unmatched subcell sky130_fd_sc_hvl__lsbufhv2lv_1_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell rstring_mux_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hvl__inv_1_2 in circuit sky130_ajc_ip__por (0)(18 instances)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_9VZRJ2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_4_2 in circuit sky130_ajc_ip__por (0)(5 instances)
-Flattening unmatched subcell schmitt_trigger_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SCV3UK_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BZXTE7_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hvl__lsbuflv2hv_1_2 in circuit sky130_ajc_ip__por (0)(19 instances)
-Flattening unmatched subcell rc_osc in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MA8JJJ in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit sky130_ajc_ip__por (0)(4 instances)
+Flattening unmatched subcell rstring_mux#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_9VZRJ2#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z#2 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit sky130_ajc_ip__por (0)(5 instances)
+Flattening unmatched subcell schmitt_trigger#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SCV3UK#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BZXTE7#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell ibias_gen#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XZ4X25#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9S9FP#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_62W3XE#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EC8RE7#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9J9EP#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QZVU2P#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JLQGA#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3DCHX4#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_75J6LY#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell comparator#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T82T27#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3HV7M9#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HVT2F#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZV8547#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HV9F5#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W8MWAU#0 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell rc_osc_1 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MA8JJJ#0 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_ZB8LT7 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LAUYMQ in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C64SS5 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C68ZY6 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C6GQGA in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9QCJ55 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MLERZ7 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell ibias_gen_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XZ4X25_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9S9FP_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_62W3XE_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EC8RE7_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y9J9EP_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QZVU2P_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_DVQADA_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JLQGA_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3DCHX4_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_75J6LY in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_2 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell comparator_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3HV7M9_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T82T27_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HVT2F in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z_2 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZV8547 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_5HV9F5 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W8MWAU_2 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LAUYMQ#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C64SS5#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LUWKLG#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C68ZY6#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C6GQGA#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9QCJ55#0 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MLERZ7#0 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell por_dig in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_4_2 in circuit sky130_ajc_ip__por (0)(8 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_3_2 in circuit sky130_ajc_ip__por (0)(46 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_4 in circuit sky130_ajc_ip__por (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_3 in circuit sky130_ajc_ip__por (0)(46 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1 in circuit sky130_ajc_ip__por (0)(19 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__nor3b_1 in circuit sky130_ajc_ip__por (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__buf_2_2 in circuit sky130_ajc_ip__por (0)(16 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit sky130_ajc_ip__por (0)(16 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__nor3_1 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_ef_sc_hd__decap_12_2 in circuit sky130_ajc_ip__por (0)(23 instances)
+Flattening unmatched subcell sky130_ef_sc_hd__decap_12 in circuit sky130_ajc_ip__por (0)(23 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__inv_2 in circuit sky130_ajc_ip__por (0)(5 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__dlygate4sd3_1 in circuit sky130_ajc_ip__por (0)(15 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__xor2_1 in circuit sky130_ajc_ip__por (0)(4 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__and2b_1 in circuit sky130_ajc_ip__por (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__a41o_1 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_6_2 in circuit sky130_ajc_ip__por (0)(7 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__decap_8_2 in circuit sky130_ajc_ip__por (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_6 in circuit sky130_ajc_ip__por (0)(7 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_8 in circuit sky130_ajc_ip__por (0)(8 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__and2_1 in circuit sky130_ajc_ip__por (0)(4 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__a21oi_1 in circuit sky130_ajc_ip__por (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__o32a_1 in circuit sky130_ajc_ip__por (0)(1 instance)
@@ -1308,23 +1302,23 @@ Flattening unmatched subcell sky130_fd_sc_hd__o21ba_1 in circuit sky130_ajc_ip__
 Flattening unmatched subcell sky130_fd_sc_hd__o21ai_1 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__o211a_1 in circuit sky130_ajc_ip__por (0)(3 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__o21bai_1 in circuit sky130_ajc_ip__por (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__and4_1_2 in circuit sky130_ajc_ip__por (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and4_1 in circuit sky130_ajc_ip__por (0)(4 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__and3_1 in circuit sky130_ajc_ip__por (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_1_2 in circuit sky130_ajc_ip__por (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_1 in circuit sky130_ajc_ip__por (0)(3 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__or4bb_1 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_4 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__a32o_1 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__a211oi_1 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__buf_1_2 in circuit sky130_ajc_ip__por (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit sky130_ajc_ip__por (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__or4b_1 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__conb_1 in circuit sky130_ajc_ip__por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_2_2 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_2 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__dlymetal6s2s_1 in circuit sky130_ajc_ip__por (0)(3 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__or3b_1 in circuit sky130_ajc_ip__por (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__nand2_2 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__and3b_1 in circuit sky130_ajc_ip__por (0)(5 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_16 in circuit sky130_ajc_ip__por (0)(3 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__and4bb_1_1 in circuit sky130_ajc_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__and4bb_1 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__a22o_1 in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__o2bb2a_1 in circuit sky130_ajc_ip__por (0)(2 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__or2_1 in circuit sky130_ajc_ip__por (0)(2 instances)
@@ -1358,7 +1352,7 @@ Cell sky130_ajc_ip__por (1) disconnected node: por_timed_out
 Cell sky130_ajc_ip__por (1) disconnected node: force_short_oneshot
 Cell sky130_ajc_ip__por (1) disconnected node: isrc_sel
 Cell sky130_ajc_ip__por (1) disconnected node: ibg_200n
-Class sky130_ajc_ip__por (0):  Merged 1078 parallel devices.
+Class sky130_ajc_ip__por (0):  Merged 914 parallel devices.
 Class sky130_ajc_ip__por (0):  Merged 108 series devices.
 
 Subcircuit pins:
@@ -1393,14 +1387,15 @@ por_ana_0/comparator_0/vt                  |(no matching pin)
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_ajc_ip__por and sky130_ajc_ip__por are equivalent.
-Flattening unmatched subcell level_shifter_up in circuit sky130_ak_ip__comparator (0)(9 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4V4BDM in circuit sky130_ak_ip__comparator (0)(9 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_8T5BGA in circuit sky130_ak_ip__comparator (0)(9 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C5EREZ in circuit sky130_ak_ip__comparator (0)(9 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_S48KL6 in circuit sky130_ak_ip__comparator (0)(9 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_RUG6CB in circuit sky130_ak_ip__comparator (0)(1 instance)
+Flattening unmatched subcell level_shifter_up in circuit sky130_ak_ip__comparator (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_8T5BGA in circuit sky130_ak_ip__comparator (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_4V4BDM in circuit sky130_ak_ip__comparator (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_S48KL6 in circuit sky130_ak_ip__comparator (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C5EREZ in circuit sky130_ak_ip__comparator (0)(9 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_M7X63G in circuit sky130_ak_ip__comparator (0)(64 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_REE66T in circuit sky130_ak_ip__comparator (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CS979Q in circuit sky130_ak_ip__comparator (0)(192 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_LUSSBJ in circuit sky130_ak_ip__comparator (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_EP2UD7 in circuit sky130_ak_ip__comparator (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HHHAEV in circuit sky130_ak_ip__comparator (0)(1 instance)
@@ -1429,7 +1424,6 @@ Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HDHSEV in circuit sky1
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_N8ANR9 in circuit sky130_ak_ip__comparator (0)(6 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_6UJQA2 in circuit sky130_ak_ip__comparator (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CDNABP in circuit sky130_ak_ip__comparator (0)(96 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CS979Q in circuit sky130_ak_ip__comparator (0)(192 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_2CKAKF in circuit sky130_ak_ip__comparator (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EEFBWQ in circuit sky130_ak_ip__comparator (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_9432CF in circuit sky130_ak_ip__comparator (0)(1 instance)
@@ -3400,6 +3394,9 @@ Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a 
 Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a better match
 Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a better match
 Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a better match
+Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a better match
+Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a better match
+Removing zero-valued device r from cell user_analog_project_wrapper (0) makes a better match
 Removing zero-valued device r from cell user_analog_project_wrapper (1) makes a better match
 Removing zero-valued device r from cell user_analog_project_wrapper (1) makes a better match
 Removing zero-valued device r from cell user_analog_project_wrapper (1) makes a better match
@@ -4389,12 +4386,186 @@ sky130_ajc_ip__por (1)                     |sky130_ajc_ip__por (1)
 sky130_ak_ip__comparator (1)               |sky130_ak_ip__comparator (1)               
 lpopamp (1)                                |lpopamp (1)                                
 Number of devices: 39                      |Number of devices: 39                      
-Number of nets: 227 **Mismatch**           |Number of nets: 230 **Mismatch**           
+Number of nets: 216 **Mismatch**           |Number of nets: 230 **Mismatch**           
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 
 ---------------------------------------------------------------------------------------
+Net: gpio_analog[14]                       |Net: gpio_analog[14]                       
+  sky130_ht_ip__hsxo_cpz1/XIN = 1          |  sky130_ht_ip__hsxo_cpz1/XIN = 1          
+                                           |                                           
+Net: gpio_analog[15]                       |Net: gpio_analog[15]                       
+  sky130_ht_ip__hsxo_cpz1/XOUT = 1         |  sky130_ht_ip__hsxo_cpz1/XOUT = 1         
+                                           |                                           
+Net: gpio_noesd[3]                         |Net: gpio_noesd[3]                         
+  sky130_be_ip__lsxo/xin = 1               |  sky130_be_ip__lsxo/xin = 1               
+                                           |                                           
+Net: gpio_noesd[4]                         |Net: gpio_noesd[4]                         
+  sky130_be_ip__lsxo/xout = 1              |  sky130_be_ip__lsxo/xout = 1              
+                                           |                                           
+Net: io_out[0]                             |Net: io_out[0]                             
+  sky130_ajc_ip__brownout/outb = 1         |  sky130_ajc_ip__brownout/outb = 1         
+                                           |                                           
+Net: io_out[12]                            |Net: io_out[12]                            
+  sky130_be_ip__lsxo/dout = 1              |  sky130_be_ip__lsxo/dout = 1              
+                                           |                                           
+Net: io_out[1]                             |Net: io_out[1]                             
+  sky130_ajc_ip__brownout/dcomp = 1        |  sky130_ajc_ip__brownout/dcomp = 1        
+                                           |                                           
+Net: io_out[23]                            |Net: io_out[23]                            
+  sky130_ht_ip__hsxo_cpz1/DOUT = 1         |  sky130_ht_ip__hsxo_cpz1/DOUT = 1         
+                                           |                                           
+Net: io_out[2]                             |Net: io_out[2]                             
+  sky130_ajc_ip__por/dcomp = 1             |  sky130_ajc_ip__por/dcomp = 1             
+                                           |                                           
+Net: io_out[3]                             |Net: io_out[3]                             
+  sky130_ajc_ip__por/osc_ck = 1            |  sky130_ajc_ip__por/osc_ck = 1            
+                                           |                                           
+Net: io_out[4]                             |Net: io_out[4]                             
+  sky130_ajc_ip__por/pwup_filt = 1         |  sky130_ajc_ip__por/pwup_filt = 1         
+                                           |                                           
+Net: io_out[5]                             |Net: io_out[5]                             
+  sky130_ajc_ip__brownout/vunder = 1       |  sky130_ajc_ip__brownout/vunder = 1       
+                                           |                                           
+Net: io_out[6]                             |Net: io_out[6]                             
+  sky130_ajc_ip__overvoltage/ovout = 1     |  sky130_ajc_ip__overvoltage/ovout = 1     
+                                           |                                           
+Net: io_out[7]                             |Net: io_out[7]                             
+  sky130_ajc_ip__por/por = 1               |  sky130_ajc_ip__por/por = 1               
+                                           |                                           
+Net: io_out[8]                             |Net: io_out[8]                             
+  sky130_ajc_ip__por/porb = 1              |  sky130_ajc_ip__por/porb = 1              
+                                           |                                           
+Net: la_data_in[117]                       |Net: la_data_in[117]                       
+  sky130_ajc_ip__brownout/timed_out = 1    |  sky130_ajc_ip__brownout/timed_out = 1    
+                                           |                                           
+Net: la_data_in[119]                       |Net: la_data_in[119]                       
+  sky130_ajc_ip__por/por_timed_out = 1     |  sky130_ajc_ip__por/por_timed_out = 1     
+                                           |                                           
+Net: la_data_in[120]                       |Net: la_data_in[120]                       
+  sky130_ajc_ip__por/startup_timed_out = 1 |  sky130_ajc_ip__por/startup_timed_out = 1 
+                                           |                                           
+Net: la_data_out[100]                      |Net: la_data_out[100]                      
+  sky130_ajc_ip__overvoltage/ena = 1       |  sky130_ajc_ip__overvoltage/ena = 1       
+                                           |                                           
+Net: la_data_out[101]                      |Net: la_data_out[101]                      
+  sky130_ajc_ip__overvoltage/isrc_sel = 1  |  sky130_ajc_ip__overvoltage/isrc_sel = 1  
+                                           |                                           
+Net: la_data_out[102]                      |Net: la_data_out[102]                      
+  sky130_ajc_ip__overvoltage/otrip[0] = 1  |  sky130_ajc_ip__overvoltage/otrip[0] = 1  
+                                           |                                           
+Net: la_data_out[103]                      |Net: la_data_out[103]                      
+  sky130_ajc_ip__overvoltage/otrip[1] = 1  |  sky130_ajc_ip__overvoltage/otrip[1] = 1  
+                                           |                                           
+Net: la_data_out[104]                      |Net: la_data_out[104]                      
+  sky130_ajc_ip__overvoltage/otrip[2] = 1  |  sky130_ajc_ip__overvoltage/otrip[2] = 1  
+                                           |                                           
+Net: la_data_out[105]                      |Net: la_data_out[105]                      
+  sky130_ajc_ip__overvoltage/otrip[3] = 1  |  sky130_ajc_ip__overvoltage/otrip[3] = 1  
+                                           |                                           
+Net: la_data_out[106]                      |Net: la_data_out[106]                      
+  sky130_ajc_ip__brownout/vtrip[1] = 1     |  sky130_ajc_ip__brownout/vtrip[1] = 1     
+                                           |                                           
+Net: la_data_out[107]                      |Net: la_data_out[107]                      
+  sky130_ajc_ip__brownout/vtrip[2] = 1     |  sky130_ajc_ip__brownout/vtrip[2] = 1     
+                                           |                                           
+Net: la_data_out[108]                      |Net: la_data_out[108]                      
+  sky130_ajc_ip__brownout/vtrip[0] = 1     |  sky130_ajc_ip__brownout/vtrip[0] = 1     
+                                           |                                           
+Net: la_data_out[109]                      |Net: la_data_out[109]                      
+  sky130_ajc_ip__brownout/ena = 1          |  sky130_ajc_ip__brownout/ena = 1          
+                                           |                                           
+Net: la_data_out[110]                      |Net: la_data_out[110]                      
+  sky130_ajc_ip__brownout/isrc_sel = 1     |  sky130_ajc_ip__brownout/isrc_sel = 1     
+                                           |                                           
+Net: la_data_out[111]                      |Net: la_data_out[111]                      
+  sky130_ajc_ip__brownout/otrip[0] = 1     |  sky130_ajc_ip__brownout/otrip[0] = 1     
+                                           |                                           
+Net: la_data_out[112]                      |Net: la_data_out[112]                      
+  sky130_ajc_ip__brownout/otrip[2] = 1     |  sky130_ajc_ip__brownout/otrip[2] = 1     
+                                           |                                           
+Net: la_data_out[113]                      |Net: la_data_out[113]                      
+  sky130_ajc_ip__brownout/otrip[1] = 1     |  sky130_ajc_ip__brownout/otrip[1] = 1     
+                                           |                                           
+Net: la_data_out[114]                      |Net: la_data_out[114]                      
+  sky130_ajc_ip__brownout/force_dis_rc_osc |  sky130_ajc_ip__brownout/force_dis_rc_osc 
+                                           |                                           
+Net: la_data_out[115]                      |Net: la_data_out[115]                      
+  sky130_ajc_ip__brownout/force_ena_rc_osc |  sky130_ajc_ip__brownout/force_ena_rc_osc 
+                                           |                                           
+Net: la_data_out[116]                      |Net: la_data_out[116]                      
+  sky130_ajc_ip__brownout/force_short_ones |  sky130_ajc_ip__brownout/force_short_ones 
+                                           |                                           
+Net: la_data_out[19]                       |Net: la_data_out[19]                       
+  sky130_ht_ip__hsxo_cpz1/ENA = 1          |  sky130_ht_ip__hsxo_cpz1/ENA = 1          
+                                           |                                           
+Net: la_data_out[20]                       |Net: la_data_out[20]                       
+  sky130_ht_ip__hsxo_cpz1/STDBY = 1        |  sky130_ht_ip__hsxo_cpz1/STDBY = 1        
+                                           |                                           
+Net: la_data_out[85]                       |Net: la_data_out[85]                       
+  sky130_be_ip__lsxo/standby = 1           |  sky130_be_ip__lsxo/standby = 1           
+                                           |                                           
+Net: la_data_out[92]                       |Net: la_data_out[92]                       
+  sky130_ajc_ip__por/force_dis_rc_osc = 1  |  sky130_ajc_ip__por/force_dis_rc_osc = 1  
+                                           |                                           
+Net: la_data_out[93]                       |Net: la_data_out[93]                       
+  sky130_ajc_ip__por/force_ena_rc_osc = 1  |  sky130_ajc_ip__por/force_ena_rc_osc = 1  
+                                           |                                           
+Net: la_data_out[94]                       |Net: la_data_out[94]                       
+  sky130_ajc_ip__por/force_pdn = 1         |  sky130_ajc_ip__por/force_pdn = 1         
+                                           |                                           
+Net: la_data_out[95]                       |Net: la_data_out[95]                       
+  sky130_ajc_ip__por/isrc_sel = 1          |  sky130_ajc_ip__por/isrc_sel = 1          
+                                           |                                           
+Net: la_data_out[96]                       |Net: la_data_out[96]                       
+  sky130_ajc_ip__por/otrip[2] = 1          |  sky130_ajc_ip__por/otrip[2] = 1          
+                                           |                                           
+Net: la_data_out[97]                       |Net: la_data_out[97]                       
+  sky130_ajc_ip__por/otrip[1] = 1          |  sky130_ajc_ip__por/otrip[1] = 1          
+                                           |                                           
+Net: la_data_out[98]                       |Net: la_data_out[98]                       
+  sky130_ajc_ip__por/otrip[0] = 1          |  sky130_ajc_ip__por/otrip[0] = 1          
+                                           |                                           
+Net: la_data_out[99]                       |Net: la_data_out[99]                       
+  sky130_ajc_ip__por/force_short_oneshot = |  sky130_ajc_ip__por/force_short_oneshot = 
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_be_ip_ |Net: la_data_out[86]                       
+  sky130_be_ip__lsxo/ena = 1               |  sky130_be_ip__lsxo/ena = 1               
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net13          
+  sky130_ajc_ip__brownout/osc_ck = 1       |  sky130_ajc_ip__brownout/osc_ck = 1       
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net14          
+  sky130_ajc_ip__brownout/itest = 1        |  sky130_ajc_ip__brownout/itest = 1        
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net15          
+  sky130_ajc_ip__brownout/brout_filt = 1   |  sky130_ajc_ip__brownout/brout_filt = 1   
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net16          
+  sky130_ajc_ip__brownout/vin_brout = 1    |  sky130_ajc_ip__brownout/vin_brout = 1    
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net17          
+  sky130_ajc_ip__brownout/vin_vunder = 1   |  sky130_ajc_ip__brownout/vin_vunder = 1   
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net18          
+  sky130_ajc_ip__por/vin = 1               |  sky130_ajc_ip__overvoltage/itest = 1     
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net19          
+  sky130_ajc_ip__por/porb_h = 1            |  sky130_ajc_ip__overvoltage/vin = 1       
+                                           |                                           
+Net: /chipalooza_testchip1_0/sky130_ajc_ip |Net: chipalooza_testchip1:1/net20          
+  sky130_ajc_ip__por/itest = 1             |  sky130_ajc_ip__por/porb_h = 1            
+                                           |                                           
+Net: vccd1                                 |Net: vccd1                                 
+  sky130_ajc_ip__brownout/dvdd = 1         |  sky130_ajc_ip__brownout/dvdd = 1         
+  sky130_ajc_ip__overvoltage/dvdd = 1      |  sky130_ajc_ip__overvoltage/dvdd = 1      
+  sky130_ajc_ip__por/dvdd = 1              |  sky130_ajc_ip__por/dvdd = 1              
+  sky130_be_ip__lsxo/dvdd = 1              |  sky130_be_ip__lsxo/dvdd = 1              
+  sky130_vbl_ip__overvoltage/dvdd = 1      |  sky130_vbl_ip__overvoltage/dvdd = 1      
+  isolated_switch_ena1v8/dvdd = 4          |  isolated_switch_ena1v8/dvdd = 4          
+  analog_mux_sel1v8/dvdd = 1               |  analog_mux_sel1v8/dvdd = 1               
+                                           |                                           
 Net: vssa2                                 |Net: vssa2                                 
   power_stage/vss = 14                     |  power_stage/VSS = 7                      
   lpopamp/avss = 1                         |  lpopamp/avss = 1                         
@@ -4425,6 +4596,45 @@ Net: vssa2                                 |Net: vssa2
   lpopamp/vsub = 1                         |                                           
   sky130_be_ip__lsxo/avss = 1              |                                           
                                            |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_234      
+                                           |  sky130_be_ip__lsxo/proxyavss_ip = 1      
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_235      
+                                           |  sky130_be_ip__lsxo/proxydvss_ip = 1      
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_236      
+                                           |  sky130_ajc_ip__brownout/proxybrownout_an 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_237      
+                                           |  sky130_ajc_ip__brownout/proxybrownout_an 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_238      
+                                           |  sky130_ajc_ip__overvoltage/proxyovervolt 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_240      
+                                           |  sky130_ht_ip__hsxo_cpz1/proxypower_gatin 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_241      
+                                           |  sky130_ht_ip__hsxo_cpz1/proxypower_gatin 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_242      
+                                           |  sky130_ajc_ip__por/proxypor_ana_0/compar 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/dummy_243      
+                                           |  sky130_ajc_ip__por/proxypor_ana_0/compar 
+                                           |                                           
+(no matching net)                          |Net: chipalooza_testchip1:1/net21          
+                                           |  sky130_ajc_ip__por/itest = 1             
+                                           |                                           
+(no matching net)                          |Net: io_oeb[0]                             
+                                           |  sky130_ajc_ip__brownout/dvss = 1         
+                                           |  sky130_ajc_ip__overvoltage/dvss = 1      
+                                           |  sky130_ajc_ip__por/dvss = 1              
+                                           |  sky130_be_ip__lsxo/dvss = 1              
+                                           |  sky130_vbl_ip__overvoltage/dvss = 1      
+                                           |  isolated_switch_ena1v8/dvss = 4          
+                                           |  analog_mux_sel1v8/dvss = 1               
+                                           |                                           
 (no matching net)                          |Net: vssa1                                 
                                            |  bias_generator/avss = 1                  
                                            |  power_stage/VSS = 7                      
@@ -4436,14 +4646,8 @@ Net: vssa2                                 |Net: vssa2
                                            |  isolated_switch_ena1v8/avss = 4          
                                            |  analog_mux_sel1v8/avss = 1               
                                            |                                           
-(no matching net)                          |Net: io_oeb[0]                             
-                                           |  sky130_ajc_ip__brownout/dvss = 1         
-                                           |  sky130_ajc_ip__overvoltage/dvss = 1      
-                                           |  sky130_ajc_ip__por/dvss = 1              
-                                           |  sky130_be_ip__lsxo/dvss = 1              
-                                           |  sky130_vbl_ip__overvoltage/dvss = 1      
-                                           |  isolated_switch_ena1v8/dvss = 4          
-                                           |  analog_mux_sel1v8/dvss = 1               
+(no matching net)                          |Net: chipalooza_testchip1:1/net22          
+                                           |  sky130_ajc_ip__por/vin = 1               
                                            |                                           
 (no matching net)                          |Net: io_oeb[23]                            
                                            |  lpopamp/vsub = 1                         
@@ -4456,6 +4660,30 @@ Net: vssa2                                 |Net: vssa2
                                            |  sky130_od_ip__tempsensor_ext_vp/vss = 1  
                                            |  bandgap/vss = 1                          
                                            |  bias_basis_current/vss = 1               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: la_data_out[34]                       |Net: la_data_out[34]                       
+  analog_mux_sel1v8/selA = 1               |  analog_mux_sel1v8/selA = 1               
+                                           |                                           
+Net: la_data_out[36]                       |Net: la_data_out[36]                       
+  analog_mux_sel1v8/selA = 1               |  analog_mux_sel1v8/selA = 1               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: gpio_analog[8]                        |Net: gpio_analog[8]                        
+  analog_mux_sel1v8/out = 1                |  analog_mux_sel1v8/out = 1                
+                                           |                                           
+Net: gpio_analog[9]                        |Net: gpio_analog[9]                        
+  analog_mux_sel1v8/out = 1                |  analog_mux_sel1v8/out = 1                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /chipalooza_testchip1_0/analog_mux_se |Net: chipalooza_testchip1:1/vbgB           
+  sky130_ajc_ip__brownout/vbg_1v2 = 1      |  sky130_ajc_ip__brownout/vbg_1v2 = 1      
+  sky130_ajc_ip__overvoltage/vbg_1v2 = 1   |  sky130_ajc_ip__overvoltage/vbg_1v2 = 1   
+  analog_mux_sel1v8/inB = 1                |  analog_mux_sel1v8/inB = 1                
+  sky130_ajc_ip__por/vbg_1v2 = 1           |  sky130_ajc_ip__por/vbg_1v2 = 1           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4475,6 +4703,48 @@ Net: vdda2                                 |Net: vdda2
   analog_mux_sel1v8/avdd = 5               |  analog_mux_sel1v8/avdd = 5               
   isolated_switch_ena1v8/avdd = 1          |  isolated_switch_ena1v8/avdd = 1          
   lvl_shift_invert/avdd = 1                |  lvl_shift_invert/avdd = 1                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /chipalooza_testchip1_0/bias_generato |Net: chipalooza_testchip1:1/src_200_2      
+  bias_generator/src_200_2 = 1             |  bias_generator/src_200_2 = 1             
+  sky130_ajc_ip__por/ibg_200n = 1          |  sky130_ajc_ip__por/ibg_200n = 1          
+                                           |                                           
+Net: /chipalooza_testchip1_0/bias_generato |Net: chipalooza_testchip1:1/src_50         
+  bias_generator/src_200_1 = 1             |  bias_generator/src_50 = 1                
+  sky130_ajc_ip__overvoltage/ibg_200n = 1  |  sky130_be_ip__lsxo/ibias = 1             
+                                           |                                           
+Net: /chipalooza_testchip1_0/bias_generato |Net: chipalooza_testchip1:1/src_200_1      
+  bias_generator/src_200_0 = 1             |  bias_generator/src_200_1 = 1             
+  sky130_ajc_ip__brownout/ibg_200n = 1     |  sky130_ajc_ip__overvoltage/ibg_200n = 1  
+                                           |                                           
+Net: /chipalooza_testchip1_0/bias_generato |Net: chipalooza_testchip1:1/src_10000_0    
+  bias_generator/src_10000_0 = 1           |  bias_generator/src_10000_0 = 1           
+  sky130_ht_ip__hsxo_cpz1/IBIAS = 1        |  sky130_ht_ip__hsxo_cpz1/IBIAS = 1        
+                                           |                                           
+Net: /chipalooza_testchip1_0/bias_generato |Net: chipalooza_testchip1:1/src_200_0      
+  sky130_be_ip__lsxo/ibias = 1             |  bias_generator/src_200_0 = 1             
+  bias_generator/src_50 = 1                |  sky130_ajc_ip__brownout/ibg_200n = 1     
+                                           |                                           
+Net: io_analog[0]                          |Net: io_analog[0]                          
+  sky130_ajc_ip__brownout/avdd = 1         |  sky130_ajc_ip__brownout/avdd = 1         
+  power_stage/sw_node = 1                  |  power_stage/SW_NODE = 1                  
+                                           |                                           
+Net: io_analog[1]                          |Net: io_analog[1]                          
+  sky130_ajc_ip__overvoltage/avdd = 1      |  sky130_ajc_ip__overvoltage/avdd = 1      
+  power_stage/sw_node = 1                  |  power_stage/SW_NODE = 1                  
+                                           |                                           
+Net: io_analog[2]                          |Net: io_analog[2]                          
+  power_stage/sw_node = 1                  |  power_stage/SW_NODE = 1                  
+  sky130_ajc_ip__por/avdd = 1              |  sky130_ajc_ip__por/avdd = 1              
+                                           |                                           
+Net: io_analog[3]                          |Net: io_analog[3]                          
+  sky130_be_ip__lsxo/avdd = 1              |  sky130_be_ip__lsxo/avdd = 1              
+  power_stage/sw_node = 1                  |  power_stage/SW_NODE = 1                  
+                                           |                                           
+Net: io_analog[6]                          |Net: io_analog[6]                          
+  power_stage/sw_node = 1                  |  power_stage/SW_NODE = 1                  
+  sky130_ht_ip__hsxo_cpz1/AVDD = 1         |  sky130_ht_ip__hsxo_cpz1/AVDD = 1         
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4500,26 +4770,57 @@ Net: /chipalooza_testchip1_0/analog_mux_se |Net: chipalooza_testchip1:1/net7
   analog_mux_sel1v8/inB = 1                |  analog_mux_sel1v8/inB = 1                
   sky130_od_ip__tempsensor_ext_vp/vbe2_out |  sky130_od_ip__tempsensor_ext_vp/vbe2_out 
 ---------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: gpio_analog[9]                        |Net: gpio_analog[9]                        
-  analog_mux_sel1v8/out = 1                |  analog_mux_sel1v8/out = 1                
-                                           |                                           
-Net: gpio_analog[8]                        |Net: gpio_analog[8]                        
-  analog_mux_sel1v8/out = 1                |  analog_mux_sel1v8/out = 1                
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: la_data_out[36]                       |Net: la_data_out[36]                       
-  analog_mux_sel1v8/selA = 1               |  analog_mux_sel1v8/selA = 1               
-                                           |                                           
-Net: la_data_out[34]                       |Net: la_data_out[34]                       
-  analog_mux_sel1v8/selA = 1               |  analog_mux_sel1v8/selA = 1               
----------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 
 ---------------------------------------------------------------------------------------
+Instance: chipalooza_testchip1_0//sky130_a |Instance: chipalooza_testchip1:1/sky130_aj 
+  vbg_1v2 = 4                              |  vbg_1v2 = 4                              
+  otrip[2] = 1                             |  otrip[2] = 1                             
+  otrip[1] = 1                             |  otrip[1] = 1                             
+  otrip[0] = 1                             |  otrip[0] = 1                             
+  force_pdn = 1                            |  force_pdn = 1                            
+  force_ena_rc_osc = 1                     |  force_ena_rc_osc = 1                     
+  force_short_oneshot = 1                  |  force_short_oneshot = 1                  
+  isrc_sel = 1                             |  isrc_sel = 1                             
+  ibg_200n = 2                             |  ibg_200n = 2                             
+  vin = 1                                  |  vin = 1                                  
+  porb_h = 1                               |  porb_h = 1                               
+  porb = 1                                 |  porb = 1                                 
+  por = 1                                  |  por = 1                                  
+  osc_ck = 1                               |  osc_ck = 1                               
+  pwup_filt = 1                            |  pwup_filt = 1                            
+  itest = 1                                |  itest = 1                                
+  startup_timed_out = 1                    |  startup_timed_out = 1                    
+  por_timed_out = 1                        |  por_timed_out = 1                        
+  force_dis_rc_osc = 1                     |  force_dis_rc_osc = 1                     
+  dcomp = 1                                |  dcomp = 1                                
+  por_ana_0/comparator_1/vt = 0            |  proxypor_ana_0/comparator_1/vt = 1       
+  por_ana_0/comparator_0/vt = 0            |  proxypor_ana_0/comparator_0/vt = 1       
+  dvdd = 10                                |  dvdd = 10                                
+  avdd = 2                                 |  avdd = 2                                 
+  avss = 59                                |  avss = 18                                
+  dvss = 59                                |  dvss = 10                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: chipalooza_testchip1_0//sky130_h |Instance: chipalooza_testchip1:1/sky130_ht 
+  XOUT = 1                                 |  XOUT = 1                                 
+  XIN = 1                                  |  XIN = 1                                  
+  ENA = 1                                  |  ENA = 1                                  
+  STDBY = 1                                |  STDBY = 1                                
+  DOUT = 1                                 |  DOUT = 1                                 
+  AVDD = 2                                 |  AVDD = 2                                 
+  DVDD = 12                                |  DVDD = 12                                
+  DVSS = 59                                |  DVSS = 14                                
+  IBIAS = 2                                |  IBIAS = 2                                
+  GUARD = 59                               |  GUARD = 14                               
+  power_gating_0/EG_AVSS = 0               |  proxypower_gating_0/EG_AVSS = 1          
+  AVSS = 59                                |  AVSS = 17                                
+  power_gating_0/SG_AVSS = 0               |  proxypower_gating_0/SG_AVSS = 1          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
 Instance: chipalooza_testchip1_0//analog_m |Instance: chipalooza_testchip1:1/analog_mu 
   selA = 1                                 |  selA = 1                                 
   dvdd = 12                                |  dvdd = 12                                
@@ -4539,119 +4840,162 @@ Instance: chipalooza_testchip1_0//analog_m |Instance: chipalooza_testchip1:1/ana
   avdd = 12                                |  avdd = 12                                
   avss = 59                                |  avss = 17                                
   dvss = 59                                |  dvss = 14                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: chipalooza_testchip1_0//sky130_a |Instance: chipalooza_testchip1:1/sky130_aj 
+  otrip[2] = 1                             |  otrip[2] = 1                             
+  isrc_sel = 1                             |  isrc_sel = 1                             
+  otrip[3] = 1                             |  otrip[3] = 1                             
+  ibg_200n = 2                             |  ibg_200n = 2                             
+  dvdd = 10                                |  dvdd = 10                                
+  avdd = 2                                 |  avdd = 2                                 
+  ena = 1                                  |  ena = 1                                  
+  vbg_1v2 = 4                              |  vbg_1v2 = 4                              
+  ovout = 1                                |  ovout = 1                                
+  overvoltage_ana_0/comparator_1_0/vt = 0  |  proxyovervoltage_ana_0/comparator_1_0/vt 
+  dvss = 59                                |  dvss = 10                                
+  otrip[0] = 1                             |  otrip[0] = 1                             
+  otrip[1] = 1                             |  otrip[1] = 1                             
+  avss = 59                                |  avss = 18                                
+  proxyitest = 0                           |  itest = 1                                
+  proxyvin = 0                             |  vin = 1                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: chipalooza_testchip1_0//sky130_a |Instance: chipalooza_testchip1:1/sky130_aj 
+  outb = 1                                 |  outb = 1                                 
+  osc_ck = 1                               |  osc_ck = 1                               
+  dcomp = 1                                |  dcomp = 1                                
+  vbg_1v2 = 4                              |  vbg_1v2 = 4                              
+  otrip[2] = 1                             |  otrip[2] = 1                             
+  otrip[1] = 1                             |  otrip[1] = 1                             
+  otrip[0] = 1                             |  otrip[0] = 1                             
+  itest = 1                                |  itest = 1                                
+  brout_filt = 1                           |  brout_filt = 1                           
+  vtrip[2] = 1                             |  vtrip[2] = 1                             
+  vtrip[1] = 1                             |  vtrip[1] = 1                             
+  vtrip[0] = 1                             |  vtrip[0] = 1                             
+  vin_brout = 1                            |  vin_brout = 1                            
+  ena = 1                                  |  ena = 1                                  
+  force_ena_rc_osc = 1                     |  force_ena_rc_osc = 1                     
+  vin_vunder = 1                           |  vin_vunder = 1                           
+  force_dis_rc_osc = 1                     |  force_dis_rc_osc = 1                     
+  timed_out = 1                            |  timed_out = 1                            
+  vunder = 1                               |  vunder = 1                               
+  force_short_oneshot = 1                  |  force_short_oneshot = 1                  
+  isrc_sel = 1                             |  isrc_sel = 1                             
+  ibg_200n = 2                             |  ibg_200n = 2                             
+  brownout_ana_0/comparator_1/vt = 0       |  proxybrownout_ana_0/comparator_1/vt = 1  
+  brownout_ana_0/comparator_0/vt = 0       |  proxybrownout_ana_0/comparator_0/vt = 1  
+  dvdd = 10                                |  dvdd = 10                                
+  avdd = 2                                 |  avdd = 2                                 
+  avss = 59                                |  avss = 18                                
+  dvss = 59                                |  dvss = 10                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: chipalooza_testchip1_0//sky130_b |Instance: chipalooza_testchip1:1/sky130_be 
+  avdd = 2                                 |  avdd = 2                                 
+  dvdd = 10                                |  dvdd = 10                                
+  dvss = 59                                |  dvss = 10                                
+  ibias = 2                                |  ibias = 2                                
+  ena = 1                                  |  ena = 1                                  
+  standby = 1                              |  standby = 1                              
+  dout = 1                                 |  dout = 1                                 
+  xout = 1                                 |  xout = 1                                 
+  xin = 1                                  |  xin = 1                                  
+  avss_ip = 0                              |  proxyavss_ip = 1                         
+  dvss_ip = 0                              |  proxydvss_ip = 1                         
+  avss = 59                                |  avss = 18                                
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 
 Subcircuit pins:
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 -------------------------------------------|-------------------------------------------
-io_oeb[17]                                 |vssd1 **Mismatch**                         
-vccd1                                      |vccd1                                      
-vdda1                                      |vdda1                                      
-vccd2                                      |vccd2                                      
-vdda2                                      |vdda2                                      
-io_analog[5]                               |io_analog[5]                               
-io_analog[10]                              |io_analog[10]                              
-io_analog[9]                               |io_analog[9]                               
-io_analog[8]                               |io_analog[8]                               
-io_analog[7]                               |io_analog[7]                               
-io_analog[6]                               |io_analog[6]                               
-io_analog[4]                               |io_analog[4]                               
-io_analog[3]                               |io_analog[3]                               
-io_analog[2]                               |io_analog[2]                               
-io_analog[1]                               |io_analog[1]                               
-io_analog[0]                               |io_analog[0]                               
-io_out[23]                                 |io_out[23]                                 
-io_out[17]                                 |io_out[17]                                 
-io_out[13]                                 |io_out[13]                                 
-io_out[12]                                 |io_out[12]                                 
-io_out[8]                                  |io_out[8]                                  
-io_out[7]                                  |io_out[7]                                  
-io_out[6]                                  |io_out[6]                                  
-io_out[5]                                  |io_out[5]                                  
-io_out[4]                                  |io_out[4]                                  
-io_out[3]                                  |io_out[3]                                  
+gpio_analog[14]                            |io_out[23] **Mismatch**                    
+gpio_analog[15]                            |io_out[12] **Mismatch**                    
+gpio_noesd[3]                              |io_out[8] **Mismatch**                     
+gpio_noesd[4]                              |io_out[7] **Mismatch**                     
+io_out[0]                                  |io_out[6] **Mismatch**                     
+io_out[12]                                 |io_out[5] **Mismatch**                     
+io_out[1]                                  |io_out[4] **Mismatch**                     
+io_out[23]                                 |io_out[3] **Mismatch**                     
 io_out[2]                                  |io_out[2]                                  
-io_out[1]                                  |io_out[1]                                  
-io_out[0]                                  |io_out[0]                                  
-gpio_noesd[7]                              |gpio_noesd[7]                              
-gpio_noesd[4]                              |gpio_noesd[4]                              
-gpio_noesd[3]                              |gpio_noesd[3]                              
-gpio_noesd[2]                              |gpio_noesd[2]                              
+io_out[3]                                  |io_out[1] **Mismatch**                     
+io_out[4]                                  |io_out[0] **Mismatch**                     
+io_out[5]                                  |gpio_noesd[4] **Mismatch**                 
+io_out[6]                                  |gpio_noesd[3] **Mismatch**                 
+io_out[7]                                  |gpio_analog[15] **Mismatch**               
+io_out[8]                                  |gpio_analog[14] **Mismatch**               
+la_data_in[117]                            |la_data_out[116] **Mismatch**              
+la_data_in[119]                            |la_data_out[115] **Mismatch**              
+la_data_in[120]                            |la_data_out[114] **Mismatch**              
+la_data_out[100]                           |la_data_out[113] **Mismatch**              
+la_data_out[101]                           |la_data_out[112] **Mismatch**              
+la_data_out[102]                           |la_data_out[111] **Mismatch**              
+la_data_out[103]                           |la_data_out[110] **Mismatch**              
+la_data_out[104]                           |la_data_out[109] **Mismatch**              
+la_data_out[105]                           |la_data_out[108] **Mismatch**              
+la_data_out[106]                           |la_data_out[107] **Mismatch**              
+la_data_out[107]                           |la_data_out[106] **Mismatch**              
+la_data_out[108]                           |la_data_out[105] **Mismatch**              
+la_data_out[109]                           |la_data_out[104] **Mismatch**              
+la_data_out[110]                           |la_data_out[103] **Mismatch**              
+la_data_out[111]                           |la_data_out[102] **Mismatch**              
+la_data_out[112]                           |la_data_out[101] **Mismatch**              
+la_data_out[113]                           |la_data_out[100] **Mismatch**              
+la_data_out[114]                           |la_data_out[99] **Mismatch**               
+la_data_out[115]                           |la_data_out[98] **Mismatch**               
+la_data_out[116]                           |la_data_out[97] **Mismatch**               
+la_data_out[19]                            |la_data_out[96] **Mismatch**               
+la_data_out[20]                            |la_data_out[95] **Mismatch**               
+la_data_out[85]                            |la_data_out[94] **Mismatch**               
+la_data_out[92]                            |la_data_out[93] **Mismatch**               
+la_data_out[93]                            |la_data_out[92] **Mismatch**               
+la_data_out[94]                            |la_data_out[86] **Mismatch**               
+la_data_out[95]                            |la_data_out[85] **Mismatch**               
+la_data_out[96]                            |la_data_out[20] **Mismatch**               
+la_data_out[97]                            |la_data_out[19] **Mismatch**               
+la_data_out[98]                            |la_data_in[120] **Mismatch**               
+la_data_out[99]                            |la_data_in[119] **Mismatch**               
+vccd1                                      |(no matching pin)                          
+vssa2                                      |(no matching pin)                          
 gpio_analog[17]                            |gpio_analog[17]                            
-gpio_analog[15]                            |gpio_analog[15]                            
-gpio_analog[14]                            |gpio_analog[14]                            
-gpio_analog[13]                            |gpio_analog[13]                            
-gpio_analog[10]                            |gpio_analog[10]                            
-gpio_analog[8]                             |gpio_analog[9] **Mismatch**                
-gpio_analog[9]                             |gpio_analog[8] **Mismatch**                
-gpio_analog[16]                            |gpio_analog[16]                            
-gpio_analog[12]                            |gpio_analog[12]                            
-gpio_analog[11]                            |gpio_analog[11]                            
-gpio_analog[6]                             |gpio_analog[6]                             
-gpio_analog[5]                             |gpio_analog[5]                             
-gpio_analog[1]                             |gpio_analog[1]                             
-gpio_analog[0]                             |gpio_analog[0]                             
-la_data_out[125]                           |la_data_out[125]                           
-la_data_out[122]                           |la_data_out[122]                           
-la_data_out[124]                           |la_data_out[124]                           
-la_data_out[123]                           |la_data_out[123]                           
-la_data_out[121]                           |la_data_out[121]                           
-la_data_in[118]                            |la_data_out[118] **Mismatch**              
-la_data_out[116]                           |la_data_out[116]                           
-la_data_out[115]                           |la_data_out[115]                           
-la_data_out[114]                           |la_data_out[114]                           
-la_data_out[113]                           |la_data_out[113]                           
-la_data_out[112]                           |la_data_out[112]                           
-la_data_out[111]                           |la_data_out[111]                           
-la_data_out[110]                           |la_data_out[110]                           
-la_data_out[109]                           |la_data_out[109]                           
-la_data_out[108]                           |la_data_out[108]                           
-la_data_out[107]                           |la_data_out[107]                           
-la_data_out[106]                           |la_data_out[106]                           
-la_data_out[105]                           |la_data_out[105]                           
-la_data_out[104]                           |la_data_out[104]                           
-la_data_out[103]                           |la_data_out[103]                           
-la_data_out[102]                           |la_data_out[102]                           
-la_data_out[101]                           |la_data_out[101]                           
-la_data_out[100]                           |la_data_out[100]                           
-la_data_out[99]                            |la_data_out[99]                            
-la_data_out[98]                            |la_data_out[98]                            
-la_data_out[97]                            |la_data_out[97]                            
-la_data_out[96]                            |la_data_out[96]                            
-la_data_out[95]                            |la_data_out[95]                            
-la_data_out[94]                            |la_data_out[94]                            
-la_data_out[93]                            |la_data_out[93]                            
-la_data_out[92]                            |la_data_out[92]                            
+la_data_out[9]                             |la_data_out[9]                             
 la_data_out[91]                            |la_data_out[91]                            
 la_data_out[90]                            |la_data_out[90]                            
+la_data_out[8]                             |la_data_out[8]                             
 la_data_out[89]                            |la_data_out[89]                            
 la_data_out[88]                            |la_data_out[88]                            
 la_data_out[87]                            |la_data_out[87]                            
-la_data_out[85]                            |la_data_out[85]                            
 la_data_out[84]                            |la_data_out[84]                            
 la_data_out[83]                            |la_data_out[83]                            
 la_data_out[82]                            |la_data_out[82]                            
 la_data_out[81]                            |la_data_out[81]                            
 la_data_out[80]                            |la_data_out[80]                            
-la_data_out[79]                            |la_data_out[79]                            
+la_data_out[7]                             |la_data_out[7]                             
+la_data_out[79]                            |(no matching pin)                          
 la_data_out[78]                            |la_data_out[78]                            
-la_data_out[71]                            |la_data_out[67] **Mismatch**               
+la_data_out[6]                             |la_data_out[6]                             
 la_data_out[67]                            |la_data_out[71] **Mismatch**               
-la_data_out[70]                            |la_data_out[66] **Mismatch**               
+la_data_out[71]                            |la_data_out[67] **Mismatch**               
 la_data_out[66]                            |la_data_out[70] **Mismatch**               
-la_data_out[77]                            |la_data_out[77]                            
-la_data_out[75]                            |la_data_out[75]                            
-la_data_out[73]                            |la_data_out[73]                            
-la_data_out[69]                            |la_data_out[69]                            
+la_data_out[70]                            |la_data_out[66] **Mismatch**               
+la_data_out[69]                            |la_data_out[77] **Mismatch**               
+la_data_out[73]                            |la_data_out[75] **Mismatch**               
+la_data_out[75]                            |la_data_out[73] **Mismatch**               
+la_data_out[77]                            |la_data_out[69] **Mismatch**               
 la_data_out[65]                            |la_data_out[65]                            
-la_data_out[76]                            |la_data_out[76]                            
-la_data_out[74]                            |la_data_out[74]                            
-la_data_out[72]                            |la_data_out[72]                            
-la_data_out[68]                            |la_data_out[68]                            
+la_data_out[68]                            |la_data_out[76] **Mismatch**               
+la_data_out[72]                            |la_data_out[74] **Mismatch**               
+la_data_out[74]                            |la_data_out[72] **Mismatch**               
+la_data_out[76]                            |la_data_out[68] **Mismatch**               
 la_data_out[64]                            |la_data_out[64]                            
 la_data_out[63]                            |la_data_out[63]                            
 la_data_out[62]                            |la_data_out[62]                            
+la_data_out[5]                             |la_data_out[5]                             
 la_data_out[61]                            |la_data_out[61]                            
 la_data_out[59]                            |la_data_out[59]                            
 la_data_out[57]                            |la_data_out[57]                            
@@ -4664,6 +5008,7 @@ la_data_out[54]                            |la_data_out[54]
 la_data_out[52]                            |la_data_out[52]                            
 la_data_out[51]                            |la_data_out[51]                            
 la_data_out[50]                            |la_data_out[50]                            
+la_data_out[4]                             |la_data_out[4]                             
 la_data_out[49]                            |la_data_out[49]                            
 la_data_out[48]                            |la_data_out[48]                            
 la_data_out[47]                            |la_data_out[47]                            
@@ -4674,6 +5019,7 @@ la_data_out[43]                            |la_data_out[43]
 la_data_out[42]                            |la_data_out[42]                            
 la_data_out[41]                            |la_data_out[41]                            
 la_data_out[40]                            |la_data_out[40]                            
+la_data_out[3]                             |la_data_out[3]                             
 la_data_out[39]                            |la_data_out[39]                            
 la_data_out[38]                            |la_data_out[38]                            
 la_data_out[37]                            |la_data_out[37]                            
@@ -4682,16 +5028,16 @@ la_data_out[33]                            |la_data_out[33]
 la_data_out[32]                            |la_data_out[32]                            
 la_data_out[31]                            |la_data_out[31]                            
 la_data_out[30]                            |la_data_out[30]                            
+la_data_out[2]                             |la_data_out[2]                             
 la_data_out[29]                            |la_data_out[29]                            
 la_data_out[28]                            |la_data_out[28]                            
 la_data_out[27]                            |la_data_out[27]                            
 la_data_out[26]                            |la_data_out[26]                            
 la_data_out[25]                            |la_data_out[25]                            
 la_data_out[21]                            |la_data_out[21]                            
-la_data_out[20]                            |la_data_out[20]                            
-la_data_out[19]                            |la_data_out[19]                            
-la_data_out[34]                            |la_data_out[36] **Mismatch**               
+la_data_out[1]                             |la_data_out[1]                             
 la_data_out[36]                            |la_data_out[34] **Mismatch**               
+la_data_out[34]                            |la_data_out[36] **Mismatch**               
 la_data_out[23]                            |la_data_out[23]                            
 la_data_out[22]                            |la_data_out[22]                            
 la_data_out[18]                            |la_data_out[18]                            
@@ -4701,20 +5047,43 @@ la_data_out[15]                            |la_data_out[15]
 la_data_out[14]                            |la_data_out[14]                            
 la_data_out[13]                            |la_data_out[13]                            
 la_data_out[12]                            |la_data_out[12]                            
+la_data_out[125]                           |la_data_out[125]                           
+la_data_out[122]                           |la_data_out[122]                           
 la_data_out[11]                            |la_data_out[11]                            
 la_data_out[10]                            |la_data_out[10]                            
-la_data_out[9]                             |la_data_out[9]                             
-la_data_out[8]                             |la_data_out[8]                             
-la_data_out[7]                             |la_data_out[7]                             
-la_data_out[6]                             |la_data_out[6]                             
-la_data_out[5]                             |la_data_out[5]                             
-la_data_out[4]                             |la_data_out[4]                             
-la_data_out[3]                             |la_data_out[3]                             
-la_data_out[2]                             |la_data_out[2]                             
-la_data_out[1]                             |la_data_out[1]                             
-la_data_in[120]                            |la_data_in[120]                            
-la_data_in[119]                            |la_data_in[119]                            
-la_data_in[117]                            |la_data_in[117]                            
+la_data_out[124]                           |la_data_out[124]                           
+la_data_out[123]                           |la_data_out[123]                           
+la_data_out[121]                           |la_data_out[121]                           
+la_data_in[118]                            |la_data_out[118] **Mismatch**              
+io_out[17]                                 |io_out[17]                                 
+io_out[13]                                 |io_out[13]                                 
+gpio_noesd[7]                              |gpio_noesd[7]                              
+gpio_noesd[2]                              |gpio_noesd[2]                              
+gpio_analog[13]                            |gpio_analog[13]                            
+gpio_analog[9]                             |gpio_analog[8] **Mismatch**                
+gpio_analog[8]                             |gpio_analog[9] **Mismatch**                
+gpio_analog[16]                            |gpio_analog[16]                            
+gpio_analog[12]                            |gpio_analog[12]                            
+gpio_analog[11]                            |gpio_analog[11]                            
+gpio_analog[10]                            |gpio_analog[10]                            
+gpio_analog[6]                             |gpio_analog[6]                             
+gpio_analog[5]                             |gpio_analog[5]                             
+gpio_analog[1]                             |gpio_analog[1]                             
+gpio_analog[0]                             |gpio_analog[0]                             
+vdda1                                      |vdda1                                      
+vccd2                                      |vccd2                                      
+vdda2                                      |vdda2                                      
+io_analog[5]                               |io_analog[5]                               
+io_analog[6]                               |io_analog[0] **Mismatch**                  
+io_analog[3]                               |io_analog[1] **Mismatch**                  
+io_analog[2]                               |io_analog[2]                               
+io_analog[1]                               |io_analog[3] **Mismatch**                  
+io_analog[0]                               |io_analog[6] **Mismatch**                  
+io_analog[10]                              |io_analog[10]                              
+io_analog[9]                               |io_analog[9]                               
+io_analog[8]                               |io_analog[8]                               
+io_analog[7]                               |io_analog[7]                               
+io_analog[4]                               |io_analog[4]                               
 gpio_analog[2]                             |gpio_analog[2]                             
 gpio_analog[3]                             |gpio_analog[3]                             
 gpio_analog[4]                             |gpio_analog[4]                             
@@ -4798,6 +5167,7 @@ io_oeb[11]                                 |io_oeb[11]
 io_oeb[14]                                 |io_oeb[14]                                 
 io_oeb[15]                                 |io_oeb[15]                                 
 io_oeb[16]                                 |io_oeb[16]                                 
+io_oeb[17]                                 |io_oeb[17]                                 
 io_oeb[18]                                 |io_oeb[18]                                 
 io_oeb[19]                                 |io_oeb[19]                                 
 io_oeb[20]                                 |io_oeb[20]                                 
@@ -5192,11 +5562,13 @@ wbs_stb_i                                  |wbs_stb_i
 wbs_we_i                                   |wbs_we_i                                   
 (no matching pin)                          |vssa1                                      
 (no matching pin)                          |vssa2                                      
+(no matching pin)                          |vccd1                                      
+(no matching pin)                          |vssd1                                      
 (no matching pin)                          |vssd2                                      
 (no matching pin)                          |la_data_in[118]                            
-(no matching pin)                          |la_data_out[86]                            
+(no matching pin)                          |la_data_in[117]                            
+(no matching pin)                          |la_data_out[79]                            
 (no matching pin)                          |io_oeb[23]                                 
-(no matching pin)                          |io_oeb[17]                                 
 (no matching pin)                          |io_oeb[13]                                 
 (no matching pin)                          |io_oeb[12]                                 
 (no matching pin)                          |io_oeb[8]                                  
@@ -5209,8 +5581,13 @@ wbs_we_i                                   |wbs_we_i
 (no matching pin)                          |io_oeb[1]                                  
 (no matching pin)                          |io_oeb[0]                                  
 vssa2                                      |(no matching pin)                          
+vssa1                                      |(no matching pin)                          
+vssd1                                      |(no matching pin)                          
+vssd2                                      |(no matching pin)                          
 la_data_out[118]                           |(no matching pin)                          
+la_data_out[79]                            |(no matching pin)                          
 la_data_out[86]                            |(no matching pin)                          
+vccd1                                      |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists for user_analog_project_wrapper and user_analog_project_wrapper altered to match.
 Device classes user_analog_project_wrapper and user_analog_project_wrapper are equivalent.
