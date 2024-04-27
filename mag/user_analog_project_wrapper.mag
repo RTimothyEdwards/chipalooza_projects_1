@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1714158041
+timestamp 1714181368
 << error_p >>
 rect 559177 585608 559545 585642
 rect 561853 585608 562221 585642
@@ -14,6 +14,8 @@ rect 533327 253980 533411 253981
 rect 533357 48462 533411 48463
 rect 533411 48402 533461 48403
 rect 533647 48402 533731 48403
+<< locali >>
+rect 19898 481746 20392 481959
 << metal2 >>
 rect 524 -800 636 480
 rect 1706 -800 1818 480
@@ -714,9 +716,13 @@ rect -100 0 0 704000
 rect 584000 0 584100 704000
 rect -100 -100 584100 0
 use chipalooza_testchip1  chipalooza_testchip1_0
-timestamp 1714158041
+timestamp 1714181368
 transform 1 0 -800 0 1 -800
 box 0 0 585600 705600
+use sky130_fd_pr__diode_pw2nd_05v5_HTFGEA  sky130_fd_pr__diode_pw2nd_05v5_HTFGEA_0  paramcells
+timestamp 1714178384
+transform 1 0 20523 0 1 481856
+box -186 -186 186 186
 << labels >>
 flabel metal3 s 583520 269230 584800 269342 0 FreeSans 1120 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
