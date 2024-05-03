@@ -8,8 +8,6 @@ E {}
 T {Analog multiplexer with ground-isolated switches and 1.8V select} -190 -90 0 0 0.4 0.4 {}
 N 10 30 50 30 {
 lab=#net1}
-N -120 30 -70 30 {
-lab=selA}
 N 350 30 380 30 {
 lab=avss}
 N 380 -10 380 30 {
@@ -56,13 +54,19 @@ N 380 160 380 200 {
 lab=avss}
 N 380 160 410 160 {
 lab=avss}
-N -150 270 -110 270 {
+N -180 270 -140 270 {
 lab=dvdd}
-N -150 300 -110 300 {
-lab=dvdd}
+N -180 250 -140 250 {
+lab=dvss}
+N -170 30 -70 30 {
+lab=selA}
+N -140 30 -140 70 {
+lab=selA}
+N -140 130 -140 250 {
+lab=dvss}
 C {isolated_switch.sym} 200 60 0 0 {name=x1}
 C {lsbuflv2hv_1.sym} -30 30 0 0 {name=x2 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
-C {devices/ipin.sym} -120 30 0 0 {name=p1 lab=selA}
+C {devices/ipin.sym} -170 30 0 0 {name=p1 lab=selA}
 C {devices/iopin.sym} 410 -10 0 0 {name=p2 lab=avss}
 C {devices/iopin.sym} 510 240 0 0 {name=p3 lab=out}
 C {devices/iopin.sym} 410 50 0 0 {name=p4 lab=inA}
@@ -72,7 +76,13 @@ C {sky130_stdcells/inv_2.sym} -20 200 0 0 {name=x4 VGND=dvss VNB=dvss VPB=avdd V
 C {devices/lab_pin.sym} 420 310 0 1 {name=p6 sig_type=std_logic lab=avdd}
 C {devices/iopin.sym} 420 220 0 0 {name=p7 lab=inB}
 C {devices/lab_pin.sym} 410 160 0 1 {name=p8 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} -150 270 0 1 {name=p9 lab=dvdd}
-C {devices/lab_pin.sym} -110 270 0 1 {name=p10 sig_type=std_logic lab=dvdd}
-C {devices/iopin.sym} -150 300 0 1 {name=p11 lab=dvss}
-C {devices/lab_pin.sym} -110 300 0 1 {name=p12 sig_type=std_logic lab=dvss}
+C {devices/iopin.sym} -180 270 0 1 {name=p9 lab=dvdd}
+C {devices/lab_pin.sym} -140 270 0 1 {name=p10 sig_type=std_logic lab=dvdd}
+C {devices/iopin.sym} -180 250 0 1 {name=p11 lab=dvss}
+C {devices/lab_pin.sym} -140 250 0 1 {name=p12 sig_type=std_logic lab=dvss}
+C {sky130_fd_pr/diode.sym} -140 100 0 0 {name=D1
+model=diode_pw2nd_05v5
+area=2.304e11
+perim=1.92e6
+spiceprefix=X
+}

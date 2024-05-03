@@ -23,40 +23,24 @@ if {[catch {set PDK $::env(PDK)}]} {
     set PDK sky130A
 }
 
-# The remainder will come from .mag (unless I create individual GDS files)
+# Pull all layout of individual projects.  NOTE:  Need a Makefile and
+# build target to handle cloning repositories, or let CACE handle it.
 
-addpath ../../chipalooza/hsxo-cpz1/mag
-# addpath ../../chipalooza/sky130_ak_ip__comparator/mag
-addpath ../../chipalooza/sky130_od_ip__tempsensor/mag
-addpath ../../chipalooza/sky130_td_ip__opamp_hp/mag
-addpath ../../chipalooza/sky130_vbl_ip__overvoltage/mag
-addpath ../../chipalooza/sky130_be_ip__lsxo/mag
-addpath ../../chipalooza/sky130_rodovalho_ip__lpopamp/mag
-
-# These have been modified to remove same names of non-matching circuits:
-# comparator, ibias_gen, rc_osc, rstring_mux, schmitt_trigger
-addpath ../../chipalooza/sky130_ajc_ip__brownout/mag
-addpath ../../chipalooza/sky130_ajc_ip__por/mag
-addpath ../../chipalooza/sky130_ajc_ip__overvoltage/mag
-
-# Pull the cells which have GDS
-# gds readonly true
-# gds rescale false
-# gds drccheck off
-
-# Force the standard cell GDS just read to take precedence
-gds noduplicates true
+addpath ../../chipalooza_forked/sky130_ht_ip__hsxo_cpz1/mag
+addpath ../../chipalooza_forked/sky130_ak_ip__comparator/mag
+addpath ../../chipalooza_forked/sky130_od_ip__tempsensor/mag
+addpath ../../chipalooza_forked/sky130_td_ip__opamp_hp/mag
+addpath ../../chipalooza_forked/sky130_vbl_ip__overvoltage/mag
+addpath ../../chipalooza_forked/sky130_be_ip__lsxo/mag
+addpath ../../chipalooza_forked/sky130_rodovalho_ip__lpopamp/mag
+addpath ../../chipalooza_forked/sky130_ajc_ip__brownout/mag
+addpath ../../chipalooza_forked/sky130_ajc_ip__por/mag
+addpath ../../chipalooza_forked/sky130_ajc_ip__overvoltage/mag
 
 # Non-chipalooza items, GDS only
 gds read ../../weiser_analog_mpw7/gds/bandgap.gds
 gds read ../../weiser_analog_mpw7/gds/bias_basis_current.gds
 
-gds noduplicates false
-
-# Test---Read project from GDS as read-only
-gds readonly true
-gds rescale false
-gds read ../../chipalooza/sky130_ak_ip__comparator/gds/sky130_ak_ip__comparator.gds.gz
-
-# Load the project wrapper cell
-load user_analog_project_wrapper
+# Load the project wrapper cell.  Dereference any cell locations;  cells
+# shoud only come from known paths.
+load user_analog_project_wrapper -dereference

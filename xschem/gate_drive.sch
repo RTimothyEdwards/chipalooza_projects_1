@@ -283,3 +283,4 @@ C {devices/lab_wire.sym} 1040 -680 0 0 {name=l19 sig_type=std_logic lab=S2_N}
 C {devices/lab_wire.sym} 1220 -680 0 0 {name=l20 sig_type=std_logic lab=S3_N}
 C {devices/lab_wire.sym} 1430 -680 0 0 {name=l21 sig_type=std_logic lab=S4_N}
 C {devices/opin.sym} 250 -770 0 0 {name=p4 lab=OUT}
+C {devices/ipin.sym} 270 -480 0 0 {name=p2 lab=VSUB}
