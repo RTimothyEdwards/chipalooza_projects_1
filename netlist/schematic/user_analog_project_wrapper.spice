@@ -1,4 +1,4 @@
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/user_analog_project_wrapper.sch
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/user_analog_project_wrapper.sch
 .subckt user_analog_project_wrapper vdda1 vdda2 vssa1 vssa2 vccd1 vccd2 vssd1 vssd2 wb_clk_i wb_rst_i wbs_stb_i wbs_cyc_i wbs_we_i
 + wbs_sel_i[3] wbs_sel_i[2] wbs_sel_i[1] wbs_sel_i[0] wbs_dat_i[31] wbs_dat_i[30] wbs_dat_i[29] wbs_dat_i[28] wbs_dat_i[27] wbs_dat_i[26]
 + wbs_dat_i[25] wbs_dat_i[24] wbs_dat_i[23] wbs_dat_i[22] wbs_dat_i[21] wbs_dat_i[20] wbs_dat_i[19] wbs_dat_i[18] wbs_dat_i[17] wbs_dat_i[16]
@@ -112,8 +112,8 @@ x1 vccd1 vccd2 vdda1 vdda2 vssa1 vssa2 io_oeb[26] io_oeb[25] io_oeb[24] io_oeb[2
 .ends
 
 * expanding   symbol:  chipalooza_testchip1.sym # of pins=15
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza_testchip1.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza_testchip1.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza_testchip1.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza_testchip1.sch
 .subckt chipalooza_testchip1 vccd1 vccd2 vdda1 vdda2 vssa1 vssa2 io_oeb[26] io_oeb[25] io_oeb[24] io_oeb[23] io_oeb[22] io_oeb[21]
 + io_oeb[20] io_oeb[19] io_oeb[18] io_oeb[17] io_oeb[16] io_oeb[15] io_oeb[14] io_oeb[13] io_oeb[12] io_oeb[11] io_oeb[10] io_oeb[9] io_oeb[8]
 + io_oeb[7] io_oeb[6] io_oeb[5] io_oeb[4] io_oeb[3] io_oeb[2] io_oeb[1] io_oeb[0] io_out[26] io_out[25] io_out[24] io_out[23] io_out[22]
@@ -159,20 +159,20 @@ x1 vdda1 gpio_analog[17] la_data_out[48] la_data_out[41] la_data_out[44] la_data
 + la_data_out[46] la_data_out[47] la_data_out[49] la_data_out[45] la_data_out[39] la_data_out[43] src_200_0 src_10000_0 src_400 src_600 src_test1
 + src_200_1 src_100 src_10000_1 src_50 src_test0 src_200_2 la_data_out[78] la_data_out[125] la_data_out[84] la_data_out[82] la_data_out[81]
 + la_data_out[83] la_data_out[80] ibias_nc3 ibias_nc1 snk_5000_1 snk_test1 snk_3700 ibias_nc2 snk_test0 la_data_out[79] vssa1 bias_generator
-x2 la_data_out[62] la_data_out[63] vssa2 vdda2 vdd_spare_3 power_stage
-x3 la_data_out[60] la_data_out[61] vssa2 vdda2 io_analog[10] power_stage
-x4 la_data_out[58] la_data_out[59] vssa2 vccd2 io_analog[9] power_stage
-x5 la_data_out[56] la_data_out[57] vssa2 vdda2 io_analog[8] power_stage
-x6 la_data_out[54] la_data_out[55] vssa2 vdda2 io_analog[7] power_stage
-x7 la_data_out[52] la_data_out[53] vssa2 vdda2 io_analog[6] power_stage
-x8 la_data_out[50] la_data_out[51] vssa2 vccd2 io_analog[5] power_stage
-x9 la_data_out[65] la_data_out[64] vssa1 vdda1 io_analog[4] power_stage
-x10 la_data_out[67] la_data_out[66] vssa1 vdda1 vdd_spare_2 power_stage
-x11 la_data_out[69] la_data_out[68] vssa1 vdda1 io_analog[3] power_stage
-x12 la_data_out[71] la_data_out[70] vssa1 vdda1 vdd_spare_1 power_stage
-x13 la_data_out[73] la_data_out[72] vssa1 vdda1 io_analog[2] power_stage
-x14 la_data_out[75] la_data_out[74] vssa1 vdda1 io_analog[1] power_stage
-x15 la_data_out[77] la_data_out[76] vssa1 vdda1 io_analog[0] power_stage
+x2 la_data_out[62] vdda2 vssa2 vssd2 vccd2 vdd_spare_3 power_stage
+x3 la_data_out[60] vdda2 vssa2 vssd2 vccd2 io_analog[10] power_stage
+x4 la_data_out[58] vccd2 vssd2 vssd2 vccd2 io_analog[9] power_stage
+x5 la_data_out[56] vdda2 vssa2 vssd2 vccd2 io_analog[8] power_stage
+x6 la_data_out[54] vdda2 vssa2 vssd2 vccd2 io_analog[7] power_stage
+x7 la_data_out[52] vdda2 vssa2 vssd2 vccd2 io_analog[6] power_stage
+x8 la_data_out[50] vccd2 vssd2 vssd2 vccd2 io_analog[5] power_stage
+x9 la_data_out[65] vdda1 vssa1 vssd1 vccd1 io_analog[4] power_stage
+x10 la_data_out[67] vdda1 vssa1 vssd1 vccd1 vdd_spare_2 power_stage
+x11 la_data_out[69] vdda1 vssa1 vssd1 vccd1 io_analog[3] power_stage
+x12 la_data_out[71] vdda1 vssa1 vssd1 vccd1 vdd_spare_1 power_stage
+x13 la_data_out[73] vdda1 vssa1 vssd1 vccd1 io_analog[2] power_stage
+x14 la_data_out[75] vdda1 vssa1 vssd1 vccd1 io_analog[1] power_stage
+x15 la_data_out[77] vdda1 vssa1 vssd1 vccd1 io_analog[0] power_stage
 X17 net4 gpio_analog[13] src_10000_1 vssd2 vssa2 io_analog[7] net2 net1 net3 lpopamp
 x18 io_analog[0] vssa1 io_out[0] vccd1 net13 vssd1 io_out[1] vbgB la_data_out[112] la_data_out[113] la_data_out[111] net14 net15
 + la_data_out[107] la_data_out[106] la_data_out[108] net16 la_data_out[109] la_data_out[115] net17 la_data_out[114] la_data_in[117] io_out[5]
@@ -183,7 +183,7 @@ x20 io_analog[2] net20 io_out[8] vssa1 vccd1 io_out[7] vssd1 io_out[3] vbgB io_o
 + la_data_out[98] net21 la_data_out[94] io_out[4] net22 la_data_out[93] la_data_out[92] la_data_in[120] la_data_in[119] la_data_out[99]
 + la_data_out[95] src_200_2 sky130_ajc_ip__por
 x21 vccd2 io_analog[8] vssa2 net6 io_out[17] net5 la_data_out[28] la_data_out[29] la_data_out[30] la_data_out[25] la_data_out[26]
-+ la_data_out[27] la_data_out[33] la_data_out[32] la_data_out[31] src_400 sky130_ak_ip__comparator
++ la_data_out[27] la_data_out[33] la_data_out[32] la_data_out[31] src_400 vssd2 sky130_ak_ip__comparator
 x22 io_analog[3] vssa1 vccd1 vssd1 src_50 la_data_out[86] la_data_out[85] io_out[12] gpio_noesd[3] gpio_noesd[4]
 + sky130_be_ip__lsxo
 X23 gpio_analog[15] gpio_analog[14] la_data_out[19] la_data_out[20] io_out[23] io_analog[6] vccd2 vssa2 vssd2 src_10000_0 vssd2
@@ -194,39 +194,39 @@ x26 io_analog[4] vccd1 la_data_out[91] la_data_out[87] src_600 la_data_out[88] i
 x28 la_data_out[21] net1 net2 vccd2 vssd2 vdda2 lvl_shift_invert
 x29 vssa2 la_data_out[22] net5 vdda2 net3 gpio_analog[12] vccd2 vssd2 analog_mux_sel1v8
 x30 vssa2 la_data_out[23] net6 vdda2 net4 gpio_analog[11] vccd2 vssd2 analog_mux_sel1v8
-x31 vccd2 vssd2 vssa2 la_data_out[17] gpio_analog[10] src_test1 vdda2 isolated_switch_ena1v8
-x32 net8 io_analog[9] vssd2 vbgA la_data_out[35] net7 sky130_od_ip__tempsensor_ext_vp
+x31 vssa2 la_data_out[17] gpio_analog[10] src_test1 vdda2 vccd2 vssd2 isolated_switch_ena1v8
+x32 net7 io_analog[9] vssd2 vbgA la_data_out[35] net8 sky130_od_ip__tempsensor_ext_vp
 x24 vssa2 la_data_out[34] net9 vdda2 net7 gpio_analog[9] vccd2 vssd2 analog_mux_sel1v8
 x33 vssa2 la_data_out[36] net10 vdda2 net8 gpio_analog[8] vccd2 vssd2 analog_mux_sel1v8
-x34 vccd1 vssd1 vssa1 la_data_out[124] gpio_analog[6] snk_test1 vdda1 isolated_switch_ena1v8
-x35 vccd1 vssd1 vssa1 la_data_out[123] gpio_analog[5] snk_3700 vdda1 isolated_switch_ena1v8
+x34 vssa1 la_data_out[124] gpio_analog[6] snk_test1 vdda1 vccd1 vssd1 isolated_switch_ena1v8
+x35 vssa1 la_data_out[123] gpio_analog[5] snk_3700 vdda1 vccd1 vssd1 isolated_switch_ena1v8
 x36 vssa1 la_data_out[122] vbgA vdda1 vbgB gpio_noesd[2] vccd1 vssd1 analog_mux_sel1v8
-x37 vccd1 vssd1 vssa1 la_data_out[121] gpio_analog[1] snk_5000_1 vdda1 isolated_switch_ena1v8
-x38 vccd1 vssd1 vssa1 la_data_out[118] gpio_analog[0] snk_test0 vdda1 isolated_switch_ena1v8
+x37 vssa1 la_data_out[121] gpio_analog[1] snk_5000_1 vdda1 vccd1 vssd1 isolated_switch_ena1v8
+x38 vssa1 la_data_out[118] gpio_analog[0] snk_test0 vdda1 vccd1 vssd1 isolated_switch_ena1v8
 x16 io_analog[5] net12 vssd2 net11 la_data_out[9] la_data_out[8] la_data_out[10] la_data_out[7] la_data_out[11] la_data_out[6]
 + la_data_out[12] la_data_out[5] la_data_out[13] la_data_out[4] la_data_out[14] la_data_out[3] la_data_out[15] la_data_out[2] la_data_out[16]
 + la_data_out[1] bandgap
 x39 io_analog[5] vssd2 net23 net11 bias_basis_current
 x40 vssa2 la_data_out[18] net12 vdda2 src_test0 gpio_analog[16] vccd2 vssd2 analog_mux_sel1v8
-R39 io_oeb[23] vssd2 0 m=1
-R40 io_oeb[17] vssd2 0 m=1
-R41 io_oeb[0] vssd1 0 m=1
-R42 io_oeb[1] vssd1 0 m=1
-R43 io_oeb[2] vssd1 0 m=1
-R44 io_oeb[3] vssd1 0 m=1
-R45 io_oeb[4] vssd1 0 m=1
-R46 io_oeb[5] vssd1 0 m=1
-R47 io_oeb[6] vssd1 0 m=1
-R48 io_oeb[7] vssd1 0 m=1
-R49 io_oeb[8] vssd1 0 m=1
-R50 io_oeb[12] vssd1 0 m=1
-R51 io_oeb[13] vssd1 0 m=1
+R1 vssd1 io_oeb[0] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R2 vssd1 io_oeb[1] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R3 vssd1 io_oeb[2] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R4 vssd1 io_oeb[3] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R5 vssd1 io_oeb[4] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R6 vssd1 io_oeb[5] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R7 vssd1 io_oeb[6] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R8 vssd1 io_oeb[7] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R9 vssd1 io_oeb[8] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R10 vssd1 io_oeb[12] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R11 vssd1 io_oeb[13] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R12 vssd2 io_oeb[17] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+R13 vssd2 io_oeb[23] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
 .ends
 
 
 * expanding   symbol:  bias_generator.sym # of pins=41
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_generator.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_generator.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/bias_generator.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/bias_generator.sch
 .subckt bias_generator avdd ref_in enb enb_200_2 enb_400 enb_100 enb_200_1 enb_test1 enb_10000_1 enb_10000_0 enb_test0 enb_600
 + enb_50 enb_200_0 src_200_0 src_10000_0 src_400 src_600 src_test1 src_200_1 src_100 src_10000_1 src_50 src_test0 src_200_2 ena_test0
 + ena_2000 ena_test1 ena_5000_2 ena_5000_1 ena_3700 ena_5000_0 snk_5000_2 snk_2000 snk_5000_1 snk_test1 snk_3700 snk_5000_0 snk_test0 ena
@@ -1120,27 +1120,35 @@ x15[0] snk_2000 ena_2000 net21[0] nbias avss bias_nstack
 .ends
 
 
-* expanding   symbol:  power_stage.sym # of pins=5
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/power_stage.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/power_stage.sch
-.subckt power_stage P_IN P_IN_N VSS VDD_PWR SW_NODE
-*.PININFO P_IN:I P_IN_N:I SW_NODE:I VDD_PWR:I VSS:I
+* expanding   symbol:  power_stage.sym # of pins=6
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/power_stage.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/power_stage.sch
+.subckt power_stage P_IN VDD_PWR VSS DVSS DVDD SW_NODE
+*.PININFO P_IN:I SW_NODE:I VDD_PWR:I VSS:I DVSS:I DVDD:I
 XM14 SW_NODE P_DRIVE VDD_PWR VDD_PWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4.38 nf=1 m=4512
-x2 P_IN P_IN_N VDD_PWR VSS P_DRIVE gate_drive
+x2 net1 net2 P_DRIVE VDD_PWR VSS DVSS gate_drive
+x1 P_IN DVSS DVSS DVDD DVDD net1 sky130_fd_sc_hd__inv_4
+x3 net1 DVSS DVSS DVDD DVDD net2 sky130_fd_sc_hd__inv_4
+x4[1] DVSS DVSS DVDD DVDD sky130_fd_sc_hd__decap_3
+x4[0] DVSS DVSS DVDD DVDD sky130_fd_sc_hd__decap_3
+x6[2] DVSS DVDD sky130_fd_sc_hd__tapvpwrvgnd_1
+x6[1] DVSS DVDD sky130_fd_sc_hd__tapvpwrvgnd_1
+x6[0] DVSS DVDD sky130_fd_sc_hd__tapvpwrvgnd_1
+x9 P_IN DVSS DVSS DVDD DVDD sky130_fd_sc_hd__diode_2
 .ends
 
 
 * expanding   symbol:  chipalooza/lpopamp.sym # of pins=9
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/lpopamp.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/lpopamp.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/lpopamp.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/lpopamp.sch
 .subckt lpopamp im o ib vsub avss avdd enb en ip
 
 .ends
 
 
 * expanding   symbol:  chipalooza/sky130_ajc_ip__brownout.sym # of pins=22
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ajc_ip__brownout.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ajc_ip__brownout.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ajc_ip__brownout.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ajc_ip__brownout.sch
 .subckt sky130_ajc_ip__brownout avdd avss outb dvdd osc_ck dvss dcomp vbg_1v2 otrip[2] otrip[1] otrip[0] itest brout_filt vtrip[2]
 + vtrip[1] vtrip[0] vin_brout ena force_ena_rc_osc vin_vunder force_dis_rc_osc timed_out vunder force_short_oneshot isrc_sel ibg_200n
 
@@ -1148,8 +1156,8 @@ x2 P_IN P_IN_N VDD_PWR VSS P_DRIVE gate_drive
 
 
 * expanding   symbol:  chipalooza/sky130_ajc_ip__overvoltage.sym # of pins=12
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ajc_ip__overvoltage.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ajc_ip__overvoltage.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ajc_ip__overvoltage.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ajc_ip__overvoltage.sch
 .subckt sky130_ajc_ip__overvoltage avdd avss dvdd dvss vbg_1v2 ovout itest otrip[3] otrip[2] otrip[1] otrip[0] vin ena isrc_sel
 + ibg_200n
 
@@ -1157,58 +1165,58 @@ x2 P_IN P_IN_N VDD_PWR VSS P_DRIVE gate_drive
 
 
 * expanding   symbol:  chipalooza/sky130_ajc_ip__por.sym # of pins=22
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ajc_ip__por.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ajc_ip__por.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ajc_ip__por.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ajc_ip__por.sch
 .subckt sky130_ajc_ip__por avdd porb_h porb avss dvdd por dvss osc_ck vbg_1v2 dcomp otrip[2] otrip[1] otrip[0] itest force_pdn
 + pwup_filt vin force_ena_rc_osc force_dis_rc_osc startup_timed_out por_timed_out force_short_oneshot isrc_sel ibg_200n
 
 .ends
 
 
-* expanding   symbol:  chipalooza/sky130_ak_ip__comparator.sym # of pins=10
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ak_ip__comparator.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ak_ip__comparator.sch
+* expanding   symbol:  chipalooza/sky130_ak_ip__comparator.sym # of pins=11
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ak_ip__comparator.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ak_ip__comparator.sch
 .subckt sky130_ak_ip__comparator DVDD AVDD AGND Vinp Vout Vinm en hyst[1] hyst[0] trim[5] trim[4] trim[3] trim[2] trim[1] trim[0]
-+ ibias
++ ibias DGND
 
 .ends
 
 
 * expanding   symbol:  chipalooza/sky130_be_ip__lsxo.sym # of pins=10
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_be_ip__lsxo.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_be_ip__lsxo.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_be_ip__lsxo.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_be_ip__lsxo.sch
 .subckt sky130_be_ip__lsxo avdd avss dvdd dvss ibias ena standby dout xin xout
 
 .ends
 
 
 * expanding   symbol:  chipalooza/sky130_ht_ip__hsxo_cpz1.sym # of pins=11
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ht_ip__hsxo_cpz1.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_ht_ip__hsxo_cpz1.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ht_ip__hsxo_cpz1.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_ht_ip__hsxo_cpz1.sch
 .subckt sky130_ht_ip__hsxo_cpz1 XOUT XIN ENA STDBY DOUT AVDD DVDD AVSS DVSS IBIAS GUARD
 
 .ends
 
 
 * expanding   symbol:  chipalooza/sky130_td_ip__opamp_hp.sym # of pins=9
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_td_ip__opamp_hp.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_td_ip__opamp_hp.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_td_ip__opamp_hp.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_td_ip__opamp_hp.sch
 .subckt sky130_td_ip__opamp_hp avdd vout ibias vinn vinp avss dvdd dvss ena
 
 .ends
 
 
 * expanding   symbol:  chipalooza/sky130_vbl_ip__overvoltage.sym # of pins=12
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_vbl_ip__overvoltage.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_vbl_ip__overvoltage.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_vbl_ip__overvoltage.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_vbl_ip__overvoltage.sch
 .subckt sky130_vbl_ip__overvoltage avdd dvdd ena vtrip[3] ibias vtrip[2] ovout vbg vtrip[1] vtrip[0] dvss avss
 
 .ends
 
 
 * expanding   symbol:  lvl_shift_invert.sym # of pins=6
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/lvl_shift_invert.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/lvl_shift_invert.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/lvl_shift_invert.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/lvl_shift_invert.sch
 .subckt lvl_shift_invert in1v8 out3v3 outb3v3 dvdd dvss avdd
 *.PININFO in1v8:I dvdd:B dvss:B avdd:B out3v3:O outb3v3:O
 x2 in1v8 dvdd dvss dvss avdd avdd out3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
@@ -1217,38 +1225,40 @@ x4 out3v3 dvss dvss avdd avdd outb3v3 sky130_fd_sc_hvl__inv_2
 
 
 * expanding   symbol:  analog_mux_sel1v8.sym # of pins=8
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/analog_mux_sel1v8.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/analog_mux_sel1v8.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/analog_mux_sel1v8.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/analog_mux_sel1v8.sch
 .subckt analog_mux_sel1v8 avss selA inA avdd inB out dvdd dvss
 *.PININFO selA:I avss:B out:B inA:B avdd:B inB:B dvdd:B dvss:B
 x1 net1 avss inA out avdd isolated_switch
 x2 selA dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
 x3 net2 avss inB out avdd isolated_switch
 x4 net1 dvss dvss avdd avdd net2 sky130_fd_sc_hvl__inv_2
+XD1 dvss selA sky130_fd_pr__diode_pw2nd_05v5 area=2.304e11 perim=1.92e6
 .ends
 
 
 * expanding   symbol:  isolated_switch_ena1v8.sym # of pins=7
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/isolated_switch_ena1v8.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/isolated_switch_ena1v8.sch
-.subckt isolated_switch_ena1v8 dvdd dvss avss on out in avdd
-*.PININFO on:I avss:B out:B in:B avdd:B
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/isolated_switch_ena1v8.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/isolated_switch_ena1v8.sch
+.subckt isolated_switch_ena1v8 avss on out in avdd dvdd dvss
+*.PININFO on:I avss:B out:B in:B avdd:B dvdd:B dvss:B
 x1 net1 avss out in avdd isolated_switch
 x2 on dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
+XD1 dvss on sky130_fd_pr__diode_pw2nd_05v5 area=2.304e11 perim=1.92e6
 .ends
 
 
 * expanding   symbol:  chipalooza/sky130_od_ip__tempsensor_ext_vp.sym # of pins=6
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_od_ip__tempsensor_ext_vp.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/chipalooza/sky130_od_ip__tempsensor_ext_vp.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_od_ip__tempsensor_ext_vp.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_od_ip__tempsensor_ext_vp.sch
 .subckt sky130_od_ip__tempsensor_ext_vp vbe1_out vdd vss vbg ena vbe2_out
 
 .ends
 
 
 * expanding   symbol:  weiser/bandgap.sym # of pins=5
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/weiser/bandgap.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/weiser/bandgap.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bandgap.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bandgap.sch
 .subckt bandgap vdd vbg vss bias trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9] trim[8] trim[7] trim[6] trim[5]
 + trim[4] trim[3] trim[2] trim[1] trim[0]
 
@@ -1256,16 +1266,16 @@ x2 on dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
 
 
 * expanding   symbol:  weiser/bias_basis_current.sym # of pins=4
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/weiser/bias_basis_current.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/weiser/bias_basis_current.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bias_basis_current.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bias_basis_current.sch
 .subckt bias_basis_current vdd vss ibp ibn
 
 .ends
 
 
 * expanding   symbol:  bias_nstack.sym # of pins=5
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_nstack.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_nstack.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/bias_nstack.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/bias_nstack.sch
 .subckt bias_nstack itail ena vcasc nbias avss
 *.PININFO avss:B ena:I nbias:I itail:B vcasc:B
 XM3 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
@@ -1276,8 +1286,8 @@ XD1 avss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 
 
 * expanding   symbol:  bias_pstack.sym # of pins=7
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_pstack.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/bias_pstack.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/bias_pstack.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/bias_pstack.sch
 .subckt bias_pstack avdd pbias pcasc vcasc enb avss itail
 *.PININFO avdd:B itail:B enb:I pcasc:I vcasc:B pbias:I avss:B
 XM13 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
@@ -1287,11 +1297,11 @@ XD1 avss enb sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 .ends
 
 
-* expanding   symbol:  gate_drive.sym # of pins=5
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/gate_drive.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/gate_drive.sch
-.subckt gate_drive IN_P IN_M VDD VSS OUT
-*.PININFO IN_M:I IN_P:I VDD:I VSS:I OUT:O
+* expanding   symbol:  gate_drive.sym # of pins=6
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/gate_drive.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/gate_drive.sch
+.subckt gate_drive IN_M IN_P OUT VDD VSS VSUB
+*.PININFO IN_M:I IN_P:I VDD:I VSS:I OUT:O VSUB:I
 XM1 net1 IN_P VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
 XM2 net1 S1_N VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
 XM3 S1_N IN_M VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
@@ -1308,8 +1318,8 @@ XM12 OUT S4_N VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=7 nf=1 m=60
 
 
 * expanding   symbol:  isolated_switch.sym # of pins=5
-** sym_path: /home/tim/gits/chipalooza_projects_1/xschem/isolated_switch.sym
-** sch_path: /home/tim/gits/chipalooza_projects_1/xschem/isolated_switch.sch
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/isolated_switch.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/isolated_switch.sch
 .subckt isolated_switch on vss out in vdd
 *.PININFO on:I out:B vdd:B vss:B in:B
 XM1 in onp net1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=8 nf=2 m=1

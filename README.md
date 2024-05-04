@@ -86,6 +86,21 @@ The projects on this tapeout and their source URLs are as follows:
 
 :---: | :---
 
+Building:
+
+The test chip is generated in magic by running magic in the mag/ directory
+and issuing the command "source construct_testchip.tcl".  There is
+currently no make target to clone the necessary project repositories.
+The location of the cells in each project repository is specified in
+the "construct_testchip.tcl" script.
+
+Verifying:
+
+In the top level directory, do "make run-precheck".  This requires at
+least setting environment variables PDK_ROOT, PDK, and PRECHECK_ROOT.
+If the PDK is installed with open_pdks, then PRECHECK_ROOT can be set
+to open_pdks/sources/precheck_sky130.
+
 Testing:
 
 All projects are connected either to the logic analyzer (128 I/O bits) or
