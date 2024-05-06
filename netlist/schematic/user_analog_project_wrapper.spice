@@ -174,13 +174,13 @@ x13 la_data_out[73] vdda1 vssa1 vssd1 vccd1 io_analog[2] power_stage
 x14 la_data_out[75] vdda1 vssa1 vssd1 vccd1 io_analog[1] power_stage
 x15 la_data_out[77] vdda1 vssa1 vssd1 vccd1 io_analog[0] power_stage
 X17 net4 gpio_analog[13] src_10000_1 vssd2 vssa2 io_analog[7] net2 net1 net3 lpopamp
-x18 io_analog[0] vssa1 io_out[0] vccd1 net13 vssd1 io_out[1] vbgB la_data_out[112] la_data_out[113] la_data_out[111] net14 net15
-+ la_data_out[107] la_data_out[106] la_data_out[108] net16 la_data_out[109] la_data_out[115] net17 la_data_out[114] la_data_in[117] io_out[5]
+x18 io_analog[0] vssa1 io_out[0] vccd1 net12 vssd1 io_out[1] vbgB la_data_out[112] la_data_out[113] la_data_out[111] net13 net14
++ la_data_out[107] la_data_out[106] la_data_out[108] net15 la_data_out[109] la_data_out[115] net16 la_data_out[114] la_data_in[117] io_out[5]
 + la_data_out[116] la_data_out[110] src_200_0 sky130_ajc_ip__brownout
-x19 io_analog[1] vssa1 vccd1 vssd1 vbgB io_out[6] net18 la_data_out[105] la_data_out[104] la_data_out[103] la_data_out[102] net19
+x19 io_analog[1] vssa1 vccd1 vssd1 vbgB io_out[6] net17 la_data_out[105] la_data_out[104] la_data_out[103] la_data_out[102] net18
 + la_data_out[100] la_data_out[101] src_200_1 sky130_ajc_ip__overvoltage
-x20 io_analog[2] net20 io_out[8] vssa1 vccd1 io_out[7] vssd1 io_out[3] vbgB io_out[2] la_data_out[96] la_data_out[97]
-+ la_data_out[98] net21 la_data_out[94] io_out[4] net22 la_data_out[93] la_data_out[92] la_data_in[120] la_data_in[119] la_data_out[99]
+x20 io_analog[2] net19 io_out[8] vssa1 vccd1 io_out[7] vssd1 io_out[3] vbgB io_out[2] la_data_out[96] la_data_out[97]
++ la_data_out[98] net20 la_data_out[94] io_out[4] net21 la_data_out[93] la_data_out[92] la_data_in[120] la_data_in[119] la_data_out[99]
 + la_data_out[95] src_200_2 sky130_ajc_ip__por
 x21 vccd2 io_analog[8] vssa2 net6 io_out[17] net5 la_data_out[28] la_data_out[29] la_data_out[30] la_data_out[25] la_data_out[26]
 + la_data_out[27] la_data_out[33] la_data_out[32] la_data_out[31] src_400 vssd2 sky130_ak_ip__comparator
@@ -203,11 +203,7 @@ x35 vssa1 la_data_out[123] gpio_analog[5] snk_3700 vdda1 vccd1 vssd1 isolated_sw
 x36 vssa1 la_data_out[122] vbgA vdda1 vbgB gpio_noesd[2] vccd1 vssd1 analog_mux_sel1v8
 x37 vssa1 la_data_out[121] gpio_analog[1] snk_5000_1 vdda1 vccd1 vssd1 isolated_switch_ena1v8
 x38 vssa1 la_data_out[118] gpio_analog[0] snk_test0 vdda1 vccd1 vssd1 isolated_switch_ena1v8
-x16 io_analog[5] net12 vssd2 net11 la_data_out[9] la_data_out[8] la_data_out[10] la_data_out[7] la_data_out[11] la_data_out[6]
-+ la_data_out[12] la_data_out[5] la_data_out[13] la_data_out[4] la_data_out[14] la_data_out[3] la_data_out[15] la_data_out[2] la_data_out[16]
-+ la_data_out[1] bandgap
-x39 io_analog[5] vssd2 net23 net11 bias_basis_current
-x40 vssa2 la_data_out[18] net12 vdda2 src_test0 gpio_analog[16] vccd2 vssd2 analog_mux_sel1v8
+x40 vssa2 la_data_out[18] net11 vdda2 src_test0 gpio_analog[16] vccd2 vssd2 analog_mux_sel1v8
 R1 vssd1 io_oeb[0] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
 R2 vssd1 io_oeb[1] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
 R3 vssd1 io_oeb[2] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
@@ -221,6 +217,9 @@ R10 vssd1 io_oeb[12] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
 R11 vssd1 io_oeb[13] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
 R12 vssd2 io_oeb[17] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
 R13 vssd2 io_oeb[23] sky130_fd_pr__res_generic_m3 W=1 L=1 m=1
+x27 io_analog[5] la_data_out[9] la_data_out[8] la_data_out[10] la_data_out[7] la_data_out[11] la_data_out[6] la_data_out[12]
++ la_data_out[5] la_data_out[13] la_data_out[4] la_data_out[14] la_data_out[3] la_data_out[15] la_data_out[2] la_data_out[16] la_data_out[1] net11
++ vssd2 vssd2 sky130_cw_ip__bandgap
 .ends
 
 
@@ -1256,19 +1255,11 @@ XD1 dvss on sky130_fd_pr__diode_pw2nd_05v5 area=2.304e11 perim=1.92e6
 .ends
 
 
-* expanding   symbol:  weiser/bandgap.sym # of pins=5
-** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bandgap.sym
-** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bandgap.sch
-.subckt bandgap vdd vbg vss bias trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9] trim[8] trim[7] trim[6] trim[5]
-+ trim[4] trim[3] trim[2] trim[1] trim[0]
-
-.ends
-
-
-* expanding   symbol:  weiser/bias_basis_current.sym # of pins=4
-** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bias_basis_current.sym
-** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/weiser/bias_basis_current.sch
-.subckt bias_basis_current vdd vss ibp ibn
+* expanding   symbol:  chipalooza/sky130_cw_ip__bandgap.sym # of pins=5
+** sym_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_cw_ip__bandgap.sym
+** sch_path: /home/tim/gits/chipalooza_projects_redef/xschem/chipalooza/sky130_cw_ip__bandgap.sch
+.subckt sky130_cw_ip__bandgap vdd trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9] trim[8] trim[7] trim[6] trim[5]
++ trim[4] trim[3] trim[2] trim[1] trim[0] vbg vss vsub
 
 .ends
 

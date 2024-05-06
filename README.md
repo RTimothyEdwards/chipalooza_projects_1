@@ -14,56 +14,67 @@ The projects on this tapeout and their source URLs are as follows:
 
 	1.  	High-speed crystal oscillator (4-16MHz)
 		hsxo-cpz1 
+		https://github.com/efabless/sky130_ht_ip__hsxo_cpz1 (forked)
 		https://github.com/htfab/hsxo-cpz1
 		Tamas Hubai
 
 	2.  	Brownout detector
 		sky130_ajc_ip__brownout
+		https://github.com/efabless/sky130_ajc_ip__brownout (forked)
 		https://github.com/ajcci/sky130_ajc_ip__brownout
 		Robin Tsang
 
 	3.  	Overvoltage detector
 		sky130_ajc_ip__overvoltage
+		https://github.com/efabless/sky130_ajc_ip__overvoltage (forked)
 		https://github.com/ajcci/sky130_ajc_ip__overvoltage
 		Robin Tsang
 
 	4.  	Power-on-Reset
 		sky130_ajc_ip__por
+		https://github.com/efabless/sky130_ajc_ip__por (forked)
 		https://github.com/ajcci/sky130_ajc_ip__por
 		Robin Tsang
 
 	5.  	Comparator
 		sky130_ak_ip__comparator
+		https://github.com/efabless/sky130_ak_ip__comparator (forked)
 		https://github.com/andrewkkang/sky130_ak_ip__comparator
 		Andrew Kang
 
 	6.  	Low-speed crystal oscillator (32kHz)
 		sky130_be_ip__lsxo
+		https://github.com/efabless/sky130_be_ip__lsxo (forked)
 		https://github.com/b-etz/sky130_be_ip__lsxo
 		Brady Etz
 
 	7.  	Temperature sensor
 		sky130_od_ip__tempsensor
+		https://github.com/efabless/sky130_od_ip__tempsensor (forked)
 		https://github.com/ordicker/sky130_od_ip__tempsensor
 		Or Dicker
 
 	8.  	Low power operational amplifier
 		sky130_rodovalho_ip__lpopamp
+		https://github.com/efabless/sky130_rodovalho_ip__lpopamp (forked)
 		https://github.com/lhrodovalho/sky130_rodovalho_ip__lpopamp
 		Luis Henrique Rodovalho
 
 	9.  	High gain-bandwidth operational amplifier
 		sky130_td_ip__opamp_hp
+		https://github.com/efabless/sky130_td_ip__opamp_hp (forked)
 		https://github.com/tdextrous/sky130_td_ip__opamp_hp
 		Thomas Dexter
 
 	10. 	Overvoltage detector
 		sky130_vbl_ip__overvoltage
+		https://github.com/efabless/sky130_vbl_ip__overvoltage (forked)
 		https://github.com/LDFranck/sky130_vbl_ip__overvoltage
 		Lucas Franck, William Orlato, and Toni Tejada
 
 	11.	Bandgap (not from Chipalooza)
 		bandgap
+		https://github.com/efabless/sky130_cw_ip (forked)
 		https://github.com/christoph-weiser/mpw7
 		Christoph Weiser
 
@@ -88,11 +99,12 @@ The projects on this tapeout and their source URLs are as follows:
 
 Building:
 
+Get the dependencies above by doing "make get_ip_blocks" in the top level
+directory.  This will clone all of the IP blocks from various github
+repository sources into the "dependencies" directory.
+
 The test chip is generated in magic by running magic in the mag/ directory
-and issuing the command "source construct_testchip.tcl".  There is
-currently no make target to clone the necessary project repositories.
-The location of the cells in each project repository is specified in
-the "construct_testchip.tcl" script.
+and issuing the command "source construct_testchip.tcl".
 
 Verifying:
 

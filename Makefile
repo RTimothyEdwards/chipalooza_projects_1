@@ -18,6 +18,7 @@ CARAVEL_ROOT?=$(PWD)/caravel
 PRECHECK_ROOT?=${HOME}/mpw_precheck
 SIM ?= RTL
 CUP_ROOT?=$(PWD)
+IP_ROOT?=$(PWD)/dependencies
 
 SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
 export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
@@ -38,6 +39,79 @@ else
 	CARAVEL_REPO := https://github.com/efabless/caravel
 	CARAVEL_TAG := $(MPW_TAG)
 endif
+
+# Get IP blocks used in this test chip
+
+EFABLESS_URL=https://github.com/efabless
+HSXO_IP=sky130_ht_ip__hsxo_cpz1
+BROWNOUT_IP=sky130_ajc_ip__brownout
+OVERVOLTAGE1_IP=sky130_ajc_ip__overvoltage
+POR_IP=sky130_ajc_ip__por
+COMPARATOR_IP=sky130_ak_ip__comparator
+LSXO_IP=sky130_be_ip__lsxo
+TEMPSENSOR_IP=sky130_od_ip__tempsensor
+LPOPAMP_IP=sky130_rodovalho_ip__lpopamp
+HPOPAMP_IP=sky130_td_ip__opamp_hp
+OVERVOLTAGE2_IP=sky130_vbl_ip__overvoltage
+BANDGAP_IP=sky130_cw_ip
+
+.PHONY: get_ip_blocks
+get_ip_blocks: check_dependencies
+	@if [ ! -d "$(IP_ROOT)/$(HSXO_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(HSXO_IP) \
+			$(IP_ROOT)/$(HSXO_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(BROWNOUT_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(BROWNOUT_IP) \
+			$(IP_ROOT)/$(BROWNOUT_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(OVERVOLTAGE1_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(OVERVOLTAGE1_IP) \
+			$(IP_ROOT)/$(OVERVOLTAGE1_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(POR_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(POR_IP) \
+			$(IP_ROOT)/$(POR_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(COMPARATOR_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(COMPARATOR_IP) \
+			$(IP_ROOT)/$(COMPARATOR_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(LSXO_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(LSXO_IP) \
+			$(IP_ROOT)/$(LSXO_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(TEMPSENSOR_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(TEMPSENSOR_IP) \
+			$(IP_ROOT)/$(TEMPSENSOR_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(LPOPAMP_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(LPOPAMP_IP) \
+			$(IP_ROOT)/$(LPOPAMP_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(HPOPAMP_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(HPOPAMP_IP) \
+			$(IP_ROOT)/$(HPOPAMP_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(OVERVOLTAGE2_IP)" ]; then \
+		git clone --depth=1 --branch=tapeout_ci2404 \
+			$(EFABLESS_URL)/$(OVERVOLTAGE2_IP) \
+			$(IP_ROOT)/$(OVERVOLTAGE2_IP) ; \
+	fi
+	@if [ ! -d "$(IP_ROOT)/$(BANDGAP_IP)" ]; then \
+		git clone --depth=1 \
+			$(EFABLESS_URL)/$(BANDGAP_IP) \
+			$(IP_ROOT)/$(BANDGAP_IP) ; \
+	fi
 
 # Include Caravel Makefile Targets
 .PHONY: % : check-caravel

@@ -22,24 +22,25 @@ if {[catch {set PDK_ROOT $::env(PDK_ROOT)}]} {
 if {[catch {set PDK $::env(PDK)}]} {
     set PDK sky130A
 }
+if {[catch {set IP_ROOT $::env(IP_ROOT)}]} {
+    set IP_ROOT ../dependencies/
+}
 
-# Pull all layout of individual projects.  NOTE:  Need a Makefile and
-# build target to handle cloning repositories, or let CACE handle it.
+# Pull all layout of individual projects.
+# NOTE: IP_ROOT is set in the top level Makefile.  Use "make get_ip_blocks"
+# in the top level directory to clone all of the repositories.
 
-addpath ../../chipalooza_forked/sky130_ht_ip__hsxo_cpz1/mag
-addpath ../../chipalooza_forked/sky130_ak_ip__comparator/mag
-addpath ../../chipalooza_forked/sky130_od_ip__tempsensor/mag
-addpath ../../chipalooza_forked/sky130_td_ip__opamp_hp/mag
-addpath ../../chipalooza_forked/sky130_vbl_ip__overvoltage/mag
-addpath ../../chipalooza_forked/sky130_be_ip__lsxo/mag
-addpath ../../chipalooza_forked/sky130_rodovalho_ip__lpopamp/mag
-addpath ../../chipalooza_forked/sky130_ajc_ip__brownout/mag
-addpath ../../chipalooza_forked/sky130_ajc_ip__por/mag
-addpath ../../chipalooza_forked/sky130_ajc_ip__overvoltage/mag
-
-# Non-chipalooza items, GDS only
-gds read ../../weiser_analog_mpw7/gds/bandgap.gds
-gds read ../../weiser_analog_mpw7/gds/bias_basis_current.gds
+addpath ${IP_ROOT}/sky130_ht_ip__hsxo_cpz1/mag
+addpath ${IP_ROOT}/sky130_ak_ip__comparator/mag
+addpath ${IP_ROOT}/sky130_od_ip__tempsensor/mag
+addpath ${IP_ROOT}/sky130_td_ip__opamp_hp/mag
+addpath ${IP_ROOT}/sky130_vbl_ip__overvoltage/mag
+addpath ${IP_ROOT}/sky130_be_ip__lsxo/mag
+addpath ${IP_ROOT}/sky130_rodovalho_ip__lpopamp/mag
+addpath ${IP_ROOT}/sky130_ajc_ip__brownout/mag
+addpath ${IP_ROOT}/sky130_ajc_ip__por/mag
+addpath ${IP_ROOT}/sky130_ajc_ip__overvoltage/mag
+addpath ${IP_ROOT}/sky130_cw_ip/mag
 
 # Load the project wrapper cell.  Dereference any cell locations;  cells
 # shoud only come from known paths.

@@ -2413,40 +2413,6 @@ brownout_ana_0/comparator_0/vt             |(no matching pin)
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_ajc_ip__brownout and sky130_ajc_ip__brownout are equivalent.
-Flattening unmatched subcell bb__pmirr in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bbp__M5 in circuit bias_basis_current (0)(8 instances)
-Flattening unmatched subcell bbp__M6 in circuit bias_basis_current (0)(2 instances)
-Flattening unmatched subcell bbp__M4 in circuit bias_basis_current (0)(4 instances)
-Flattening unmatched subcell bbp__M4_nc in circuit bias_basis_current (0)(4 instances)
-Flattening unmatched subcell bb__nmirr in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bbn__M2 in circuit bias_basis_current (0)(32 instances)
-Flattening unmatched subcell bbn__M3 in circuit bias_basis_current (0)(2 instances)
-Flattening unmatched subcell bbn__M1 in circuit bias_basis_current (0)(8 instances)
-Flattening unmatched subcell bb__r1 in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bb__M10 in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bb__M9 in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bb__M7 in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bb__R2 in circuit bias_basis_current (0)(1 instance)
-Flattening unmatched subcell bb__M8 in circuit bias_basis_current (0)(1 instance)
-
-Cell bias_basis_current (1) disconnected node: vdd
-Cell bias_basis_current (1) disconnected node: vss
-Cell bias_basis_current (1) disconnected node: ibp
-Cell bias_basis_current (1) disconnected node: ibn
-Class bias_basis_current (0):  Merged 54 parallel devices.
-Class bias_basis_current (0):  Merged 2 series devices.
-
-Subcircuit pins:
-Circuit 1: bias_basis_current              |Circuit 2: bias_basis_current              
--------------------------------------------|-------------------------------------------
-vdd                                        |vdd                                        
-ibp                                        |ibp                                        
-ibn                                        |ibn                                        
-vss                                        |vss                                        
-vsu                                        |(no matching pin)                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes bias_basis_current and bias_basis_current are equivalent.
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_W75H7K in circuit sky130_td_ip__opamp_hp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CVG6CD in circuit sky130_td_ip__opamp_hp (0)(18 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WKXP7K in circuit sky130_td_ip__opamp_hp (0)(1 instance)
@@ -2567,8 +2533,8 @@ Flattening unmatched subcell sky130_fd_pr__nfet_01v8_723X3M in circuit sky130_ht
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_MPZGNS in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
 Flattening unmatched subcell vittoz_pierce_osc in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_JULQJE in circuit sky130_ht_ip__hsxo_cpz1 (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_KDBUUD in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_844AHT in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_KDBUUD in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_YNEQJ5 in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_MJGQJ3 in circuit sky130_ht_ip__hsxo_cpz1 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_E4ZTVH in circuit sky130_ht_ip__hsxo_cpz1 (0)(3 instances)
@@ -2707,97 +2673,6 @@ avss                                       |avss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_vbl_ip__overvoltage and sky130_vbl_ip__overvoltage are equivalent.
-Flattening unmatched subcell bg__cap in circuit bandgap (0)(11 instances)
-Flattening unmatched subcell bg__res in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bg__trim in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgt__MN in circuit bandgap (0)(16 instances)
-Flattening unmatched subcell bgt__res in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bg__startup in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgs__M3_M4 in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgs__M5_M6 in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgs__M7 in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bg__M1_M2 in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bg__pnp_group in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgpg__pnp in circuit bandgap (0)(9 instances)
-Flattening unmatched subcell bg__se_folded_cascode_p in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfc__pmirr in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfcpm__DUM in circuit bandgap (0)(32 instances)
-Flattening unmatched subcell bgfcpm__M1 in circuit bandgap (0)(16 instances)
-Flattening unmatched subcell bgfcpm__MB2 in circuit bandgap (0)(4 instances)
-Flattening unmatched subcell bgfcpm__MB3 in circuit bandgap (0)(4 instances)
-Flattening unmatched subcell bgfc__nmirr in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfcnm__M4 in circuit bandgap (0)(16 instances)
-Flattening unmatched subcell bgfcnm__M5 in circuit bandgap (0)(16 instances)
-Flattening unmatched subcell bgfcnm__MB5 in circuit bandgap (0)(4 instances)
-Flattening unmatched subcell bgfcnm__DUM in circuit bandgap (0)(44 instances)
-Flattening unmatched subcell bgfc__casp_top in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfccpt__DUM in circuit bandgap (0)(24 instances)
-Flattening unmatched subcell bgfccpt__M11 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfccpt__M10 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfc__casn_top in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfccnt__M6 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfccnt__DUM in circuit bandgap (0)(28 instances)
-Flattening unmatched subcell bgfccnt__M7 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfccnt__MB4 in circuit bandgap (0)(4 instances)
-Flattening unmatched subcell bgfc__diffpair_p in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfcdpp__M3 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfcdpp__M2 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfcdpp__DUM in circuit bandgap (0)(4 instances)
-Flattening unmatched subcell bgfc__casp_bot in circuit bandgap (0)(1 instance)
-Flattening unmatched subcell bgfccpb__M8 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfccpb__M9 in circuit bandgap (0)(8 instances)
-Flattening unmatched subcell bgfccpb__DUM in circuit bandgap (0)(28 instances)
-Flattening unmatched subcell bgfccpb__MB1 in circuit bandgap (0)(4 instances)
-
-Cell bandgap (1) disconnected node: vdd
-Cell bandgap (1) disconnected node: vbg
-Cell bandgap (1) disconnected node: vss
-Cell bandgap (1) disconnected node: bias
-Cell bandgap (1) disconnected node: trim[15]
-Cell bandgap (1) disconnected node: trim[14]
-Cell bandgap (1) disconnected node: trim[13]
-Cell bandgap (1) disconnected node: trim[12]
-Cell bandgap (1) disconnected node: trim[11]
-Cell bandgap (1) disconnected node: trim[10]
-Cell bandgap (1) disconnected node: trim[9]
-Cell bandgap (1) disconnected node: trim[8]
-Cell bandgap (1) disconnected node: trim[7]
-Cell bandgap (1) disconnected node: trim[6]
-Cell bandgap (1) disconnected node: trim[5]
-Cell bandgap (1) disconnected node: trim[4]
-Cell bandgap (1) disconnected node: trim[3]
-Cell bandgap (1) disconnected node: trim[2]
-Cell bandgap (1) disconnected node: trim[1]
-Cell bandgap (1) disconnected node: trim[0]
-Class bandgap (0):  Merged 288 parallel devices.
-Class bandgap (0):  Merged 18 series devices.
-
-Subcircuit pins:
-Circuit 1: bandgap                         |Circuit 2: bandgap                         
--------------------------------------------|-------------------------------------------
-vbg                                        |vbg                                        
-trim[15]                                   |trim[15]                                   
-trim[13]                                   |trim[13]                                   
-trim[11]                                   |trim[11]                                   
-trim[9]                                    |trim[9]                                    
-trim[7]                                    |trim[7]                                    
-trim[5]                                    |trim[5]                                    
-trim[3]                                    |trim[3]                                    
-trim[1]                                    |trim[1]                                    
-trim[0]                                    |trim[0]                                    
-trim[2]                                    |trim[2]                                    
-trim[4]                                    |trim[4]                                    
-trim[6]                                    |trim[6]                                    
-trim[8]                                    |trim[8]                                    
-trim[10]                                   |trim[10]                                   
-trim[12]                                   |trim[12]                                   
-trim[14]                                   |trim[14]                                   
-bias                                       |bias                                       
-vdd                                        |vdd                                        
-vss                                        |vss                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes bandgap and bandgap are equivalent.
 
 Subcircuit summary:
 Circuit 1: lvl_shift_invert                |Circuit 2: lvl_shift_invert                
@@ -2851,6 +2726,115 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_od_ip__tempsensor_ext_vp and sky130_od_ip__tempsensor_ext_vp are equivalent.
+Flattening unmatched subcell bias_basis_current in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bb__pmirr in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bbp__M5 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bbp__M6 in circuit sky130_cw_ip__bandgap (0)(2 instances)
+Flattening unmatched subcell bbp__M4 in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bbp__M4_nc in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bb__nmirr in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bbn__M2 in circuit sky130_cw_ip__bandgap (0)(32 instances)
+Flattening unmatched subcell bbn__M3 in circuit sky130_cw_ip__bandgap (0)(2 instances)
+Flattening unmatched subcell bbn__M1 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bb__r1 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bb__M10 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bb__M9 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bb__M7 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bb__R2 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bb__M8 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bandgap_cw in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bg__cap in circuit sky130_cw_ip__bandgap (0)(11 instances)
+Flattening unmatched subcell bg__res in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bg__trim in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgt__MN in circuit sky130_cw_ip__bandgap (0)(16 instances)
+Flattening unmatched subcell bgt__res in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bg__startup in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgs__M3_M4 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgs__M5_M6 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgs__M7 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bg__M1_M2 in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bg__pnp_group in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgpg__pnp in circuit sky130_cw_ip__bandgap (0)(9 instances)
+Flattening unmatched subcell bg__se_folded_cascode_p in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfc__pmirr in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfcpm__DUM in circuit sky130_cw_ip__bandgap (0)(32 instances)
+Flattening unmatched subcell bgfcpm__M1 in circuit sky130_cw_ip__bandgap (0)(16 instances)
+Flattening unmatched subcell bgfcpm__MB2 in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bgfcpm__MB3 in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bgfc__nmirr in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfcnm__M4 in circuit sky130_cw_ip__bandgap (0)(16 instances)
+Flattening unmatched subcell bgfcnm__M5 in circuit sky130_cw_ip__bandgap (0)(16 instances)
+Flattening unmatched subcell bgfcnm__MB5 in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bgfcnm__DUM in circuit sky130_cw_ip__bandgap (0)(44 instances)
+Flattening unmatched subcell bgfc__casp_top in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfccpt__DUM in circuit sky130_cw_ip__bandgap (0)(24 instances)
+Flattening unmatched subcell bgfccpt__M11 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfccpt__M10 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfc__casn_top in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfccnt__M6 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfccnt__DUM in circuit sky130_cw_ip__bandgap (0)(28 instances)
+Flattening unmatched subcell bgfccnt__M7 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfccnt__MB4 in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bgfc__diffpair_p in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfcdpp__M3 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfcdpp__M2 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfcdpp__DUM in circuit sky130_cw_ip__bandgap (0)(4 instances)
+Flattening unmatched subcell bgfc__casp_bot in circuit sky130_cw_ip__bandgap (0)(1 instance)
+Flattening unmatched subcell bgfccpb__M8 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfccpb__M9 in circuit sky130_cw_ip__bandgap (0)(8 instances)
+Flattening unmatched subcell bgfccpb__DUM in circuit sky130_cw_ip__bandgap (0)(28 instances)
+Flattening unmatched subcell bgfccpb__MB1 in circuit sky130_cw_ip__bandgap (0)(4 instances)
+
+Cell sky130_cw_ip__bandgap (0) disconnected node: vsub
+Cell sky130_cw_ip__bandgap (1) disconnected node: vdd
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[15]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[14]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[13]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[12]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[11]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[10]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[9]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[8]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[7]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[6]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[5]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[4]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[3]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[2]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[1]
+Cell sky130_cw_ip__bandgap (1) disconnected node: trim[0]
+Cell sky130_cw_ip__bandgap (1) disconnected node: vbg
+Cell sky130_cw_ip__bandgap (1) disconnected node: vss
+Cell sky130_cw_ip__bandgap (1) disconnected node: vsub
+Class sky130_cw_ip__bandgap (0):  Merged 342 parallel devices.
+Class sky130_cw_ip__bandgap (0):  Merged 20 series devices.
+
+Subcircuit pins:
+Circuit 1: sky130_cw_ip__bandgap           |Circuit 2: sky130_cw_ip__bandgap           
+-------------------------------------------|-------------------------------------------
+trim[0]                                    |trim[0]                                    
+trim[4]                                    |trim[4]                                    
+trim[6]                                    |trim[6]                                    
+trim[10]                                   |trim[10]                                   
+trim[12]                                   |trim[12]                                   
+trim[14]                                   |trim[14]                                   
+trim[15]                                   |trim[15]                                   
+trim[13]                                   |trim[13]                                   
+trim[11]                                   |trim[11]                                   
+trim[7]                                    |trim[7]                                    
+trim[5]                                    |trim[5]                                    
+trim[3]                                    |trim[3]                                    
+trim[1]                                    |trim[1]                                    
+trim[2]                                    |trim[2]                                    
+vbg                                        |vbg                                        
+trim[8]                                    |trim[8]                                    
+trim[9]                                    |trim[9]                                    
+vdd                                        |vdd                                        
+vsub                                       |vsub                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_cw_ip__bandgap and sky130_cw_ip__bandgap are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_RBNV2H in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell por_ana in circuit sky130_ajc_ip__por (0)(1 instance)
 Flattening unmatched subcell rstring_mux in circuit sky130_ajc_ip__por (0)(1 instance)
@@ -3812,21 +3796,20 @@ bias_pstack (440)                          |bias_pstack (440)
 power_stage (14)                           |power_stage (14)                           
 sky130_ajc_ip__overvoltage (1)             |sky130_ajc_ip__overvoltage (1)             
 sky130_ajc_ip__brownout (1)                |sky130_ajc_ip__brownout (1)                
-bias_basis_current (1)                     |bias_basis_current (1)                     
 sky130_td_ip__opamp_hp (1)                 |sky130_td_ip__opamp_hp (1)                 
 analog_mux_sel1v8 (6)                      |analog_mux_sel1v8 (6)                      
 sky130_ht_ip__hsxo_cpz1 (1)                |sky130_ht_ip__hsxo_cpz1 (1)                
 isolated_switch_ena1v8 (5)                 |isolated_switch_ena1v8 (5)                 
 sky130_vbl_ip__overvoltage (1)             |sky130_vbl_ip__overvoltage (1)             
-bandgap (1)                                |bandgap (1)                                
 lvl_shift_invert (1)                       |lvl_shift_invert (1)                       
 sky130_od_ip__tempsensor_ext_vp (1)        |sky130_od_ip__tempsensor_ext_vp (1)        
+sky130_cw_ip__bandgap (1)                  |sky130_cw_ip__bandgap (1)                  
 sky130_ajc_ip__por (1)                     |sky130_ajc_ip__por (1)                     
 sky130_ak_ip__comparator (1)               |sky130_ak_ip__comparator (1)               
 sky130_rodovalho_ip__lpopamp (1)           |lpopamp (1)                                
 sky130_fd_pr__res_generic_m3 (13)          |sky130_fd_pr__res_generic_m3 (13)          
-Number of devices: 933                     |Number of devices: 933                     
-Number of nets: 1092                       |Number of nets: 1092                       
+Number of devices: 932                     |Number of devices: 932                     
+Number of nets: 1089                       |Number of nets: 1089                       
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
@@ -3844,7 +3827,6 @@ la_data_out[125]                           |la_data_out[125]
 la_data_out[81]                            |la_data_out[81]                            
 la_data_out[82]                            |la_data_out[82]                            
 la_data_out[80]                            |la_data_out[80]                            
-io_analog[5]                               |io_analog[5]                               
 la_data_out[41]                            |la_data_out[41]                            
 la_data_out[42]                            |la_data_out[42]                            
 la_data_out[43]                            |la_data_out[43]                            
@@ -3860,11 +3842,11 @@ gpio_analog[17]                            |gpio_analog[17]
 la_data_out[48]                            |la_data_out[48]                            
 la_data_out[39]                            |la_data_out[39]                            
 la_data_out[62]                            |la_data_out[62]                            
-la_data_out[58]                            |la_data_out[58]                            
 la_data_out[60]                            |la_data_out[60]                            
 la_data_out[56]                            |la_data_out[56]                            
 la_data_out[54]                            |la_data_out[54]                            
 la_data_out[52]                            |la_data_out[52]                            
+la_data_out[58]                            |la_data_out[58]                            
 la_data_out[50]                            |la_data_out[50]                            
 la_data_out[67]                            |la_data_out[67]                            
 la_data_out[71]                            |la_data_out[71]                            
@@ -3961,6 +3943,21 @@ la_data_out[124]                           |la_data_out[124]
 la_data_out[118]                           |la_data_out[118]                           
 gpio_analog[6]                             |gpio_analog[6]                             
 gpio_analog[0]                             |gpio_analog[0]                             
+la_data_out[18]                            |la_data_out[18]                            
+gpio_analog[16]                            |gpio_analog[16]                            
+io_oeb[0]                                  |io_oeb[0]                                  
+io_oeb[1]                                  |io_oeb[1]                                  
+io_oeb[2]                                  |io_oeb[2]                                  
+io_oeb[3]                                  |io_oeb[3]                                  
+io_oeb[4]                                  |io_oeb[4]                                  
+io_oeb[5]                                  |io_oeb[5]                                  
+io_oeb[6]                                  |io_oeb[6]                                  
+io_oeb[7]                                  |io_oeb[7]                                  
+io_oeb[8]                                  |io_oeb[8]                                  
+io_oeb[12]                                 |io_oeb[12]                                 
+io_oeb[13]                                 |io_oeb[13]                                 
+io_oeb[17]                                 |io_oeb[17]                                 
+io_oeb[23]                                 |io_oeb[23]                                 
 la_data_out[9]                             |la_data_out[9]                             
 la_data_out[8]                             |la_data_out[8]                             
 la_data_out[10]                            |la_data_out[10]                            
@@ -3977,21 +3974,6 @@ la_data_out[15]                            |la_data_out[15]
 la_data_out[2]                             |la_data_out[2]                             
 la_data_out[16]                            |la_data_out[16]                            
 la_data_out[1]                             |la_data_out[1]                             
-la_data_out[18]                            |la_data_out[18]                            
-gpio_analog[16]                            |gpio_analog[16]                            
-io_oeb[0]                                  |io_oeb[0]                                  
-io_oeb[1]                                  |io_oeb[1]                                  
-io_oeb[2]                                  |io_oeb[2]                                  
-io_oeb[3]                                  |io_oeb[3]                                  
-io_oeb[4]                                  |io_oeb[4]                                  
-io_oeb[5]                                  |io_oeb[5]                                  
-io_oeb[6]                                  |io_oeb[6]                                  
-io_oeb[7]                                  |io_oeb[7]                                  
-io_oeb[8]                                  |io_oeb[8]                                  
-io_oeb[12]                                 |io_oeb[12]                                 
-io_oeb[13]                                 |io_oeb[13]                                 
-io_oeb[17]                                 |io_oeb[17]                                 
-io_oeb[23]                                 |io_oeb[23]                                 
 sky130_be_ip__lsxo_0/avss_ip               |(no matching pin)                          
 sky130_be_ip__lsxo_0/dvss_ip               |(no matching pin)                          
 sky130_ajc_ip__brownout_0/brown            |(no matching pin)                          
@@ -4011,6 +3993,7 @@ io_analog[9]                               |io_analog[9]
 io_analog[8]                               |io_analog[8]                               
 io_analog[7]                               |io_analog[7]                               
 io_analog[6]                               |io_analog[6]                               
+io_analog[5]                               |io_analog[5]                               
 io_analog[4]                               |io_analog[4]                               
 io_analog[3]                               |io_analog[3]                               
 io_analog[2]                               |io_analog[2]                               
@@ -5525,21 +5508,20 @@ bias_pstack (440)                          |bias_pstack (440)
 power_stage (14)                           |power_stage (14)                           
 sky130_ajc_ip__overvoltage (1)             |sky130_ajc_ip__overvoltage (1)             
 sky130_ajc_ip__brownout (1)                |sky130_ajc_ip__brownout (1)                
-bias_basis_current (1)                     |bias_basis_current (1)                     
 sky130_td_ip__opamp_hp (1)                 |sky130_td_ip__opamp_hp (1)                 
 analog_mux_sel1v8 (6)                      |analog_mux_sel1v8 (6)                      
 sky130_ht_ip__hsxo_cpz1 (1)                |sky130_ht_ip__hsxo_cpz1 (1)                
 isolated_switch_ena1v8 (5)                 |isolated_switch_ena1v8 (5)                 
 sky130_vbl_ip__overvoltage (1)             |sky130_vbl_ip__overvoltage (1)             
-bandgap (1)                                |bandgap (1)                                
 lvl_shift_invert (1)                       |lvl_shift_invert (1)                       
 sky130_od_ip__tempsensor_ext_vp (1)        |sky130_od_ip__tempsensor_ext_vp (1)        
+sky130_cw_ip__bandgap (1)                  |sky130_cw_ip__bandgap (1)                  
 sky130_ajc_ip__por (1)                     |sky130_ajc_ip__por (1)                     
 sky130_ak_ip__comparator (1)               |sky130_ak_ip__comparator (1)               
 sky130_rodovalho_ip__lpopamp (1)           |lpopamp (1)                                
 sky130_fd_pr__res_generic_m3 (13)          |sky130_fd_pr__res_generic_m3 (13)          
-Number of devices: 933                     |Number of devices: 933                     
-Number of nets: 1092                       |Number of nets: 1092                       
+Number of devices: 932                     |Number of devices: 932                     
+Number of nets: 1089                       |Number of nets: 1089                       
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
@@ -5569,12 +5551,12 @@ la_data_out[43]                            |la_data_out[43]
 la_data_out[42]                            |la_data_out[42]                            
 la_data_out[41]                            |la_data_out[41]                            
 la_data_out[125]                           |la_data_out[125]                           
-io_analog[5]                               |io_analog[5]                               
 io_analog[10]                              |io_analog[10]                              
 io_analog[9]                               |io_analog[9]                               
 io_analog[8]                               |io_analog[8]                               
 io_analog[7]                               |io_analog[7]                               
 io_analog[6]                               |io_analog[6]                               
+io_analog[5]                               |io_analog[5]                               
 io_analog[4]                               |io_analog[4]                               
 io_analog[3]                               |io_analog[3]                               
 io_analog[2]                               |io_analog[2]                               
@@ -5674,11 +5656,11 @@ la_data_out[73]                            |la_data_out[73]
 la_data_out[69]                            |la_data_out[69]                            
 la_data_out[65]                            |la_data_out[65]                            
 la_data_out[62]                            |la_data_out[62]                            
-la_data_out[58]                            |la_data_out[58]                            
 la_data_out[60]                            |la_data_out[60]                            
 la_data_out[56]                            |la_data_out[56]                            
 la_data_out[54]                            |la_data_out[54]                            
 la_data_out[52]                            |la_data_out[52]                            
+la_data_out[58]                            |la_data_out[58]                            
 la_data_out[50]                            |la_data_out[50]                            
 la_data_out[48]                            |la_data_out[48]                            
 la_data_out[39]                            |la_data_out[39]                            
