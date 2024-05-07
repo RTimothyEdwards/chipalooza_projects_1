@@ -86,33 +86,33 @@ lab=io_analog[6]}
 N -560 -150 -400 -150 {
 lab=io_analog[5]}
 N -520 -250 -400 -250 {
-lab=la_data_out[50]}
+lab=la_data_in[50]}
 N -520 -440 -400 -440 {
-lab=la_data_out[52]}
+lab=la_data_in[52]}
 N -510 -600 -390 -600 {
-lab=la_data_out[54]}
+lab=la_data_in[54]}
 N -500 -750 -380 -750 {
-lab=la_data_out[56]}
+lab=la_data_in[56]}
 N -520 -910 -400 -910 {
-lab=la_data_out[58]}
+lab=la_data_in[58]}
 N -520 -1080 -400 -1080 {
-lab=la_data_out[60]}
+lab=la_data_in[60]}
 N -520 -1220 -400 -1220 {
-lab=la_data_out[62]}
+lab=la_data_in[62]}
 N 270 -1230 390 -1230 {
-lab=la_data_out[65]}
+lab=la_data_in[65]}
 N 270 -1080 390 -1080 {
-lab=la_data_out[67]}
+lab=la_data_in[67]}
 N 270 -920 390 -920 {
-lab=la_data_out[69]}
+lab=la_data_in[69]}
 N 270 -760 390 -760 {
-lab=la_data_out[71]}
+lab=la_data_in[71]}
 N 270 -600 390 -600 {
-lab=la_data_out[73]}
+lab=la_data_in[73]}
 N 270 -440 390 -440 {
-lab=la_data_out[75]}
+lab=la_data_in[75]}
 N 270 -260 390 -260 {
-lab=la_data_out[77]}
+lab=la_data_in[77]}
 N 270 -160 430 -160 {
 lab=io_analog[0]}
 N 270 -340 430 -340 {
@@ -130,45 +130,45 @@ lab=io_analog[4]}
 N -570 -1250 -490 -1250 {
 lab=vssd2}
 N -520 610 -400 610 {
-lab=la_data_out[79]}
+lab=la_data_in[79]}
 N -520 590 -400 590 {
-lab=la_data_out[80]}
+lab=la_data_in[80]}
 N -520 570 -400 570 {
-lab=la_data_out[83]}
+lab=la_data_in[83]}
 N -520 550 -400 550 {
-lab=la_data_out[81]}
+lab=la_data_in[81]}
 N -520 530 -400 530 {
-lab=la_data_out[82]}
+lab=la_data_in[82]}
 N -520 510 -400 510 {
-lab=la_data_out[84]}
+lab=la_data_in[84]}
 N -520 490 -400 490 {
-lab=la_data_out[125]}
+lab=la_data_in[125]}
 N -520 470 -400 470 {
-lab=la_data_out[78]}
+lab=la_data_in[78]}
 N -520 450 -400 450 {
-lab=la_data_out[43]}
+lab=la_data_in[43]}
 N -520 430 -400 430 {
-lab=la_data_out[39]}
+lab=la_data_in[39]}
 N -520 410 -400 410 {
-lab=la_data_out[45]}
+lab=la_data_in[45]}
 N -520 390 -400 390 {
-lab=la_data_out[49]}
+lab=la_data_in[49]}
 N -520 370 -400 370 {
-lab=la_data_out[47]}
+lab=la_data_in[47]}
 N -520 350 -400 350 {
-lab=la_data_out[46]}
+lab=la_data_in[46]}
 N -520 330 -400 330 {
-lab=la_data_out[38]}
+lab=la_data_in[38]}
 N -520 310 -400 310 {
-lab=la_data_out[42]}
+lab=la_data_in[42]}
 N -520 290 -400 290 {
-lab=la_data_out[40]}
+lab=la_data_in[40]}
 N -520 270 -400 270 {
-lab=la_data_out[44]}
+lab=la_data_in[44]}
 N -520 250 -400 250 {
-lab=la_data_out[41]}
+lab=la_data_in[41]}
 N -520 230 -400 230 {
-lab=la_data_out[48]}
+lab=la_data_in[48]}
 N -520 210 -400 210 {
 lab=gpio_analog[17]}
 N -100 590 20 590 {
@@ -334,15 +334,15 @@ lab=gpio_analog[14]}
 N -2400 420 -2350 420 {
 lab=gpio_analog[15]}
 N -2790 360 -2740 360 {
-lab=la_data_out[19]}
+lab=la_data_in[19]}
 N -2790 380 -2740 380 {
-lab=la_data_out[20]}
+lab=la_data_in[20]}
 N -2790 320 -2740 320 {
 lab=src_10000_0}
 N -2400 400 -2360 400 {
 lab=io_out[23]}
 N -3390 980 -3310 980 {
-lab=la_data_out[18]}
+lab=la_data_in[18]}
 N -2480 -130 -2430 -130 {
 lab=gpio_analog[13]}
 N -2720 100 -2660 100 {
@@ -360,7 +360,7 @@ lab=#net2}
 N -2750 60 -2660 60 {
 lab=#net2}
 N -3270 20 -3210 20 {
-lab=la_data_out[21]}
+lab=la_data_in[21]}
 N -2910 60 -2850 60 {
 lab=vccd2}
 N -2910 80 -2850 80 {
@@ -392,9 +392,9 @@ lab=vdda2}
 N -2910 -380 -2860 -380 {
 lab=vssa2}
 N -3250 -190 -3210 -190 {
-lab=la_data_out[22]}
+lab=la_data_in[22]}
 N -3250 -380 -3210 -380 {
-lab=la_data_out[23]}
+lab=la_data_in[23]}
 N -2910 -130 -2690 -130 {
 lab=#net3}
 N -2690 -130 -2690 -100 {
@@ -426,9 +426,9 @@ lab=src_400}
 N -2350 -570 -2310 -570 {
 lab=io_out[17]}
 N -2750 -520 -2650 -520 {
-lab=la_data_out[28]}
+lab=la_data_in[28]}
 N -2930 -500 -2650 -500 {
-lab=la_data_out[29:30]
+lab=la_data_in[29:30]
 bus=true}
 N -3070 -810 -3030 -810 {
 lab=vccd2}
@@ -443,11 +443,11 @@ lab=src_test1}
 N -3070 -710 -3030 -710 {
 lab=vdda2}
 N -3450 -810 -3370 -810 {
-lab=la_data_out[17]}
+lab=la_data_in[17]}
 N -3400 -1010 -3360 -1010 {
-lab=la_data_out[34]}
+lab=la_data_in[34]}
 N -3400 -1200 -3360 -1200 {
-lab=la_data_out[36]}
+lab=la_data_in[36]}
 N -3060 -1120 -3040 -1120 {
 lab=gpio_analog[8]}
 N -3060 -930 -3040 -930 {
@@ -497,7 +497,7 @@ lab=#net10}
 N -3060 -1180 -2830 -1180 {
 lab=#net10}
 N -2650 -880 -2620 -880 {
-lab=la_data_out[35]}
+lab=la_data_in[35]}
 N -2830 -900 -2620 -900 {
 lab=vbgA}
 N -2830 -900 -2830 -800 {
@@ -505,7 +505,7 @@ lab=vbgA}
 N -2830 -800 -2680 -800 {
 lab=vbgA}
 N -2670 -1230 -2640 -1230 {
-lab=la_data_out[37]}
+lab=la_data_in[37]}
 N -2550 -1340 -2550 -1270 {
 lab=io_analog[10]}
 N -2550 -1340 -2490 -1340 {
@@ -529,19 +529,19 @@ lab=io_out[13]}
 N -1770 -1010 -1690 -1010 {
 lab=vbgA}
 N -1740 -920 -1690 -920 {
-lab=la_data_out[91]}
+lab=la_data_in[91]}
 N -1740 -810 -1690 -810 {
-lab=la_data_out[90]}
+lab=la_data_in[90]}
 N -1740 -860 -1690 -860 {
-lab=la_data_out[88]}
+lab=la_data_in[88]}
 N -1740 -860 -1690 -860 {
-lab=la_data_out[88]}
+lab=la_data_in[88]}
 N -1740 -890 -1690 -890 {
-lab=la_data_out[87]}
+lab=la_data_in[87]}
 N -1740 -840 -1690 -840 {
-lab=la_data_out[89]}
+lab=la_data_in[89]}
 N -940 -940 -900 -940 {
-lab=la_data_out[124]}
+lab=la_data_in[124]}
 N -1260 -880 -1240 -880 {
 lab=gpio_analog[6]}
 N -1280 -860 -1240 -860 {
@@ -555,7 +555,7 @@ lab=vssd1}
 N -1280 -940 -1240 -940 {
 lab=vccd1}
 N -940 -780 -900 -780 {
-lab=la_data_out[123]}
+lab=la_data_in[123]}
 N -1260 -720 -1240 -720 {
 lab=gpio_analog[5]}
 N -1280 -700 -1240 -700 {
@@ -583,9 +583,9 @@ lab=gpio_noesd[3]}
 N -1700 -380 -1620 -380 {
 lab=gpio_noesd[3]}
 N -1760 -510 -1710 -510 {
-lab=la_data_out[85]}
+lab=la_data_in[85]}
 N -1760 -550 -1710 -550 {
-lab=la_data_out[86]}
+lab=la_data_in[86]}
 N -1160 -380 -1110 -380 {
 lab=gpio_noesd[2]}
 N -1160 -360 -1110 -360 {
@@ -597,13 +597,13 @@ lab=vssa1}
 N -1160 -420 -1110 -420 {
 lab=vdda1}
 N -810 -460 -770 -460 {
-lab=la_data_out[122]}
+lab=la_data_in[122]}
 N -1240 -440 -1110 -440 {
 lab=vbgA}
 N -1240 -400 -1110 -400 {
 lab=vbgB}
 N -820 -280 -780 -280 {
-lab=la_data_out[121]}
+lab=la_data_in[121]}
 N -1140 -220 -1120 -220 {
 lab=gpio_analog[1]}
 N -1160 -200 -1120 -200 {
@@ -617,7 +617,7 @@ lab=vssd1}
 N -1160 -280 -1120 -280 {
 lab=vccd1}
 N -820 -90 -780 -90 {
-lab=la_data_out[118]}
+lab=la_data_in[118]}
 N -1140 -30 -1120 -30 {
 lab=gpio_analog[0]}
 N -1160 -10 -1120 -10 {
@@ -647,33 +647,33 @@ lab=io_out[8]}
 N -1510 -160 -1450 -160 {
 lab=io_out[3]}
 N -1510 -40 -1480 -40 {
-lab=la_data_in[119]}
+lab=la_data_out[119]}
 N -1860 -60 -1810 -60 {
-lab=la_data_out[92]}
+lab=la_data_in[92]}
 N -1860 -80 -1810 -80 {
-lab=la_data_out[93]}
+lab=la_data_in[93]}
 N -1860 -100 -1810 -100 {
-lab=la_data_out[94]}
+lab=la_data_in[94]}
 N -1510 -100 -1450 -100 {
 lab=io_out[4]}
 N -2020 -120 -1810 -120 {
-lab=la_data_out[96:98]
+lab=la_data_in[96:98]
 bus=true}
 N -1870 -20 -1810 -20 {
-lab=la_data_out[95]}
+lab=la_data_in[95]}
 N -1870 -40 -1810 -40 {
-lab=la_data_out[99]}
+lab=la_data_in[99]}
 N -1510 -60 -1480 -60 {
-lab=la_data_in[120]}
+lab=la_data_out[120]}
 N -1840 310 -1740 310 {
 lab=src_200_1}
 N -1440 150 -1370 150 {
 lab=io_out[6]}
 N -1970 250 -1740 250 {
-lab=la_data_out[105:102]
+lab=la_data_in[105:102]
 bus=true}
 N -1840 290 -1740 290 {
-lab=la_data_out[101]}
+lab=la_data_in[101]}
 N -1790 730 -1740 730 {
 lab=src_200_0}
 N -1440 490 -1370 490 {
@@ -681,34 +681,34 @@ lab=io_out[0]}
 N -1440 650 -1370 650 {
 lab=io_out[5]}
 N -1940 590 -1740 590 {
-lab=la_data_out[112:113],la_data_out[111]
+lab=la_data_in[112:113],la_data_in[111]
 bus=true}
 N -1980 610 -1740 610 {
-lab=la_data_out[107:106],la_data_out[108]
+lab=la_data_in[107:106],la_data_in[108]
 bus=true}
 N -1440 630 -1360 630 {
-lab=la_data_in[117]}
+lab=la_data_out[117]}
 N -1790 690 -1740 690 {
-lab=la_data_out[116]}
+lab=la_data_in[116]}
 N -1440 530 -1370 530 {
 lab=io_out[1]}
 N -1790 650 -1740 650 {
-lab=la_data_out[115]}
+lab=la_data_in[115]}
 N -1790 670 -1740 670 {
-lab=la_data_out[114]}
+lab=la_data_in[114]}
 N -1790 710 -1740 710 {
-lab=la_data_out[110]}
+lab=la_data_in[110]}
 N -1790 630 -1740 630 {
-lab=la_data_out[109]}
+lab=la_data_in[109]}
 N -3150 -480 -2650 -480 {
-lab=la_data_out[25:27],la_data_out[33:31]
+lab=la_data_in[25:27],la_data_in[33:31]
 bus=true}
 N -2150 910 -2080 910 {
 lab=vssd1}
 N -1340 900 -1290 900 {
 lab=vssd2}
 N -2610 1010 -2580 1010 {bus=true
-lab=la_data_out[9:8],la_data_out[10],la_data_out[7],la_data_out[11],la_data_out[6],la_data_out[12],la_data_out[5],la_data_out[13],la_data_out[4],la_data_out[14],la_data_out[3],la_data_out[15],la_data_out[2],la_data_out[16],la_data_out[1]}
+lab=la_data_in[9:8],la_data_in[10],la_data_in[7],la_data_in[11],la_data_in[6],la_data_in[12],la_data_in[5],la_data_in[13],la_data_in[4],la_data_in[14],la_data_in[3],la_data_in[15],la_data_in[2],la_data_in[16],la_data_in[1]}
 N -2840 910 -2840 1000 {
 lab=#net12}
 N -2970 1000 -2840 1000 {
@@ -752,13 +752,13 @@ lab=vssd1}
 N -2730 -0 -2660 0 {
 lab=vssd2}
 N -2610 850 -2610 1010 {
-lab=la_data_out[9:8],la_data_out[10],la_data_out[7],la_data_out[11],la_data_out[6],la_data_out[12],la_data_out[5],la_data_out[13],la_data_out[4],la_data_out[14],la_data_out[3],la_data_out[15],la_data_out[2],la_data_out[16],la_data_out[1]
+lab=la_data_in[9:8],la_data_in[10],la_data_in[7],la_data_in[11],la_data_in[6],la_data_in[12],la_data_in[5],la_data_in[13],la_data_in[4],la_data_in[14],la_data_in[3],la_data_in[15],la_data_in[2],la_data_in[16],la_data_in[1]
 bus=true}
 N -2650 850 -2610 850 {
-lab=la_data_out[9:8],la_data_out[10],la_data_out[7],la_data_out[11],la_data_out[6],la_data_out[12],la_data_out[5],la_data_out[13],la_data_out[4],la_data_out[14],la_data_out[3],la_data_out[15],la_data_out[2],la_data_out[16],la_data_out[1]
+lab=la_data_in[9:8],la_data_in[10],la_data_in[7],la_data_in[11],la_data_in[6],la_data_in[12],la_data_in[5],la_data_in[13],la_data_in[4],la_data_in[14],la_data_in[3],la_data_in[15],la_data_in[2],la_data_in[16],la_data_in[1]
 bus=true}
 N -1840 270 -1740 270 {
-lab=la_data_out[100]}
+lab=la_data_in[100]}
 N -490 -1250 -490 -1210 {
 lab=vssd2}
 N -470 -1280 -470 -1260 {
@@ -844,31 +844,31 @@ lab=vssa1}
 N 270 -1190 350 -1190 {
 lab=vssa1}
 N 390 -1230 410 -1230 {
-lab=la_data_out[65]}
+lab=la_data_in[65]}
 N 430 -1130 450 -1130 {
 lab=io_analog[4]}
 N 430 -980 450 -980 {
 lab=vdd_spare_2}
 N 390 -1080 410 -1080 {
-lab=la_data_out[67]}
+lab=la_data_in[67]}
 N 390 -920 410 -920 {
-lab=la_data_out[69]}
+lab=la_data_in[69]}
 N 430 -820 450 -820 {
 lab=io_analog[3]}
 N 390 -760 410 -760 {
-lab=la_data_out[71]}
+lab=la_data_in[71]}
 N 430 -660 450 -660 {
 lab=vdd_spare_1}
 N 390 -600 410 -600 {
-lab=la_data_out[73]}
+lab=la_data_in[73]}
 N 430 -500 450 -500 {
 lab=io_analog[2]}
 N 390 -440 410 -440 {
-lab=la_data_out[75]}
+lab=la_data_in[75]}
 N 430 -340 450 -340 {
 lab=io_analog[1]}
 N 390 -260 410 -260 {
-lab=la_data_out[77]}
+lab=la_data_in[77]}
 N 430 -160 450 -160 {
 lab=io_analog[0]}
 N 360 -200 380 -200 {
@@ -1077,95 +1077,95 @@ C {devices/lab_pin.sym} -1860 0 0 0 {name=p244 sig_type=std_logic lab=src_200_2}
 C {devices/lab_pin.sym} 20 430 0 1 {name=p245 sig_type=std_logic lab=src_200_2}
 C {devices/lab_pin.sym} -1840 310 0 0 {name=p261 sig_type=std_logic lab=src_200_1}
 C {devices/lab_pin.sym} 20 330 0 1 {name=p262 sig_type=std_logic lab=src_200_1}
-C {devices/ipin.sym} -3090 630 0 0 {name=p268 lab=la_data_out[127:0]}
+C {devices/ipin.sym} -3090 630 0 0 {name=p268 lab=la_data_in[127:0]}
 C {devices/lab_pin.sym} -1790 730 0 0 {name=p270 sig_type=std_logic lab=src_200_0}
 C {devices/lab_pin.sym} 20 230 0 1 {name=p271 sig_type=std_logic lab=src_200_0}
 C {devices/opin.sym} -3220 520 0 0 {name=p272 lab=io_out[26:0]}
-C {devices/opin.sym} -3270 660 0 0 {name=p277 lab=la_data_in[127:0]}
+C {devices/opin.sym} -3270 660 0 0 {name=p277 lab=la_data_out[127:0]}
 C {devices/opin.sym} -3220 500 0 0 {name=p300 lab=io_oeb[26:0]}
 C {devices/iopin.sym} -3100 600 0 1 {name=p36 lab=io_analog[10:0]}
 C {analog_mux_sel1v8.sym} -3160 1040 0 0 {name=x40}
 C {devices/lab_pin.sym} -2300 940 0 0 {name=p37 sig_type=std_logic lab=io_analog[5]}
 C {devices/lab_pin.sym} -1730 910 0 0 {name=p316 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} -2730 0 0 0 {name=p317 sig_type=std_logic lab=vssd2}
-C {devices/lab_pin.sym} -2020 -120 0 0 {name=p318 sig_type=std_logic lab=la_data_out[96:98]}
-C {devices/lab_pin.sym} -1970 250 0 0 {name=p319 sig_type=std_logic lab=la_data_out[105:102]}
-C {devices/lab_pin.sym} -1940 590 0 0 {name=p320 sig_type=std_logic lab=la_data_out[112:113],la_data_out[111]}
-C {devices/lab_pin.sym} -1980 610 0 0 {name=p321 sig_type=std_logic lab=la_data_out[107:106],la_data_out[108]}
-C {devices/lab_pin.sym} -3150 -480 0 0 {name=p322 sig_type=std_logic lab=la_data_out[25:27],la_data_out[33:31]}
-C {devices/lab_pin.sym} -2650 850 0 0 {name=p323 sig_type=std_logic lab=la_data_out[9:8],la_data_out[10],la_data_out[7],la_data_out[11],la_data_out[6],la_data_out[12],la_data_out[5],la_data_out[13],la_data_out[4],la_data_out[14],la_data_out[3],la_data_out[15],la_data_out[2],la_data_out[16],la_data_out[1]}
-C {devices/lab_pin.sym} -2930 -500 0 0 {name=p324 sig_type=std_logic lab=la_data_out[29:30]}
+C {devices/lab_pin.sym} -2020 -120 0 0 {name=p318 sig_type=std_logic lab=la_data_in[96:98]}
+C {devices/lab_pin.sym} -1970 250 0 0 {name=p319 sig_type=std_logic lab=la_data_in[105:102]}
+C {devices/lab_pin.sym} -1940 590 0 0 {name=p320 sig_type=std_logic lab=la_data_in[112:113],la_data_in[111]}
+C {devices/lab_pin.sym} -1980 610 0 0 {name=p321 sig_type=std_logic lab=la_data_in[107:106],la_data_in[108]}
+C {devices/lab_pin.sym} -3150 -480 0 0 {name=p322 sig_type=std_logic lab=la_data_in[25:27],la_data_in[33:31]}
+C {devices/lab_pin.sym} -2650 850 0 0 {name=p323 sig_type=std_logic lab=la_data_in[9:8],la_data_in[10],la_data_in[7],la_data_in[11],la_data_in[6],la_data_in[12],la_data_in[5],la_data_in[13],la_data_in[4],la_data_in[14],la_data_in[3],la_data_in[15],la_data_in[2],la_data_in[16],la_data_in[1]}
+C {devices/lab_pin.sym} -2930 -500 0 0 {name=p324 sig_type=std_logic lab=la_data_in[29:30]}
 C {devices/ipin.sym} -570 -1250 0 0 {name=p325 lab=vssd2}
 C {devices/ipin.sym} 420 -1260 0 1 {name=p326 lab=vssd1}
-C {devices/lab_pin.sym} -3400 -1200 0 0 {name=p298 sig_type=std_logic lab=la_data_out[36]}
-C {devices/lab_pin.sym} -3400 -1010 0 0 {name=p303 sig_type=std_logic lab=la_data_out[34]}
-C {devices/lab_pin.sym} -3450 -810 0 0 {name=p327 sig_type=std_logic lab=la_data_out[17]}
-C {devices/lab_pin.sym} -2750 -520 0 0 {name=p328 sig_type=std_logic lab=la_data_out[28]}
+C {devices/lab_pin.sym} -3400 -1200 0 0 {name=p298 sig_type=std_logic lab=la_data_in[36]}
+C {devices/lab_pin.sym} -3400 -1010 0 0 {name=p303 sig_type=std_logic lab=la_data_in[34]}
+C {devices/lab_pin.sym} -3450 -810 0 0 {name=p327 sig_type=std_logic lab=la_data_in[17]}
+C {devices/lab_pin.sym} -2750 -520 0 0 {name=p328 sig_type=std_logic lab=la_data_in[28]}
 C {devices/lab_pin.sym} -2310 -570 0 1 {name=p329 sig_type=std_logic lab=io_out[17]}
 C {devices/lab_pin.sym} -2860 -300 0 1 {name=p330 sig_type=std_logic lab=gpio_analog[11]}
 C {devices/lab_pin.sym} -2430 -130 0 1 {name=p331 sig_type=std_logic lab=gpio_analog[13]}
 C {devices/lab_pin.sym} -2860 -110 0 1 {name=p332 sig_type=std_logic lab=gpio_analog[12]}
 C {devices/lab_pin.sym} -3020 -750 0 1 {name=p333 sig_type=std_logic lab=gpio_analog[10]}
-C {devices/lab_pin.sym} -2650 -880 0 0 {name=p334 sig_type=std_logic lab=la_data_out[35]}
+C {devices/lab_pin.sym} -2650 -880 0 0 {name=p334 sig_type=std_logic lab=la_data_in[35]}
 C {devices/lab_pin.sym} -3040 -930 0 1 {name=p335 sig_type=std_logic lab=gpio_analog[9]}
 C {devices/lab_pin.sym} -3040 -1120 0 1 {name=p336 sig_type=std_logic lab=gpio_analog[8]}
-C {devices/lab_pin.sym} -2670 -1230 0 0 {name=p337 sig_type=std_logic lab=la_data_out[37]}
+C {devices/lab_pin.sym} -2670 -1230 0 0 {name=p337 sig_type=std_logic lab=la_data_in[37]}
 C {devices/lab_pin.sym} -2330 -1170 0 1 {name=p338 sig_type=std_logic lab=gpio_noesd[7]}
-C {devices/lab_pin.sym} -3250 -380 0 0 {name=p339 sig_type=std_logic lab=la_data_out[23]}
-C {devices/lab_pin.sym} -3250 -190 0 0 {name=p340 sig_type=std_logic lab=la_data_out[22]}
-C {devices/lab_pin.sym} -3270 20 0 0 {name=p341 sig_type=std_logic lab=la_data_out[21]}
-C {devices/lab_pin.sym} -2790 360 0 0 {name=p342 sig_type=std_logic lab=la_data_out[19]}
-C {devices/lab_pin.sym} -2790 380 0 0 {name=p343 sig_type=std_logic lab=la_data_out[20]}
+C {devices/lab_pin.sym} -3250 -380 0 0 {name=p339 sig_type=std_logic lab=la_data_in[23]}
+C {devices/lab_pin.sym} -3250 -190 0 0 {name=p340 sig_type=std_logic lab=la_data_in[22]}
+C {devices/lab_pin.sym} -3270 20 0 0 {name=p341 sig_type=std_logic lab=la_data_in[21]}
+C {devices/lab_pin.sym} -2790 360 0 0 {name=p342 sig_type=std_logic lab=la_data_in[19]}
+C {devices/lab_pin.sym} -2790 380 0 0 {name=p343 sig_type=std_logic lab=la_data_in[20]}
 C {devices/lab_pin.sym} -2800 420 0 0 {name=p344 sig_type=std_logic lab=gpio_analog[14]}
 C {devices/lab_pin.sym} -2350 420 0 1 {name=p345 sig_type=std_logic lab=gpio_analog[15]}
 C {devices/lab_pin.sym} -2360 400 0 1 {name=p346 sig_type=std_logic lab=io_out[23]}
-C {devices/lab_pin.sym} -3390 980 0 0 {name=p347 sig_type=std_logic lab=la_data_out[18]}
+C {devices/lab_pin.sym} -3390 980 0 0 {name=p347 sig_type=std_logic lab=la_data_in[18]}
 C {devices/lab_pin.sym} -1200 940 0 1 {name=p348 sig_type=std_logic lab=io_oeb[17]}
 C {devices/lab_pin.sym} -1200 1010 0 1 {name=p349 sig_type=std_logic lab=io_oeb[23]}
 C {devices/lab_pin.sym} -2960 1060 0 1 {name=p350 sig_type=std_logic lab=gpio_analog[16]}
 C {devices/lab_pin.sym} -520 210 0 0 {name=p351 sig_type=std_logic lab=gpio_analog[17]}
-C {devices/lab_pin.sym} -520 230 0 0 {name=p352 sig_type=std_logic lab=la_data_out[48]}
-C {devices/lab_pin.sym} -520 250 0 0 {name=p353 sig_type=std_logic lab=la_data_out[41]}
-C {devices/lab_pin.sym} -520 270 0 0 {name=p354 sig_type=std_logic lab=la_data_out[44]}
-C {devices/lab_pin.sym} -520 290 0 0 {name=p355 sig_type=std_logic lab=la_data_out[40]}
-C {devices/lab_pin.sym} -520 310 0 0 {name=p356 sig_type=std_logic lab=la_data_out[42]}
-C {devices/lab_pin.sym} -520 330 0 0 {name=p357 sig_type=std_logic lab=la_data_out[38]}
-C {devices/lab_pin.sym} -520 350 0 0 {name=p358 sig_type=std_logic lab=la_data_out[46]}
-C {devices/lab_pin.sym} -520 370 0 0 {name=p359 sig_type=std_logic lab=la_data_out[47]}
-C {devices/lab_pin.sym} -520 390 0 0 {name=p360 sig_type=std_logic lab=la_data_out[49]}
-C {devices/lab_pin.sym} -520 410 0 0 {name=p361 sig_type=std_logic lab=la_data_out[45]}
-C {devices/lab_pin.sym} -520 430 0 0 {name=p362 sig_type=std_logic lab=la_data_out[39]}
-C {devices/lab_pin.sym} -520 450 0 0 {name=p363 sig_type=std_logic lab=la_data_out[43]}
-C {devices/lab_pin.sym} -520 470 0 0 {name=p364 sig_type=std_logic lab=la_data_out[78]}
-C {devices/lab_pin.sym} -520 490 0 0 {name=p365 sig_type=std_logic lab=la_data_out[125]}
-C {devices/lab_pin.sym} -520 510 0 0 {name=p366 sig_type=std_logic lab=la_data_out[84]}
-C {devices/lab_pin.sym} -520 530 0 0 {name=p367 sig_type=std_logic lab=la_data_out[82]}
-C {devices/lab_pin.sym} -520 550 0 0 {name=p368 sig_type=std_logic lab=la_data_out[81]}
-C {devices/lab_pin.sym} -520 570 0 0 {name=p369 sig_type=std_logic lab=la_data_out[83]}
-C {devices/lab_pin.sym} -520 590 0 0 {name=p370 sig_type=std_logic lab=la_data_out[80]}
-C {devices/lab_pin.sym} -520 610 0 0 {name=p371 sig_type=std_logic lab=la_data_out[79]}
-C {devices/lab_pin.sym} -1790 630 0 0 {name=p372 sig_type=std_logic lab=la_data_out[109]}
-C {devices/lab_pin.sym} -1790 650 0 0 {name=p373 sig_type=std_logic lab=la_data_out[115]}
-C {devices/lab_pin.sym} -1790 670 0 0 {name=p374 sig_type=std_logic lab=la_data_out[114]}
-C {devices/lab_pin.sym} -1790 690 0 0 {name=p375 sig_type=std_logic lab=la_data_out[116]}
-C {devices/lab_pin.sym} -1790 710 0 0 {name=p376 sig_type=std_logic lab=la_data_out[110]}
+C {devices/lab_pin.sym} -520 230 0 0 {name=p352 sig_type=std_logic lab=la_data_in[48]}
+C {devices/lab_pin.sym} -520 250 0 0 {name=p353 sig_type=std_logic lab=la_data_in[41]}
+C {devices/lab_pin.sym} -520 270 0 0 {name=p354 sig_type=std_logic lab=la_data_in[44]}
+C {devices/lab_pin.sym} -520 290 0 0 {name=p355 sig_type=std_logic lab=la_data_in[40]}
+C {devices/lab_pin.sym} -520 310 0 0 {name=p356 sig_type=std_logic lab=la_data_in[42]}
+C {devices/lab_pin.sym} -520 330 0 0 {name=p357 sig_type=std_logic lab=la_data_in[38]}
+C {devices/lab_pin.sym} -520 350 0 0 {name=p358 sig_type=std_logic lab=la_data_in[46]}
+C {devices/lab_pin.sym} -520 370 0 0 {name=p359 sig_type=std_logic lab=la_data_in[47]}
+C {devices/lab_pin.sym} -520 390 0 0 {name=p360 sig_type=std_logic lab=la_data_in[49]}
+C {devices/lab_pin.sym} -520 410 0 0 {name=p361 sig_type=std_logic lab=la_data_in[45]}
+C {devices/lab_pin.sym} -520 430 0 0 {name=p362 sig_type=std_logic lab=la_data_in[39]}
+C {devices/lab_pin.sym} -520 450 0 0 {name=p363 sig_type=std_logic lab=la_data_in[43]}
+C {devices/lab_pin.sym} -520 470 0 0 {name=p364 sig_type=std_logic lab=la_data_in[78]}
+C {devices/lab_pin.sym} -520 490 0 0 {name=p365 sig_type=std_logic lab=la_data_in[125]}
+C {devices/lab_pin.sym} -520 510 0 0 {name=p366 sig_type=std_logic lab=la_data_in[84]}
+C {devices/lab_pin.sym} -520 530 0 0 {name=p367 sig_type=std_logic lab=la_data_in[82]}
+C {devices/lab_pin.sym} -520 550 0 0 {name=p368 sig_type=std_logic lab=la_data_in[81]}
+C {devices/lab_pin.sym} -520 570 0 0 {name=p369 sig_type=std_logic lab=la_data_in[83]}
+C {devices/lab_pin.sym} -520 590 0 0 {name=p370 sig_type=std_logic lab=la_data_in[80]}
+C {devices/lab_pin.sym} -520 610 0 0 {name=p371 sig_type=std_logic lab=la_data_in[79]}
+C {devices/lab_pin.sym} -1790 630 0 0 {name=p372 sig_type=std_logic lab=la_data_in[109]}
+C {devices/lab_pin.sym} -1790 650 0 0 {name=p373 sig_type=std_logic lab=la_data_in[115]}
+C {devices/lab_pin.sym} -1790 670 0 0 {name=p374 sig_type=std_logic lab=la_data_in[114]}
+C {devices/lab_pin.sym} -1790 690 0 0 {name=p375 sig_type=std_logic lab=la_data_in[116]}
+C {devices/lab_pin.sym} -1790 710 0 0 {name=p376 sig_type=std_logic lab=la_data_in[110]}
 C {devices/lab_pin.sym} -1370 490 0 1 {name=p377 sig_type=std_logic lab=io_out[0]}
 C {devices/lab_pin.sym} -1370 530 0 1 {name=p378 sig_type=std_logic lab=io_out[1]}
-C {devices/lab_pin.sym} -1360 630 0 1 {name=p379 sig_type=std_logic lab=la_data_in[117]}
+C {devices/lab_pin.sym} -1360 630 0 1 {name=p379 sig_type=std_logic lab=la_data_out[117]}
 C {devices/lab_pin.sym} -1370 650 0 1 {name=p380 sig_type=std_logic lab=io_out[5]}
 C {devices/lab_pin.sym} -1370 150 0 1 {name=p381 sig_type=std_logic lab=io_out[6]}
 C {devices/lab_pin.sym} -1140 -30 0 0 {name=p382 sig_type=std_logic lab=gpio_analog[0]}
 C {devices/lab_pin.sym} -1140 -220 0 0 {name=p383 sig_type=std_logic lab=gpio_analog[1]}
 C {devices/lab_pin.sym} -1160 -380 0 0 {name=p384 sig_type=std_logic lab=gpio_noesd[2]}
-C {devices/lab_pin.sym} -1860 -100 0 0 {name=p385 sig_type=std_logic lab=la_data_out[94]}
-C {devices/lab_pin.sym} -1860 -80 0 0 {name=p386 sig_type=std_logic lab=la_data_out[93]}
-C {devices/lab_pin.sym} -1860 -60 0 0 {name=p387 sig_type=std_logic lab=la_data_out[92]}
-C {devices/lab_pin.sym} -1870 -40 0 0 {name=p388 sig_type=std_logic lab=la_data_out[99]}
-C {devices/lab_pin.sym} -1870 -20 0 0 {name=p389 sig_type=std_logic lab=la_data_out[95]}
-C {devices/lab_pin.sym} -1480 -60 0 1 {name=p390 sig_type=std_logic lab=la_data_in[120]}
-C {devices/lab_pin.sym} -1480 -40 0 1 {name=p391 sig_type=std_logic lab=la_data_in[119]}
-C {devices/lab_pin.sym} -1840 290 0 0 {name=p392 sig_type=std_logic lab=la_data_out[101]}
-C {devices/lab_pin.sym} -1840 270 0 0 {name=p393 sig_type=std_logic lab=la_data_out[100]}
+C {devices/lab_pin.sym} -1860 -100 0 0 {name=p385 sig_type=std_logic lab=la_data_in[94]}
+C {devices/lab_pin.sym} -1860 -80 0 0 {name=p386 sig_type=std_logic lab=la_data_in[93]}
+C {devices/lab_pin.sym} -1860 -60 0 0 {name=p387 sig_type=std_logic lab=la_data_in[92]}
+C {devices/lab_pin.sym} -1870 -40 0 0 {name=p388 sig_type=std_logic lab=la_data_in[99]}
+C {devices/lab_pin.sym} -1870 -20 0 0 {name=p389 sig_type=std_logic lab=la_data_in[95]}
+C {devices/lab_pin.sym} -1480 -60 0 1 {name=p390 sig_type=std_logic lab=la_data_out[120]}
+C {devices/lab_pin.sym} -1480 -40 0 1 {name=p391 sig_type=std_logic lab=la_data_out[119]}
+C {devices/lab_pin.sym} -1840 290 0 0 {name=p392 sig_type=std_logic lab=la_data_in[101]}
+C {devices/lab_pin.sym} -1840 270 0 0 {name=p393 sig_type=std_logic lab=la_data_in[100]}
 C {devices/lab_pin.sym} -1450 -100 0 1 {name=p394 sig_type=std_logic lab=io_out[4]}
 C {devices/lab_pin.sym} -1450 -140 0 1 {name=p395 sig_type=std_logic lab=io_out[2]}
 C {devices/lab_pin.sym} -1450 -160 0 1 {name=p397 sig_type=std_logic lab=io_out[3]}
@@ -1174,35 +1174,35 @@ C {devices/lab_pin.sym} -1450 -200 0 1 {name=p399 sig_type=std_logic lab=io_out[
 C {devices/lab_pin.sym} -1470 -380 0 1 {name=p396 sig_type=std_logic lab=gpio_noesd[4]}
 C {devices/lab_pin.sym} -1700 -380 0 0 {name=p400 sig_type=std_logic lab=gpio_noesd[3]}
 C {devices/lab_pin.sym} -1390 -530 0 1 {name=p401 sig_type=std_logic lab=io_out[12]}
-C {devices/lab_pin.sym} -1760 -550 0 0 {name=p402 sig_type=std_logic lab=la_data_out[86]}
-C {devices/lab_pin.sym} -1760 -510 0 0 {name=p403 sig_type=std_logic lab=la_data_out[85]}
-C {devices/lab_pin.sym} -1740 -920 0 0 {name=p404 sig_type=std_logic lab=la_data_out[91]}
-C {devices/lab_pin.sym} -1740 -810 0 0 {name=p405 sig_type=std_logic lab=la_data_out[90]}
-C {devices/lab_pin.sym} -1740 -840 0 0 {name=p406 sig_type=std_logic lab=la_data_out[89]}
-C {devices/lab_pin.sym} -1740 -860 0 0 {name=p407 sig_type=std_logic lab=la_data_out[88]}
-C {devices/lab_pin.sym} -1740 -890 0 0 {name=p408 sig_type=std_logic lab=la_data_out[87]}
+C {devices/lab_pin.sym} -1760 -550 0 0 {name=p402 sig_type=std_logic lab=la_data_in[86]}
+C {devices/lab_pin.sym} -1760 -510 0 0 {name=p403 sig_type=std_logic lab=la_data_in[85]}
+C {devices/lab_pin.sym} -1740 -920 0 0 {name=p404 sig_type=std_logic lab=la_data_in[91]}
+C {devices/lab_pin.sym} -1740 -810 0 0 {name=p405 sig_type=std_logic lab=la_data_in[90]}
+C {devices/lab_pin.sym} -1740 -840 0 0 {name=p406 sig_type=std_logic lab=la_data_in[89]}
+C {devices/lab_pin.sym} -1740 -860 0 0 {name=p407 sig_type=std_logic lab=la_data_in[88]}
+C {devices/lab_pin.sym} -1740 -890 0 0 {name=p408 sig_type=std_logic lab=la_data_in[87]}
 C {devices/lab_pin.sym} -1390 -1010 0 1 {name=p409 sig_type=std_logic lab=io_out[13]}
 C {devices/lab_pin.sym} -1260 -880 0 0 {name=p410 sig_type=std_logic lab=gpio_analog[6]}
 C {devices/lab_pin.sym} -1260 -720 0 0 {name=p411 sig_type=std_logic lab=gpio_analog[5]}
-C {devices/lab_pin.sym} -900 -940 0 1 {name=p412 sig_type=std_logic lab=la_data_out[124]}
-C {devices/lab_pin.sym} -770 -460 0 1 {name=p413 sig_type=std_logic lab=la_data_out[122]}
-C {devices/lab_pin.sym} -780 -280 0 1 {name=p414 sig_type=std_logic lab=la_data_out[121]}
-C {devices/lab_pin.sym} -780 -90 0 1 {name=p415 sig_type=std_logic lab=la_data_out[118]}
-C {devices/lab_pin.sym} -900 -780 0 1 {name=p416 sig_type=std_logic lab=la_data_out[123]}
-C {devices/lab_pin.sym} -520 -250 0 0 {name=p418 sig_type=std_logic lab=la_data_out[50]}
-C {devices/lab_pin.sym} -520 -440 0 0 {name=p420 sig_type=std_logic lab=la_data_out[52]}
-C {devices/lab_pin.sym} -510 -600 0 0 {name=p422 sig_type=std_logic lab=la_data_out[54]}
-C {devices/lab_pin.sym} -500 -750 0 0 {name=p424 sig_type=std_logic lab=la_data_out[56]}
-C {devices/lab_pin.sym} -520 -910 0 0 {name=p426 sig_type=std_logic lab=la_data_out[58]}
-C {devices/lab_pin.sym} -520 -1080 0 0 {name=p428 sig_type=std_logic lab=la_data_out[60]}
-C {devices/lab_pin.sym} -520 -1220 0 0 {name=p430 sig_type=std_logic lab=la_data_out[62]}
-C {devices/lab_pin.sym} 410 -1230 0 1 {name=p431 sig_type=std_logic lab=la_data_out[65]}
-C {devices/lab_pin.sym} 410 -1080 0 1 {name=p433 sig_type=std_logic lab=la_data_out[67]}
-C {devices/lab_pin.sym} 410 -920 0 1 {name=p435 sig_type=std_logic lab=la_data_out[69]}
-C {devices/lab_pin.sym} 410 -760 0 1 {name=p437 sig_type=std_logic lab=la_data_out[71]}
-C {devices/lab_pin.sym} 410 -600 0 1 {name=p439 sig_type=std_logic lab=la_data_out[73]}
-C {devices/lab_pin.sym} 410 -440 0 1 {name=p441 sig_type=std_logic lab=la_data_out[75]}
-C {devices/lab_pin.sym} 410 -260 0 1 {name=p443 sig_type=std_logic lab=la_data_out[77]}
+C {devices/lab_pin.sym} -900 -940 0 1 {name=p412 sig_type=std_logic lab=la_data_in[124]}
+C {devices/lab_pin.sym} -770 -460 0 1 {name=p413 sig_type=std_logic lab=la_data_in[122]}
+C {devices/lab_pin.sym} -780 -280 0 1 {name=p414 sig_type=std_logic lab=la_data_in[121]}
+C {devices/lab_pin.sym} -780 -90 0 1 {name=p415 sig_type=std_logic lab=la_data_in[118]}
+C {devices/lab_pin.sym} -900 -780 0 1 {name=p416 sig_type=std_logic lab=la_data_in[123]}
+C {devices/lab_pin.sym} -520 -250 0 0 {name=p418 sig_type=std_logic lab=la_data_in[50]}
+C {devices/lab_pin.sym} -520 -440 0 0 {name=p420 sig_type=std_logic lab=la_data_in[52]}
+C {devices/lab_pin.sym} -510 -600 0 0 {name=p422 sig_type=std_logic lab=la_data_in[54]}
+C {devices/lab_pin.sym} -500 -750 0 0 {name=p424 sig_type=std_logic lab=la_data_in[56]}
+C {devices/lab_pin.sym} -520 -910 0 0 {name=p426 sig_type=std_logic lab=la_data_in[58]}
+C {devices/lab_pin.sym} -520 -1080 0 0 {name=p428 sig_type=std_logic lab=la_data_in[60]}
+C {devices/lab_pin.sym} -520 -1220 0 0 {name=p430 sig_type=std_logic lab=la_data_in[62]}
+C {devices/lab_pin.sym} 410 -1230 0 1 {name=p431 sig_type=std_logic lab=la_data_in[65]}
+C {devices/lab_pin.sym} 410 -1080 0 1 {name=p433 sig_type=std_logic lab=la_data_in[67]}
+C {devices/lab_pin.sym} 410 -920 0 1 {name=p435 sig_type=std_logic lab=la_data_in[69]}
+C {devices/lab_pin.sym} 410 -760 0 1 {name=p437 sig_type=std_logic lab=la_data_in[71]}
+C {devices/lab_pin.sym} 410 -600 0 1 {name=p439 sig_type=std_logic lab=la_data_in[73]}
+C {devices/lab_pin.sym} 410 -440 0 1 {name=p441 sig_type=std_logic lab=la_data_in[75]}
+C {devices/lab_pin.sym} 410 -260 0 1 {name=p443 sig_type=std_logic lab=la_data_in[77]}
 C {devices/lab_pin.sym} -580 -980 0 0 {name=p445 sig_type=std_logic lab=io_analog[10]}
 C {devices/lab_pin.sym} -570 -810 0 0 {name=p446 sig_type=std_logic lab=io_analog[9]}
 C {devices/lab_pin.sym} -570 -650 0 0 {name=p447 sig_type=std_logic lab=io_analog[8]}

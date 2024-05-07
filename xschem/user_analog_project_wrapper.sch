@@ -24,13 +24,13 @@ lab=gpio_analog[17:0]}
 N 4080 -90 4260 -90 {
 lab=io_analog[10:0]}
 N 4080 -70 4260 -70 {
-lab=la_data_in[127:0]}
+lab=la_data_out[127:0]}
 N 3600 -90 3780 -90 {
 lab=vssa1}
 N 3600 -70 3780 -70 {
 lab=vssa2}
 N 3600 -50 3780 -50 {
-lab=la_data_out[127:0]}
+lab=la_data_in[127:0]}
 N 3600 -30 3780 -30 {
 lab=vssd2}
 N 3600 -10 3780 -10 {
@@ -73,8 +73,8 @@ C {devices/lab_pin.sym} 4260 -150 0 1 {name=p33 sig_type=std_logic lab=io_out[26
 C {devices/lab_pin.sym} 4260 -130 0 1 {name=p34 sig_type=std_logic lab=gpio_noesd[17:0]}
 C {devices/lab_pin.sym} 4260 -110 0 1 {name=p35 sig_type=std_logic lab=gpio_analog[17:0]}
 C {devices/lab_pin.sym} 4260 -90 0 1 {name=p36 sig_type=std_logic lab=io_analog[10:0]}
-C {devices/lab_pin.sym} 4260 -70 0 1 {name=p37 sig_type=std_logic lab=la_data_in[127:0]}
-C {devices/lab_pin.sym} 3600 -50 0 0 {name=p38 sig_type=std_logic lab=la_data_out[127:0]}
+C {devices/lab_pin.sym} 3600 -50 0 0 {name=p37 sig_type=std_logic lab=la_data_in[127:0]}
+C {devices/lab_pin.sym} 4260 -70 0 1 {name=p38 sig_type=std_logic lab=la_data_out[127:0]}
 C {devices/lab_pin.sym} 3600 -30 0 0 {name=p39 sig_type=std_logic lab=vssd2}
 C {devices/lab_pin.sym} 3600 -10 0 0 {name=p40 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3600 -70 0 0 {name=p41 sig_type=std_logic lab=vssa2}
