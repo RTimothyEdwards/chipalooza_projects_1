@@ -7900,7 +7900,7 @@ use isolated_switch_ena1v8  isolated_switch_ena1v8_5
 timestamp 1714180201
 transform -1 0 7186 0 -1 384878
 box 0 0 4162 6736
-use sky130_rodovalho_ip__lpopamp  lpopamp_0 ../dependencies//sky130_rodovalho_ip__lpopamp/mag
+use sky130_rodovalho_ip__lpopamp  lpopamp_0 ../dependencies/sky130_rodovalho_ip__lpopamp/mag
 timestamp 1714587215
 transform 0 -1 48697 -1 0 299887
 box -7000 0 81800 36580
@@ -7918,43 +7918,43 @@ array 0 6 90000 0 0 111006
 timestamp 1714671808
 transform 0 1 351850 1 0 120408
 box -89200 -44204 -9499 66802
-use sky130_ajc_ip__brownout  sky130_ajc_ip__brownout_0 ../dependencies//sky130_ajc_ip__brownout/mag
+use sky130_ajc_ip__brownout  sky130_ajc_ip__brownout_0 ../dependencies/sky130_ajc_ip__brownout/mag
 timestamp 1713419710
 transform 0 -1 557384 -1 0 89090
 box -1604 -1987 43293 41283
-use sky130_ajc_ip__overvoltage  sky130_ajc_ip__overvoltage_0 ../dependencies//sky130_ajc_ip__overvoltage/mag
+use sky130_ajc_ip__overvoltage  sky130_ajc_ip__overvoltage_0 ../dependencies/sky130_ajc_ip__overvoltage/mag
 timestamp 1713210720
 transform 0 -1 550164 -1 0 176882
 box -2433 -2390 42464 28880
-use sky130_ajc_ip__por  sky130_ajc_ip__por_0 ../dependencies//sky130_ajc_ip__por/mag
+use sky130_ajc_ip__por  sky130_ajc_ip__por_0 ../dependencies/sky130_ajc_ip__por/mag
 timestamp 1713454396
 transform 0 -1 557064 -1 0 294668
 box -1604 -1987 43293 41283
-use sky130_ak_ip__comparator  sky130_ak_ip__comparator_0 ../dependencies//sky130_ak_ip__comparator/mag
+use sky130_ak_ip__comparator  sky130_ak_ip__comparator_0 ../dependencies/sky130_ak_ip__comparator/mag
 timestamp 1714760001
 transform 0 -1 28376 1 0 319360
 box -1900 -33700 39700 13700
-use sky130_be_ip__lsxo  sky130_be_ip__lsxo_0 ../dependencies//sky130_be_ip__lsxo/mag
+use sky130_be_ip__lsxo  sky130_be_ip__lsxo_0 ../dependencies/sky130_be_ip__lsxo/mag
 timestamp 1714591373
 transform 0 -1 558491 1 0 410746
 box 1476 -23704 25570 -812
-use sky130_cw_ip__bandgap  sky130_cw_ip__bandgap_0 ../dependencies//sky130_cw_ip/mag
+use sky130_cw_ip__bandgap  sky130_cw_ip__bandgap_0 ../dependencies/sky130_cw_ip/mag
 timestamp 1715026686
 transform 1 0 38648 0 1 42266
 box -5734 12 42048 14837
-use sky130_ht_ip__hsxo_cpz1  sky130_ht_ip__hsxo_cpz1_0 ../dependencies//sky130_ht_ip__hsxo_cpz1/mag
+use sky130_ht_ip__hsxo_cpz1  sky130_ht_ip__hsxo_cpz1_0 ../dependencies/sky130_ht_ip__hsxo_cpz1/mag
 timestamp 1714659811
 transform 1 0 13043 0 1 95673
 box -3162 -7320 32492 17749
-use sky130_od_ip__tempsensor_ext_vp  sky130_od_ip__tempsensor_ext_vp_0 ../dependencies//sky130_od_ip__tempsensor/mag
+use sky130_od_ip__tempsensor_ext_vp  sky130_od_ip__tempsensor_ext_vp_0 ../dependencies/sky130_od_ip__tempsensor/mag
 timestamp 1713856378
 transform 1 0 9095 0 1 442073
 box -584 -5030 6610 3202
-use sky130_td_ip__opamp_hp  sky130_td_ip__opamp_hp_0 ../dependencies//sky130_td_ip__opamp_hp/mag
+use sky130_td_ip__opamp_hp  sky130_td_ip__opamp_hp_0 ../dependencies/sky130_td_ip__opamp_hp/mag
 timestamp 1714591961
 transform 0 1 10847 1 0 489761
 box -7724 -6929 51340 16206
-use sky130_vbl_ip__overvoltage  sky130_vbl_ip__overvoltage_0 ../dependencies//sky130_vbl_ip__overvoltage/mag
+use sky130_vbl_ip__overvoltage  sky130_vbl_ip__overvoltage_0 ../dependencies/sky130_vbl_ip__overvoltage/mag
 timestamp 1714660490
 transform 1 0 539503 0 1 576713
 box -18218 -4002 24405 17489
