@@ -141,227 +141,432 @@ perimeter.
 
 High Gain-Bandwidth Operational Amplifier
 (Thomas Dexter)
-Enable:  la_data_out[37]
+Enable:  la_data_in[37]
 Bias:    100nA	when selected
-	Selection: la_data_out[40] = 0
+	Selection: la_data_in[40] = 0
 Upstream analog power supply: vdda2/vssa2
 Upstream digital power supply: vccd2/vssd2
-Power supply monitor:  io_analog[10]
-Power supply enable: la_data_out[60]
-Power supply !enable: la_data_out[61]
-Amp output:  gpio_noesd[7]
-Amp negative input: gpio_analog[8] when selected
-	Selection: la_data_out[36] = 1
-Amp positive input: gpio_analog[9] when selected
-	Selection: la_data_out[34] = 1
+Power supply monitor:  io_analog[10] (pin GPIO 24) "mon_hgbw_opamp"
+Power supply enable: la_data_in[60]
+Amp output:  gpio_noesd[7] (pin GPIO 25) "hgbw_opamp_out"
+Amp negative input: gpio_analog[8] (pin GPIO 26) "hgbw_opamp_in-" when selected
+	Selection: la_data_in[36] = 1
+Amp positive input: gpio_analog[9] (pin GPIO 27) "hgbw_opamp_in+" when selected
+	Selection: la_data_in[34] = 1
 
 ---
 
 Temperature sensor
 (Or Dicker)
-Enable: la_data_out[35]
-Bias:  gpio_noesd[2] (nominally 1.2V) when selected
-	Selection: la_data_out[122] = 1
+Enable: la_data_in[35]
+Bias:  gpio_noesd[2] (pin GPIO 9) "1.2V_bias" (nominally 1.2V) when selected
+	Selection: la_data_in[122] = 1
 Upstream digital power supply: vccd2/vssd2
-Power supply monitor: io_analog[9]
-Power supply enable: la_data_out[58]
-Power supply !enable: la_data_out[59]
-Vbe1_out: gpio_analog[8] when selected
-	Selection: la_data_out[36] = 0
-Vbe2_out: gpio_analog[9] when selected
-	Selection: la_data_out[34] = 0
+Power supply monitor: io_analog[9] (pin GPIO 23) "mon_temp_sense"
+Power supply enable: la_data_in[58]
+Vbe1_out: gpio_analog[9] (pin GPIO 27) "temp_sense_vbe1" when selected
+	Selection: la_data_in[34] = 0
+Vbe2_out: gpio_analog[8] (pin GPIO 26) "temp_sense_vbe2" when selected
+	Selection: la_data_in[36] = 0
 
 ---
 
 Comparator
 (Andrew Kang)
-Enable: la_data_out[28]
-Hysteresis: la_data_out[29:30]
-Trim: la_data_out[25:27],la_data_out[33:31]
+Enable: la_data_in[28]
+Hysteresis: la_data_in[29:30]
+Trim: la_data_in[25:27],la_data_in[33:31]
 Bias:	400nA	when selected
-	Selection:  la_data_out[44] = 0
+	Selection:  la_data_in[44] = 0
 Upstream analog power supply: vdda2/vssa2
 Upstream digital power supply: vccd2/vssd2
-Power supply monitor: io_analog[8]
-Power supply enable: la_data_out[56]
-Power supply !enable: la_data_out[57]
-Comparator output: io_out[17]
-Comparator negative input:  gpio_analog[12] when selected
-	Selection: la_data_out[22] = 1
-Comparator positive input:  gpio_analog[11] when selected
-	Selection: la_data_out[23] = 1
+Power supply monitor: io_analog[8] (pin GPIO 22) "mon_comparator"
+Power supply enable: la_data_in[56]
+Comparator output: io_out[17] (pin GPIO 28) "comparator_out"
+Comparator negative input:  gpio_analog[12] (pin GPIO 30) "comparator_in-" when selected
+	Selection: la_data_in[22] = 1
+Comparator positive input:  gpio_analog[11] (pin GPIO 29) "comparator_in+" when selected
+	Selection: la_data_in[23] = 1
 	
 ---
 
 Low power operational amplifier
 (Luis Henrique Rodovalho)
-Enable: la_data_out[21]
+Enable: la_data_in[21]
 Bias:  10uA when selected
-	Selection:  la_data_out[46] = 0
+	Selection:  la_data_in[46] = 0
 Upstream analog power supply: vdda2/vssa2
 Upstream digital power supply: vccd2/vssd2
-Power supply monitor: io_analog[7]
-Power supply enable: la_data_out[54]
-Power supply !enable: la_data_out[55]
-Amplifier output:  gpio_analog[13]
-Amplifier negative input: gpio_analog[11] when selected
-	Selection: la_data_out[23] = 0
-Amplifier positive input: gpio_analog[12] when selected
-	Selection: la_data_out[22] = 0
+Power supply monitor: io_analog[7] (pin GPIO 21) "mon_lpopamp"
+Power supply enable: la_data_in[54]
+Amplifier output:  gpio_analog[13] (pin GPIO 31) "lpopamp_out"
+Amplifier negative input: gpio_analog[11] (pin GPIO 29) "lpopamp_in-" when selected
+	Selection: la_data_in[23] = 0
+Amplifier positive input: gpio_analog[12] (pin GPIO 30) "lpopamp_in+" when selected
+	Selection: la_data_in[22] = 0
 
 ---
 
 High speed crystal oscillator
 (Tamas Hubai)
-Enable: la_data_out[19]
-Standby: la_data_out[20]
+Enable: la_data_in[19]
+Standby: la_data_in[20]
 Bias:  10uA when selected
-	Selection: la_data_out[47] = 0
+	Selection: la_data_in[47] = 0
 Upstream analog power supply: vdda2/vssa2
 Upstream digital power supply: vccd2/vssd2
-Power supply monitor: io_analog[6]
-Power supply enable:  la_data_out[52]
-Power supply !enable: la_data_out[53]
-Oscillator out:  io_out[23]
-Crystal Xin:  gpio_analog[14]
-Crystal Xout: gpio_analog[15]
+Power supply monitor: io_analog[6] (pin GPIO 20) "mon_hsxo"
+Power supply enable:  la_data_in[52]
+Oscillator out:  io_out[23] (pin GPIO 34) "hsxo_out"
+Crystal Xin:  gpio_analog[14] (pin GPIO 32) "hsxo_xin"
+Crystal Xout: gpio_analog[15] (pin GPIO 33) "hsxo_xout"
 
 ---
 
 Bandgap (Christoph Weiser)
 Enable: none (enable via power supply)
 Bias:  self-biased
-Trim: la_data_out[9,8,10,7,11,6,12,5,13,4,14,3,15,2,16,1]
+Trim: la_data_in[9,8,10,7,11,6,12,5,13,4,14,3,15,2,16,1]
 Upstream digital power supply: vccd2/vssd2
-Power supply monitor: io_analog[5]
-Power supply enable: la_data_out[50]
-Power supply !enable: la_data_out[51]
-Bandgap output:  gpio_analog[16] when selected
-	Selection:  la_data_out[18] = 1
+Power supply monitor: io_analog[5] (pin GPIO 19) "mon_bandgap"
+Power supply enable: la_data_in[50]
+Bandgap output:  gpio_analog[16] (pin GPIO 34) "bandgap_out" when selected
+	Selection:  la_data_in[18] = 1
 
 ---
 
 Brownout detector (Robin Tsang)
-Enable: la_data_out[109]
-Bias: gpio_noesd[2] (nominally 1.2V) when selected
-	Selection: la_data_out[122] = 0
+Enable: la_data_in[109]
+Bias: gpio_noesd[2] (pin GPIO 9) "1.2V_bias" (nominally 1.2V) when selected
+	Selection: la_data_in[122] = 0
 Bias: 200nA when selected
-	Selection: la_data_out[43] = 0
-Trip point select (otrip):  la_data_out[112:113,111]
-Trip point select (vtrip):  la_data_out[107:106,108]
-Force enable RC osc: la_data_out[115]
-Force disable RC osc: la_data_out[114]
-Force short oneshot: la_data_out[116]
-Current source select: la_data_out[110]
+	Selection: la_data_in[43] = 0
+Trip point select (otrip):  la_data_in[112:113,111]
+Trip point select (vtrip):  la_data_in[107:106,108]
+Force enable RC osc: la_data_in[115]
+Force disable RC osc: la_data_in[114]
+Force short oneshot: la_data_in[116]
+Current source select: la_data_in[110]
 Upstream analog power supply: vdda1/vssa1
 Upstream digital power supply: vccd1/vssd1
-Power supply monitor: io_analog[0]
-Power supply enable: la_data_out[77]
-Power supply !enable: la_data_out[76]
-Outb: io_out[0]
-Dcomp: io_out[1]
-Vunder: io_out[5]
-Timed out: la_data_in[116]
+Power supply monitor: io_analog[0] (pin GPIO 14) "mon_brownout"
+Power supply enable: la_data_in[77]
+Outb: io_out[0] (pin GPIO 0) "brownout_outb"
+Dcomp: io_out[1] (pin GPIO 1) "brownout_dcomp"
+Vunder: io_out[5] (pin GPIO 5) "brownout_vunder"
+Timed out: la_data_out[117]
 
 ---
 
 Overvoltage detector (Robin Tsang)
-Enable: la_data_out[100]
-Bias: gpio_noesd[2] (nominally 1.2V) when selected
-	Selection: la_data_out[122] = 0
+Enable: la_data_in[100]
+Bias: gpio_noesd[2] (pin GPIO 9) "1.2V_bias" (nominally 1.2V) when selected
+	Selection: la_data_in[122] = 0
 Bias: 200nA when selected
-	Selection: la_data_out[42] = 0
-Trip point select (otrip):  la_data_out[105:102]
-Current source select: la_data_out[101]
+	Selection: la_data_in[42] = 0
+Trip point select (otrip):  la_data_in[105:102]
+Current source select: la_data_in[101]
 Upstream analog power supply: vdda1/vssa1
 Upstream digital power supply: vccd1/vssd1
-Power supply monitor: io_analog[1]
-Power supply enable: la_data_out[75]
-Power supply !enable: la_data_out[74]
-Ovout: io_out[6]
+Power supply monitor: io_analog[1] (pin GPIO 15) "mon_overvoltage1"
+Power supply enable: la_data_in[75]
+Ovout: io_out[6] (pin GPIO 6) "overvoltage1_ovout"
 
 ---
 
 Power-on-reset (Robin Tsang)
-Bias: gpio_noesd[2] (nominally 1.2V) when selected
-	Selection: la_data_out[122] = 0
+Bias: gpio_noesd[2] (pin GPIO 9) "1.2V_bias" (nominally 1.2V) when selected
+	Selection: la_data_in[122] = 0
 Bias: 200nA when selected
-	Selection: la_data_out[41] = 0
-Trip point select (otrip): la_data_out[96:98]
-Force PDN: la_data_out[94]
-Force enable RC osc: la_data_out[93]
-Force disable RC osc: la_data_out[92]
-Force short oneshot: la_data_out[99]
-Current source select: la_data_out[95]
+	Selection: la_data_in[41] = 0
+Trip point select (otrip): la_data_in[96:98]
+Force PDN: la_data_in[94]
+Force enable RC osc: la_data_in[93]
+Force disable RC osc: la_data_in[92]
+Force short oneshot: la_data_in[99]
+Current source select: la_data_in[95]
 Upstream analog power supply: vdda1/vssa1
 Upstream digital power supply: vccd1/vssd1
-Power supply monitor: io_analog[2]
-Power supply enable: la_data_out[73]
-Power supply !enable: la_data_out[72]
-POR: io_out[7]
-PORb: io_out[9]
-Osc_clk: io_out[3]
-Dcomp: io_out[2]
-Pwup_filt: io_out[4]
-Startup timed out: la_data_in[120]
-POR timed out: la_data_io[119]
+Power supply monitor: io_analog[2] (pin GPIO 16) "mon_por"
+Power supply enable: la_data_in[73]
+POR: io_out[7] (pin GPIO 7) "por_out"
+PORb: io_out[8] (pin GPIO 8) "por_outb"
+Osc_clk: io_out[3] (pin GPIO 3) "por_osc_clk"
+Dcomp: io_out[2] (pin GPIO 2) "por_dcomp"
+Pwup_filt: io_out[4] (pin GPIO 4) "por_pwup_filt"
+Startup timed out: la_data_out[120]
+POR timed out: la_data_out[119]
 
 ---
 
 Low-speed (32kHz) crystal oscillator (Brady Etz)
-Enable: la_data_out[86]
-Standby: la_data_out[85]
+Enable: la_data_in[86]
+Standby: la_data_in[85]
 Bias: 50nA when selected
-	Selection: la_data_out[39] = 0
+	Selection: la_data_in[39] = 0
 Upstream analog power supply: vdda1/vssa1
 Upstream digital power supply: vccd1/vssd1
-Power supply monitor: io_analog[3]
-Power supply enable: la_data_out[69]
-Power supply !enable: la_data_out[68]
-Dout: io_out[12]
-Crystal XIn: gpio_noesd[3]
-Crystal XOut: gpio_noesd[4]
+Power supply monitor: io_analog[3] (pin GPIO 17) "mon_lsxo"
+Power supply enable: la_data_in[69]
+Dout: io_out[12] (pin GPIO 12) "lsxo_out"
+Crystal XIn: gpio_noesd[3] (pin GPIO 10) "lsxo_xin"
+Crystal XOut: gpio_noesd[4] (pin GPIO 11) "lsxs_xout"
 
 ---
 
 Overvoltage detector (Lucas Franck & William Orlato)
-Enable: la_data_out[91]
-Bias: gpio_noesd[2] (nominally 1.2V) when selected
-	Selection: la_data_out[122] = 1
-Trip point select (vtrip): la_data_out[87:90]
+Enable: la_data_in[91]
+Bias: gpio_noesd[2] (pin GPIO 9) "1.2V_bias" (nominally 1.2V) when selected
+	Selection: la_data_in[122] = 1
+Bias: 600nA when selected
+	Selection: la_data_in[45] = 0
+Trip point select (vtrip): la_data_in[87:90]
 Upstream analog power supply: vdda1/vssa1
 Upstream digital power supply: vccd1/vssd1
-Power supply monitor: io_analog[4]
-Power supply enable: la_data_out[65]
-Power supply !enable: la_data_out[64]
-OVout: io_out[13]
+Power supply monitor: io_analog[4] (pin GPIO 18) "mon_overvoltage2"
+Power supply enable: la_data_in[65]
+OVout: io_out[13] (pin GPIO 13) "overvoltage2_out"
+
+---
+
+All bias currents are regulated by an input bias voltage which is
+nominally 3.3V but may be adjusted up or down to trim the bias
+(limit max. voltage VDDIO + 0.3V to avoid forward biasing the ESD
+diodes into the power supply).
+Bias in: gpio_analog[17] (pin GPIO 35) "bias_trim_in"
 
 ---
 
 Three power FETs are unused but should be kept disabled:
-Enable:  la_data_out[62], la_data_out[67], la_data_out[71]
-Disable: la_data_out[63], la_data_out[66], la_data_out[70]
+Enable:  la_data_in[62], la_data_in[67], la_data_in[71]
+
+---
+
+The bias generator has a master enable signal that will enable
+all bias currents:
+
+Enable bias generator:  la_data_in[79] 
+
+It also has a separate disable signal for the sources (which is
+all of the biases used by projects on this chip):
+
+Disable bias generator sources:  la_data_in[48] 
 
 ---
 
 These current sources/sinks are multiplexed to analog pins not otherwise
-being used for projects:
+being used for projects.  The "enable" or "disable" bit enables or disables
+the current bias, and "selection" connects it to the associated pin:
 
-100nA source (test0): gpio_analog[16] when selected
-	Selection: la_data_out[18] = 0
+100nA source (test0): gpio_analog[16] (pin GPIO 34) when selected
+	Disable: la_data_in[49]
+	Selection: la_data_in[18] = 0 (at pin)
 
-100nA source (test1): gpio_analog[10] when selected
-	Selection: la_data_out[17] = 1
+100nA source (test1): gpio_analog[10] (pin GPIO 28) when selected
+	Disable: la_data_in[38]
+	Selection: la_data_in[17] = 1 (at pin)
 
-100nA sink (test1): gpio_analog[6] when selected
-	Selection: la_data_out[124] = 1
+100nA sink (test1): gpio_analog[6] (pin GPIO 13) when selected
+	Enable:  la_data_in[84]
+	Selection: la_data_in[124] = 1 (at pin)
 
-3.7uA sink (snk_3700): gpio_analog[5] when selected
-	Selection: la_data_out[123] = 1
+3.7uA sink (sink_3700): gpio_analog[5] (pin GPIO 12) when selected
+	Enable:  la_data_in[83]
+	Selection: la_data_in[123] = 1 (at pin)
 
-100nA sink (test0): gpio_analog[0] when selected
-	Selection: la_data_out[118] = 1
+5.0uA sink (sink_5000_1): gpio_analog[1] (pin GPIO 8) when selected
+	Enable:  la_data_in[81]
+	Selection: la_data_in[121] = 1 (at pin)
+
+100nA sink (test0): gpio_analog[0] (pin GPIO 7) when selected
+	Enable:  la_data_in[78]
+	Selection: la_data_in[118] = 1 (at pin)
 
 ---
 
 Refer to [README](docs/source/index.rst) for this sample project documentation. 
+
+Refer to docs/chipalooza_testchip1.pdf (.ps) for a package pinout drawing.
+
+---
+
+Chip QFN-64 package pinout:
+
+Pin  Signal(s)
+ 1   vssa2
+ 2   mprj_io[25] hgbw_opamp_out
+ 3   mprj_io[26] hgbw_opamp_in- temp_sense_vbe2
+ 4   mprj_io[27] hgbw_opamp_in+ temp_sense_vbe1
+ 5   mprj_io[28] comparator_out source_100_1
+ 6   mprj_io[29] comparator_in+ lpopamp_in-
+ 7   mprj_io[30] comparator_in- lpopamp_in+
+ 8   mprj_io[31] lpopamp_out
+ 9   vdda2
+10   vssd2
+11   mprj_io[32] hsxo_xin
+12   mprj_io[33] hsxo_xout
+13   mprj_io[34] hsxo_out  bandgap_out source_100_0
+14   mprj_io[35] bias_trim_in
+15   mprj_io[36]
+16   mprj_io[37]
+17   vddio
+18   vccd
+19   N/C
+20   vssa
+21   resetb
+22   clock
+23   vssd
+24   flash_csb
+25   flash_clk
+26   flash_io0
+27   flash_io1
+28   gpio
+29   vssio
+30   vdda
+31   mprj_io[0] brownout_outb
+32   mprj_io[1] brownout_dcomp
+37   mprj_io[2] por_dcomp
+34   mprj_io[3] por_osc_clk
+35   mprj_io[4] por_pwup_filt
+36   mprj_io[5] brownout_vunder
+37   mprj_io[6] overvoltage1_ovout
+38   vssa1
+39   vssd1
+40   vdda1
+41   mprj_io[7] por_out  sink_100_0
+42   mprj_io[8] por_outb
+43   mprj_io[9]  1.2V_bias
+44   mprj_io[10] lsxo_xin
+45   mprj_io[11] lsxo_xout
+46   mprj_io[12] lsxo_out  sink_3700
+47   vdda1
+48   mprj_io[13] overvoltage2_out  sink_100_1
+49   vccd1
+50   mprj_io[14] mon_brownout
+51   mprj_io[15] mon_overvoltage1
+52   vssa1
+53   mprj_io[16] mon_por
+54   mprj_io[17] mon_lsxo
+55   mprj_io[18] mon_overvoltage2
+56   vssio
+57   mprj_io[19] mon_bandgap
+58   mprj_io[20] mon_hsxo
+59   mprj_io[21] mon_lpopamp
+60   mprj_io[22] mon_comparator
+61   mprj_io[23] mon_temp_sense
+62   mprj_io[24] mon_hgbw_opamp
+63   vccd2
+64   vddio
+
+---
+
+NOTES:  The following pins have dual analog and digital functions.  The
+analog function is enabled/disabled by a ground isolation swtch, and the
+digital function is enabled/disabled by configuring the GPIO from
+software.
+
+pin 41:  por_out (digital), sink_100_0 (analog)
+pin 42:  porb_out (digital), sink_5000_1 (analog)
+pin 46:  lsxo_out (digital), sink_3700 (analog)
+pin 5:   comparator_out (digital), source_100_1 (analog)
+pin 13:  hsxo_out (digital), bandgap_out, source_100_0 (analog, multiplexed)*
+
+*Because the analog on pin 13 is multiplexed, the analog can only be
+ completely disabled by selecting source_100_0 as the multiplexer input and
+ then disabling the current source.  This is not ideal but should not
+ interfere with the HSXO output.
+
+---
+
+Logic analyzer map:
+
+la_data_in[16:1]  Bandgap trim (not in order)
+la_data_in[17]	  Select source_test_1 at pin
+la_data_in[18]    Select bandgap_out (1) or source_test_0 (0)
+la_data_in[19]	  HSXO enable
+la_data_in[20]	  HSXO standby
+la_data_in[21]	  LP opamp enable
+la_data_in[22]	  Select comparator_in- (1) or lpopamp_in+ (0)
+la_data_in[23]	  Select comparator_in+ (1) or lpopamp_in- (0)
+la_data_in[27:25] Comparator trim
+la_data_in[28]	  Comparator enable
+la_data_in[30:29] Comparator hysteresis
+la_data_in[33:31] Comparator trim
+la_data_in[34]	  Select hgbw_opamp_in+ (1) or temp_sense_vbe1 (0)
+la_data_in[35]	  Temperature sensor enable
+la_data_in[36]	  Select hgbw_opamp_in- (1) or temp_sense_vbe2 (0)
+la_data_in[37]	  HGBW op amp enable
+la_data_in[38]	  Disable source_test_1 at bias
+la_data_in[39]	  Disable LSXO 50nA bias
+la_data_in[40] 	  Disable HGBW op amp 100nA bias
+la_data_in[41] 	  Disable POR 200nA bias
+la_data_in[42]	  Disable Overvoltage1 200nA bias
+la_data_in[43]	  Disable Brownout 200nA bias
+la_data_in[44]	  Disable Comparator 400nA bias
+la_data_in[45]	  Disable Overvoltage2 600nA bias
+la_data_in[46]	  Disable LP op amp 10uA bias
+la_data_in[47]	  Disable HSXO 10uA bias
+la_data_in[48] 	  Disable bias generator sources
+la_data_in[49]	  Disable source_test_0
+la_data_in[50]	  Enable Bandgap power supply
+la_data_in[52]	  Enable HSXO power supply
+la_data_in[54]	  Enable LP op amp power supply
+la_data_in[56]	  Enable Comparator power supply
+la_data_in[58]	  Enable Temperature sensor power supply
+la_data_in[60]	  Enable HGBW op amp power supply
+la_data_in[62]	  (Enable unused power supply)
+la_data_in[65]	  Enable Overvoltage2 power supply
+la_data_in[67]	  (Enable unused power supply)
+la_data_in[69]	  Enable LSXO power supply
+la_data_in[71]	  (Enable unused power supply)
+la_data_in[73]	  Enable POR power supply
+la_data_in[75]	  Enable Overvoltage1 power supply
+la_data_in[77]	  Enable Brownout power supply
+la_data_in[78]	  Enable sink_test_0
+la_data_in[79]	  Enable bias generator (master enable)
+la_data_in[80]	  Enable sink_5000_0 (unused)
+la_data_in[81]	  Enable sink_5000_1
+la_data_in[82]	  Enable sink_5000_2 (unused)
+la_data_in[83]	  Enable sink_3700
+la_data_in[84]	  Enable sink_test_1
+la_data_in[85]    LSXO Standby
+la_data_in[86]    LSXO Enable
+la_data_in[90:87] Overvoltage2 trip point selection
+la_data_in[91]	  Overvoltage2 enable
+la_data_in[92]	  POR force disable RC oscillator
+la_data_in[93]	  POR force enable RC oscillator
+la_data_in[94]	  POR force PDN
+la_data_in[95]	  POR current source select
+la_data_in[98:96] POR trip point select
+la_data_in[99]	  POR force short oneshot
+la_data_in[100]	  Overvoltage1 enable
+la_data_in[101]	  Overvoltage1 current source select
+la_data_in[105:102] Overvoltage1 trip point select
+la_data_in[108:106] Brownout trip point (vtrip) select
+la_data_in[109]	  Brownout enable
+la_data_in[110]	  Brownout current source select
+la_data_in[113:111] Brownout trip point (otrip) select
+la_data_in[114]	  Brownout force disable RC oscillator
+la_data_in[115]	  Brownout force enable RC oscillator
+la_data_in[116]	  Brownout force short oneshot
+la_data_out[117]  Brownout timed out
+la_data_in[118]	  Select sink_test_0 at pin
+la_data_out[119]  POR timed out
+la_data_out[120]  POR startup timed out
+la_data_in[121]	  Select sink_5000_1 at pin
+la_data_in[122]	  Select 1.2V bias (see above)
+la_data_in[123]	  Select sink_3700 at pin
+la_data_in[124]	  Select sink_test_1 at pin
+la_data_in[125]	  Enable sink_2000 (unused)
+
+---
+
+Test plan:
+
+Write a software routine to run on flash that communicates via UART.
+Because projects use GPIO[1-4] (housekeeping SPI) and GPIO[5-6] (UART),
+use pin GPIO[36] to toggle between the UART and project I/O, and use
+pin GPIO[37] to toggle between the housekeeping SPI and project I/O.
+Program should communicate with the host computer to select and
+identify projects, and to set trim and other configuration bits as
+needed.
