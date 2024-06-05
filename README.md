@@ -113,6 +113,9 @@ least setting environment variables PDK_ROOT, PDK, and PRECHECK_ROOT.
 If the PDK is installed with open_pdks, then PRECHECK_ROOT can be set
 to open_pdks/sources/precheck_sky130.
 
+This might take an hour. If you just want to see the results then you
+can download [a tar of the full output](https://github.com/qpwo/_patch_chipalooza_projects_1/releases/tag/build4d31885)
+
 Testing:
 
 All projects are connected either to the logic analyzer (128 I/O bits) or
