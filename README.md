@@ -572,3 +572,299 @@ pin GPIO[37] to toggle between the housekeeping SPI and project I/O.
 Program should communicate with the host computer to select and
 identify projects, and to set trim and other configuration bits as
 needed.
+
+For helping with testbench scripting, an API has been defined in
+the `firmware/` directory.  File `chipalooza_defs.h` define all of the
+bit mask values into the logic analyzer data arrays.  File
+`chipalooza_utils.c` defines a set of routines for accessing each
+of the projects.  Note that this only defines access to each project
+for the configuration that is set or read from the logic analyzer
+data array.  Check the connections of each project referenced above
+for information on what I/O pins to connect to for each project,
+which power supplies need to be enabled, and any other board-level
+inputs or outputs required.
+
+chipalooza_utils.c API:
+
+
+Bandgap:
+
+	void bandgap_powerup()
+
+	void bandgap_powerdown()
+
+	void bandgap_select_output()
+
+	void bandgap_set_trim()
+
+HSXO:
+
+	void hsxo_powerup()
+
+	void hsxo_powerdown()
+
+	void hsxo_enable()
+
+	void hsxo_disable()
+
+	void hsxo_run()
+
+	void hsxo_standby()
+
+	void hsxo_bias_enable()
+
+	void hsxo_bias_disable()
+
+LSXO:
+
+	void lsxo_powerup()
+
+	void lsxo_powerdown()
+
+	void lsxo_enable()
+
+	void lsxo_disable()
+
+	void lsxo_run()
+
+	void lsxo_standby()
+
+	void lsxo_bias_enable()
+
+	void lsxo_bias_disable()
+
+LP opamp:
+
+	void lp_opamp_powerup()
+
+	void lp_opamp_powerdown()
+
+	void lp_opamp_enable()
+
+	void lp_opamp_disable()
+
+	void lp_opamp_enable_inputs()
+
+	void lp_opamp_bias_enable()
+
+	void lp_opamp_bias_disable()
+
+Comparator:
+
+	void comparator_powerup()
+
+	void comparator_powerdown()
+
+	void comparator_enable()
+
+	void comparator_disable()
+
+	void comparator_enable_inputs()
+
+	void comparator_bias_enable()
+
+	void comparator_bias_disable()
+
+	void comparator_set_hyst(uint8_t value)
+
+	void comparator_set_trim(uint8_t value)
+
+Temperature sensor:
+
+	void tempsense_powerup()
+
+	void tempsense_powerdown()
+
+	void tempsense_enable()
+
+	void tempsense_disable()
+
+	void tempsense_enable_outputs()
+
+HGBW op-amp:
+
+	void hgbw_opamp_powerup()
+
+	void hgbw_opamp_powerdown()
+
+	void hgbw_opamp_enable()
+
+	void hgbw_opamp_disable()
+
+	void hgbw_opamp_enable_inputs()
+
+	void hgbw_opamp_bias_enable()
+
+	void hgbw_opamp_bias_disable()
+
+Overvoltage detector (2):
+
+	void overvoltage2_powerup()
+
+	void overvoltage2_powerdown()
+
+	void overvoltage2_enable()
+
+	void overvoltage2_disable()
+
+	void overvoltage2_bias_enable()
+
+	void overvoltage2_bias_disable()
+
+	void overvoltage2_set_trippoint(uint8_t value)
+
+POR:
+
+	void por_powerup()
+
+	void por_powerdown()
+
+	void por_vbg_enable()
+
+	void por_vbg_disable()
+
+	void por_bias_enable()
+
+	void por_bias_disable()
+
+	void por_osc_default()
+
+	void por_force_osc_on()
+
+	void por_force_osc_off()
+
+	void por_pdn_default()
+
+	void por_force_pdn()
+
+	void por_select_external_bias()
+
+	void por_select_internal_bias()
+
+	void por_oneshot_mode()
+
+	void por_continuous_mode()
+
+	void por_set_trippoint(uint8_t value)
+
+	uint8_t por_get_timeout()
+
+	uint8_t por_get_startup_timeout()
+
+Overvoltage detector (1):
+
+	void overvoltage1_powerup()
+
+	void overvoltage1_powerdown()
+
+	void overvoltage1_enable()
+
+	void overvoltage1_disable()
+
+	void overvoltage1_bias_enable()
+
+	void overvoltage1_bias_disable()
+
+	void overvoltage1_select_external_bias()
+
+	void overvoltage1_select_internal_bias()
+
+	void overvoltage1_set_trippoint(uint8_t value)
+
+Brownout detector:
+
+	void brownout_powerup()
+
+	void brownout_powerdown()
+
+	void brownout_vbg_enable()
+
+	void brownout_vbg_disable()
+
+	void brownout_bias_enable()
+
+	void brownout_bias_disable()
+
+	void brownout_select_external_bias()
+
+	void brownout_select_internal_bias()
+
+	void brownout_set_vtrippoint(uint8_t value)
+
+	void brownout_set_otrippoint(uint8_t value)
+
+	void brownout_osc_default()
+
+	void brownout_force_osc_on()
+
+	void brownout_force_osc_off()
+
+	void brownout_oneshot_mode()
+
+	void brownout_continuous_mode()
+
+	uint8_t brownout_get_timeout()
+
+Bias generator:
+
+	void biasgen_enable()
+
+	void biasgen_disable()
+
+	void biasgen_sources_enable()
+
+	void biasgen_sources_disable()
+
+	void biasgen_source_test0_enable()
+
+	void biasgen_source_test0_disable()
+
+	void biasgen_source_test0_enable_output()
+
+	void biasgen_source_test0_disable_output()
+
+	void biasgen_source_test1_enable()
+
+	void biasgen_source_test1_disable()
+
+	void biasgen_source_test1_enable_output()
+
+	void biasgen_source_test1_disable_output()
+
+	void biasgen_sink_test0_enable()
+
+	void biasgen_sink_test0_disable()
+
+	void biasgen_sink_test0_enable_output()
+
+	void biasgen_sink_test0_disable_output()
+
+	void biasgen_sink_test1_enable()
+
+	void biasgen_sink_test1_disable()
+
+	void biasgen_sink_test1_enable_output()
+
+	void biasgen_sink_test1_disable_output()
+
+	void biasgen_sink_test_3700_enable()
+
+	void biasgen_sink_test_3700_disable()
+
+	void biasgen_sink_test_3700_enable_output()
+
+	void biasgen_sink_test_3700_disable_output()
+
+	void biasgen_sink_test_5000_enable()
+
+	void biasgen_sink_test_5000_disable()
+
+	void biasgen_sink_test_5000_enable_output()
+
+	void biasgen_sink_test_5000_disable_output()
+
+Power switching:
+
+	void powerdown_unused()
+
+	void powerdown_all()
