@@ -595,7 +595,7 @@ Bandgap:
 
 	void bandgap_select_output()
 
-	void bandgap_set_trim()
+	void bandgap_set_trim(uint16_t value)
 
 HSXO:
 
@@ -815,6 +815,8 @@ Bias generator:
 
 	void biasgen_sources_disable()
 
+Bias generator test outputs:
+
 	void biasgen_source_test0_enable()
 
 	void biasgen_source_test0_disable()
@@ -868,3 +870,7 @@ Power switching:
 	void powerdown_unused()
 
 	void powerdown_all()
+
+General:
+
+	void init_logic_analyzer()

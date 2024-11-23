@@ -1,4 +1,23 @@
-/* Definitions for the chipalooza_testchip1 */
+/*----------------------------------------------*/
+/* Definitions for the chipalooza_testchip1	*/
+/*----------------------------------------------*/
+/* Written by Tim Edwards, Efabless		*/
+/* November 22, 2024				*/
+/*----------------------------------------------*/
+
+/* Note that bit definitions for multiplexers have two
+ * definitions for the same bit,  indicating the
+ * selection of the two projects shared by the
+ * multiplexer.
+ *
+ * Some definitions are multi-bit masks indicating
+ * the range of bits used by the value.  This does
+ * not indicate what order the bits are in, and for
+ * many multi-bit values, the bits are scrambled.
+ * See the chipalooza_utils.c set of utility
+ * routines for a more comprehensive description of
+ * the value bit fields.
+ */
 
 /* Logic analyzer data in bits */
 
@@ -13,7 +32,7 @@
 #define SEL_COMP_INM	   0x00400000
 #define NSEL_LPAMP_INP	   0x00400000
 #define SEL_COMP_INP	   0x00800000
-#define NSEL_LPAMP_INN	   0x00800000
+#define NSEL_LPAMP_INM	   0x00800000
 #define COMP_TRIM_MASK_L   0x0e000000
 #define COMP_ENABLE	   0x10000000
 #define COMP_HYST_MASK	   0x60000000
@@ -24,7 +43,7 @@
 #define SEL_HGBWAMP_INP	   0x00000004
 #define NSEL_TEMP_VBE1	   0x00000004
 #define TEMP_ENABLE	   0x00000008
-#define SEL_HGBWAMP_INN    0x00000010
+#define SEL_HGBWAMP_INM    0x00000010
 #define NSEL_TEMP_VBE2	   0x00000010
 #define HGBWAMP_ENABLE     0x00000020
 #define NENA_SRC_TEST1	   0x00000040
