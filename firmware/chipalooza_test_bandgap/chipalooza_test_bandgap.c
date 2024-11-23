@@ -3,7 +3,7 @@
 
 /*
  *-----------------------------------------------------------
- * chipalooza_tests1.c:
+ * chipalooza_test_bandgap.c:
  *-----------------------------------------------------------
  * Written by Tim Edwards, Efabless Corporation
  * November 22, 2024
@@ -154,8 +154,8 @@ void main()
     // Enable the output multiplexer for the bandgap
     bandgap_select_output();
 
-    // Set bandgap trim
-    bandgap_set_trim(0);
+    // Set bandgap trim (16 bit value)
+    bandgap_set_trim(32767);
 
     // That's all!  Now if the LED on the board is blinking,
     // GPIO 19 should read 1.8V and GPIO 34 should read 1.2V.

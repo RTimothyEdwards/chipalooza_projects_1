@@ -13,11 +13,11 @@ INCLUDES=-I$(shell pwd) -I../ -I../generated/
 
 VOLTAGE=$(shell python3 -c "from gpio_config_def import voltage; print(voltage)")
 
-# ---- Test patterns for project raven ----
+# ---- Test patterns for chipalooza test chip 1 ----
 
 .SUFFIXES:
 
-PATTERN = chipalooza_tests1
+PATTERN = chipalooza_test_comp
 
 hex:  ${PATTERN:=.hex}
 
