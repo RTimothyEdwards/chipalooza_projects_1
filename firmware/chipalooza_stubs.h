@@ -116,6 +116,7 @@ void overvoltage1_bias_disable();
 void overvoltage1_select_external_bias();
 void overvoltage1_select_internal_bias();
 void overvoltage1_set_trippoint(uint8_t value);
+uint8_t overvoltage1_get_trippoint();
 
 /* Brownout detector */
 

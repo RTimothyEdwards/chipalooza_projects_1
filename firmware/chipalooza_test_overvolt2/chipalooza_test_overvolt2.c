@@ -3,10 +3,10 @@
 
 /*
  *-----------------------------------------------------------
- * chipalooza_test_hgbwamp.c:
+ * chipalooza_test_overvolt2.c:
  *-----------------------------------------------------------
  * Written by Tim Edwards, Efabless Corporation
- * November 22, 2024
+ * November 28, 2024
  *-----------------------------------------------------------
  *
  * Board-level preparation:
@@ -16,26 +16,47 @@
  * 4) connect vdda2 to 3.3V
  * 5) connect GPIO 35 to 3.3V (for biasgen trim)
  *
+ * Digilent setup:
+ * V+ to vdda1
+ * W1 set at constant 1.2V to GPIO 9
+ * 1+ to GPIO 13
+ * digital channels 0->3 to GPIO 5->8
+ *
  * Firmware preparation:
  * 1) set all GPIOs to analog mode (config_io, above)
- *    except for GPIO 28, which is a user digital output
+ *    except for GPIO 13, which is a user digital output
  * 2) disable all power supplies
  *
  *-----------------------------------------------------------
- * 1st test:  Check op amp
+ * 1st test:  Check overvoltage
  *-----------------------------------------------------------
  *
- * 1) enable power supply for op amp
- * 2) enable the op amp
- * 3) enable the op amp bias (100nA)
- * 4) enable the op amp inputs
- * 5) power supply monitor is GPIO 24 (no ESD protection)
- * 6) drive inputs to the op amp on GPIO 26 (negative)
- *    and GPIO 27 (positive)
- * 7) view analog output on GPIO 25
+ * 1) enable power supply for overvoltage detector
+ * 2) enable the overvoltage detector
+ * 3) enable the overvoltage detector bias (400nA)
+ * 4) enable the overvoltage detector bandgap input (1.2V)
+ *	(Note:  This needs to be externally supplied)
+ * 5) power supply monitor is GPIO 18 (no ESD protection)
+ * 6) view digital output from GPIO 13
  *
- * Basic functional test:  Output should follow the
- * differential input with measurable gain.
+ * Basic functional test:  Output should go high whenever
+ * the vdda1 supply exceeds the default threshold
+ *
+ * Note that this circuit is powered off of vdda1, which
+ * also powers the current bias generator, so it is not
+ * possible to decouple the two.
+ *
+ *-----------------------------------------------------------
+ * 2nd test:  Check trim
+ *-----------------------------------------------------------
+ *
+ * Measure at different values of voltage trim.
+ *
+ * Basic functional test:  Output should go high whenever
+ * the vdda1 supply exceeds the threshold set by the trip
+ * point.  Use GPIO 12->9 connected to Digilent channels
+ * 6->3 to control the 4-bit threshold setting (see code
+ * below).
  *
  */
 
@@ -61,21 +82,27 @@ void config_io() {
 
     reg_mprj_io_0 = GPIO_MODE_MGMT_STD_ANALOG;
 
-    /* Keep the SPI functional */
+    /* Keep SPI functional */
     reg_mprj_io_1 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_2 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
     reg_mprj_io_3 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
     reg_mprj_io_4 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
 
-    reg_mprj_io_5 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_6 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_7 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_8 = GPIO_MODE_MGMT_STD_ANALOG;
+    /* For digital input setting trippoint level */
+    reg_mprj_io_5 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_6 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_7 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_8 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+
+    /* For 1.2V input */
     reg_mprj_io_9 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_10 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_11 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_12 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_13 = GPIO_MODE_MGMT_STD_ANALOG;
+
+    /* Overvoltage detector digital output is on GPIO 13 */
+    reg_mprj_io_13 = GPIO_MODE_USER_STD_OUTPUT;
+
     reg_mprj_io_14 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_15 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_16 = GPIO_MODE_MGMT_STD_ANALOG;
@@ -91,7 +118,7 @@ void config_io() {
     reg_mprj_io_25 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_26 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_27 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_28 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_28 = GPIO_MODE_USER_STD_ANALOG;
     reg_mprj_io_29 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_30 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_31 = GPIO_MODE_MGMT_STD_ANALOG;
@@ -106,6 +133,9 @@ void config_io() {
 
 void main()
 {
+    uint8_t vtrim;
+    uint32_t value, allgpio;
+
     reg_gpio_mode1 = 1;
     reg_gpio_mode0 = 0;
     reg_gpio_ien = 1;
@@ -125,21 +155,22 @@ void main()
 
     init_logic_analyzer();
 
-    // Enable the power switch to the hgbw_opamp
-    hgbw_opamp_powerup();
+    // Enable the power switch to the overvoltage detector.
+    overvoltage2_powerup();
 
-    // Enable the input multiplexers for the hgbw_opamp
-    hgbw_opamp_enable_inputs();
+    // Enable the bias current to the overvoltage detector.
+    overvoltage2_bias_enable();
 
-    // Enable the bias current to the hgbw_opamp
-    hgbw_opamp_bias_enable();
+    // Enable the overvoltage detector
+    // This also enables the 1.2V bandgap for the overvoltage detector.
+    overvoltage2_enable();
 
-    // Enable the hgbw_opamp
-    hgbw_opamp_enable();
+    // Set overvoltage trip point
+    overvoltage2_set_trippoint(0);
 
     // That's all!  Now if the LED on the board is blinking,
-    // GPIO 25 should be the output
-    // gain * (V(GPIO 27) - V(GPIO 26)).
+    // GPIO 13 should be the digital encoding of the state
+    // V(vdda1) > V(trip).
 
     // Proceed with the blink test.  For most measurements,
     // this should not be enabled to keep the digital
@@ -147,20 +178,28 @@ void main()
 
     reg_gpio_out = 1; // OFF
 
+    reg_mprj_datal = 0x00000000;
+    reg_mprj_datah = 0x00000000;
+
+    vtrim = 0;
+
     while(1) {
 
-	reg_mprj_datal = 0x00000000;
-	reg_mprj_datah = 0x00000000;
+	/* Blink LED */
 
 	reg_gpio_out = 0x0;
-
 	delay(1000000);
-
-	reg_mprj_datal = 0xffffffff;
-	reg_mprj_datah = 0xffffffff;
-
 	reg_gpio_out = 0x1;
-
 	delay(1000000);
+
+	/* Sample trip point value, applied externally	*/
+	/* on GPIO 8->5					*/
+
+	allgpio = reg_mprj_datal;
+	value = ((allgpio >> 8) & 0xf);
+	if (value != vtrim) {
+	    vtrim = value;
+	    overvoltage2_set_trippoint(vtrim);
+	}
     }
 }

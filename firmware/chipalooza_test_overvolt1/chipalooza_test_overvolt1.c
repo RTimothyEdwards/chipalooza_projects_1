@@ -3,10 +3,10 @@
 
 /*
  *-----------------------------------------------------------
- * chipalooza_test_comp.c:
+ * chipalooza_test_overvolt1.c:
  *-----------------------------------------------------------
  * Written by Tim Edwards, Efabless Corporation
- * November 22, 2024
+ * December 11, 2024
  *-----------------------------------------------------------
  *
  * Board-level preparation:
@@ -18,43 +18,56 @@
  *
  * Firmware preparation:
  * 1) set all GPIOs to analog mode (config_io, above)
- *    except for GPIO 28, which is a user digital output
+ *    except for GPIO 6, which is a user digital output,
+ *    and GPIO 8 and GPIO 10 to 13, which are management
+ *    digital inputs.
  * 2) disable all power supplies
+ * 3) Take 1.2V reference from GPIO 9.
+ *
+ * Map the following digital inputs to project inputs:
+ * GPIO 8	isrc select
+ * (GPIO 9	1.2V reference)
+ * GPIO 10	trip 0 
+ * GPIO 11	trip 1
+ * GPIO 12	trip 2
+ * GPIO 13	trip 3
+ *
+ * For debugging, the following GPIOs are set to duplicate
+ * the trip point setting back to GPIO 25-28
+ * 
+ * GPIO 25	trip 0 
+ * GPIO 26	trip 1
+ * GPIO 27	trip 2
+ * GPIO 28	trip 3
  *
  *-----------------------------------------------------------
- * 1st test:  Check comparator
+ * 1st test:  Check overvoltage detector
  *-----------------------------------------------------------
  *
- * 1) enable power supply for comparator
- * 2) enable the comparator
- * 3) enable the comparator bias (400nA)
- * 4) enable the comparator inputs
- * 5) power supply monitor is GPIO 22 (no ESD protection)
- * 6) drive inputs to the comparator on GPIO 30 (negative)
- *    and GPIO 29 (positive)
- * 7) view digital output from GPIO 28
+ * 1) enable power supply for overvoltage detector
+ * 2) enable the overvoltage detector
+ * 3) enable the overvoltage detector bias (200nA)
+ * 4) power supply monitor is GPIO 15 (no ESD protection)
+ * 5) view digital output from GPIO 6
  *
  * Basic functional test:  Output should go high whenever
- * the positive input is greater than the negative input.
- *
- * Measure at different common-mode voltages
+ * the vdda1 power supply exceeds the specified trip point.
  *
  *-----------------------------------------------------------
- * 1st test:  Check comparator
+ * 1st test:  Check overvoltage detector
  *-----------------------------------------------------------
  *
- * Measure at different values of hysteresis and offset
- * trim.
+ * Measure at different values of trip points, and check
+ * operation with internal and external bias.
  *
- * Program:  Use digital input pins to set trim and hysteresis.
- *  Hysteresis: (2 bits) on GPIO 25 and 26.  Set GPIO to be
- * pull-down inputs, then control value from the Digilent.
- * The program periodically samples the values and applies them
+ * Program:  Use digital input pins to set trip point and
+ * select current bias.
+ * Current bias select: (1 bit) on GPIO 11.  Set GPIO to be a
+ * pull-down input, then control value from the Digilent.
+ * The program periodically samples the value and applies it
  * to the logic analyzer.
  *
- * Trim: (6 bits) on GPIO 8 to GPIO 13.  Same as above
-
- *
+ * Trim: (4 bits) on GPIO 7 to GPIO 10.  Same as above
  *
  */
 
@@ -87,10 +100,10 @@ void config_io() {
     reg_mprj_io_4 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
 
     reg_mprj_io_5 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_6 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_6 = GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_7 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_8 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_9 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_9 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_10 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_11 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_12 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
@@ -107,13 +120,10 @@ void config_io() {
     reg_mprj_io_22 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_23 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_24 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_25 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_26 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_27 = GPIO_MODE_MGMT_STD_ANALOG;
-
-    /* Comparator digital output is on GPIO 28 */
-    reg_mprj_io_28 = GPIO_MODE_USER_STD_OUTPUT;
-
+    reg_mprj_io_25 = GPIO_MODE_MGMT_STD_OUTPUT;
+    reg_mprj_io_26 = GPIO_MODE_MGMT_STD_OUTPUT;
+    reg_mprj_io_27 = GPIO_MODE_MGMT_STD_OUTPUT;
+    reg_mprj_io_28 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_29 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_30 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_31 = GPIO_MODE_MGMT_STD_ANALOG;
@@ -128,7 +138,7 @@ void config_io() {
 
 void main()
 {
-    uint8_t hyst, trim;
+    uint8_t isel, trip;
     uint32_t value, allgpio;
 
     reg_gpio_mode1 = 1;
@@ -150,27 +160,24 @@ void main()
 
     init_logic_analyzer();
 
-    // Enable the power switch to the comparator
-    comparator_powerup();
+    // Enable the power switch to the overvoltage detector
+    overvoltage1_powerup();
 
-    // Enable the input multiplexers for the comparator
-    comparator_enable_inputs();
+    // Enable the bias current to the overvoltage detector
+    overvoltage1_bias_enable();
 
-    // Enable the bias current to the comparator
-    comparator_bias_enable();
+    // Enable the overvoltage detector
+    overvoltage1_enable();
 
-    // Enable the comparator
-    comparator_enable();
+    // Set overvoltage detector trip point
+    overvoltage1_set_trippoint(0);
 
-    // Set comparator offset trim
-    comparator_set_trim(0);
-
-    // Set comparator hysteresis
-    comparator_set_hyst(0);
+    // Set overvoltage detector current source select
+    overvoltage1_select_internal_bias();
 
     // That's all!  Now if the LED on the board is blinking,
-    // GPIO 28 should be the digital encoding of the state
-    // V(GPIO 29) > V(GPIO 30).
+    // GPIO 6 should be the digital encoding of the state
+    // vdda1 > (trip point).
 
     // Proceed with the blink test.  For most measurements,
     // this should not be enabled to keep the digital
@@ -181,8 +188,8 @@ void main()
     reg_mprj_datal = 0x00000000;
     reg_mprj_datah = 0x00000000;
 
-    hyst = 0;
-    trim = 0;
+    isel = 0;
+    trip = 0;
 
     while(1) {
 
@@ -193,21 +200,28 @@ void main()
 	reg_gpio_out = 0x1;
 	delay(1000000);
 
-	/* Sample hysteresis value, applied externally */
+	/* Sample current source select value, applied externally */
+	/* on GPIO 8						  */
 
 	allgpio = reg_mprj_datal;
-        value = ((allgpio >> 25) & 0x3);
-	if (value != hyst) {
-	    hyst = value;
-	    comparator_set_hyst(hyst);
+        value = ((allgpio >> 8) & 0x1);
+	if (value != isel) {
+	    isel = value;
+	    if (isel == 1)
+		overvoltage1_select_external_bias();
+	    else
+		overvoltage1_select_internal_bias();
 	}
 
-	/* Sample trim value, applied externally */
+	/* Sample trip point value, applied externally on GPIO 13->10 */
 
-	value = ((allgpio >> 8) & 0x3f);
-	if (value != trim) {
-	    trim = value;
-	    comparator_set_trim(trim);
+	value = ((allgpio >> 10) & 0xf);
+	if (value != trip) {
+	    trip = value;
+	    overvoltage1_set_trippoint(trip);
+
+	    /* sanity check */
+	    reg_mprj_datal = trip << 25;
 	}
     }
 }

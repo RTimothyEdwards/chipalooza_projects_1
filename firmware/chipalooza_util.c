@@ -831,6 +831,13 @@ void overvoltage1_set_trippoint(uint8_t value)
     reg_la3_data = value;
 }
 
+uint8_t overvoltage1_get_trippoint()
+{
+    uint32_t maskval = reg_la3_data;
+    maskval = (maskval & OV1_TRIP_MASK) >> 6;
+    return (uint8_t)(maskval & 0xff);
+}
+
 /*----------------------------------------------------------------------*/
 /* BROWNOUT DETECTOR							*/
 /*----------------------------------------------------------------------*/

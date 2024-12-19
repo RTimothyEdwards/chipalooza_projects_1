@@ -3,10 +3,10 @@
 
 /*
  *-----------------------------------------------------------
- * chipalooza_test_hgbwamp.c:
+ * chipalooza_test_lsxo.c:
  *-----------------------------------------------------------
  * Written by Tim Edwards, Efabless Corporation
- * November 22, 2024
+ * November 27, 2024
  *-----------------------------------------------------------
  *
  * Board-level preparation:
@@ -27,12 +27,12 @@
  *
  * 1) enable power supply for op amp
  * 2) enable the op amp
- * 3) enable the op amp bias (100nA)
+ * 3) enable the op amp bias (10uA)
  * 4) enable the op amp inputs
- * 5) power supply monitor is GPIO 24 (no ESD protection)
- * 6) drive inputs to the op amp on GPIO 26 (negative)
- *    and GPIO 27 (positive)
- * 7) view analog output on GPIO 25
+ * 5) power supply monitor is GPIO 21 (no ESD protection)
+ * 6) drive inputs to the op amp on GPIO 29 (negative)
+ *    and GPIO 30 (positive)
+ * 7) view analog output on GPIO 31
  *
  * Basic functional test:  Output should follow the
  * differential input with measurable gain.
@@ -74,7 +74,10 @@ void config_io() {
     reg_mprj_io_9 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_10 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_11 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_12 = GPIO_MODE_MGMT_STD_ANALOG;
+
+    /* LSXO digital output on GPIO 12 */
+    reg_mprj_io_12 = GPIO_MODE_USER_STD_OUTPUT;
+
     reg_mprj_io_13 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_14 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_15 = GPIO_MODE_MGMT_STD_ANALOG;
@@ -125,21 +128,27 @@ void main()
 
     init_logic_analyzer();
 
-    // Enable the power switch to the hgbw_opamp
-    hgbw_opamp_powerup();
+    // Enable the power switch to the lp_opamp
+    lsxo_powerup();
 
-    // Enable the input multiplexers for the hgbw_opamp
-    hgbw_opamp_enable_inputs();
+    // Enable the bias current to the lp_opamp
+    lsxo_bias_enable();
 
-    // Enable the bias current to the hgbw_opamp
-    hgbw_opamp_bias_enable();
+    // Enable the lsxo in standby mode
+    lsxo_standby();
+    lsxo_enable();
 
-    // Enable the hgbw_opamp
-    hgbw_opamp_enable();
+    // Start the LSXO running
+    lsxo_run();
 
     // That's all!  Now if the LED on the board is blinking,
-    // GPIO 25 should be the output
-    // gain * (V(GPIO 27) - V(GPIO 26)).
+    // GPIO 12 should be the (digital) output
+
+    // Xin/Xout are GPIO 10 and 11.  For a quick test, it should
+    // be possible to drive these pins with a low-amplitude sine
+    // wave at 32.768kHz
+
+    // To do:  Allow external control of enable and standby
 
     // Proceed with the blink test.  For most measurements,
     // this should not be enabled to keep the digital

@@ -86,10 +86,13 @@ void delay(const int d)
 void config_io() {
 
     reg_mprj_io_0 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_1 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_2 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_3 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_4 = GPIO_MODE_MGMT_STD_ANALOG;
+
+    /* Keep GPIOs 1 to 4 in standard SPI access mode */
+    reg_mprj_io_1 = GPIO_MODE_MGMT_STD_OUTPUT;
+    reg_mprj_io_2 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
+    reg_mprj_io_3 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
+    reg_mprj_io_4 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
+
     reg_mprj_io_5 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_6 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_7 = GPIO_MODE_MGMT_STD_ANALOG;
