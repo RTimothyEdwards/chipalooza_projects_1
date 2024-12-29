@@ -20,7 +20,11 @@
  * V+ to vdda1
  * W1 set at constant 1.2V to GPIO 9
  * 1+ to GPIO 13
- * digital channels 0->3 to GPIO 5->8
+ * digital channels 0->3 to GPIO 0 and 6->8
+ *
+ * NOTE:  The digital input bits are not all together
+ * because GPIO 5 is used for the UART by default and
+ * is strongly pulled high.
  *
  * Firmware preparation:
  * 1) set all GPIOs to analog mode (config_io, above)
@@ -54,8 +58,8 @@
  *
  * Basic functional test:  Output should go high whenever
  * the vdda1 supply exceeds the threshold set by the trip
- * point.  Use GPIO 12->9 connected to Digilent channels
- * 6->3 to control the 4-bit threshold setting (see code
+ * point.  Use GPIO 8->6, 0 connected to Digilent channels
+ * 3->0 to control the 4-bit threshold setting (see code
  * below).
  *
  */
@@ -80,7 +84,8 @@ void delay(const int d)
 
 void config_io() {
 
-    reg_mprj_io_0 = GPIO_MODE_MGMT_STD_ANALOG;
+    /* For digital input setting trippoint level (low bit) */
+    reg_mprj_io_0 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
 
     /* Keep SPI functional */
     reg_mprj_io_1 = GPIO_MODE_MGMT_STD_OUTPUT;
@@ -88,8 +93,8 @@ void config_io() {
     reg_mprj_io_3 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
     reg_mprj_io_4 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
 
-    /* For digital input setting trippoint level */
-    reg_mprj_io_5 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_5 = GPIO_MODE_MGMT_STD_ANALOG;
+    /* For digital input setting trippoint level (upper 3 bits) */
     reg_mprj_io_6 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_7 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_8 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
@@ -133,7 +138,7 @@ void config_io() {
 
 void main()
 {
-    uint8_t vtrim;
+    uint8_t vtrip;
     uint32_t value, allgpio;
 
     reg_gpio_mode1 = 1;
@@ -181,7 +186,7 @@ void main()
     reg_mprj_datal = 0x00000000;
     reg_mprj_datah = 0x00000000;
 
-    vtrim = 0;
+    vtrip = 0;
 
     while(1) {
 
@@ -193,13 +198,13 @@ void main()
 	delay(1000000);
 
 	/* Sample trip point value, applied externally	*/
-	/* on GPIO 8->5					*/
+	/* on GPIO 8->6, 0				*/
 
 	allgpio = reg_mprj_datal;
-	value = ((allgpio >> 8) & 0xf);
-	if (value != vtrim) {
-	    vtrim = value;
-	    overvoltage2_set_trippoint(vtrim);
+	value = (allgpio & 0x1) | ((allgpio >> 5) & 0xe);
+	if ((uint8_t)value != vtrip) {
+	    vtrip = (uint8_t)value;
+	    overvoltage2_set_trippoint(vtrip);
 	}
     }
 }

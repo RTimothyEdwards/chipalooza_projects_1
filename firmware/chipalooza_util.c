@@ -543,8 +543,8 @@ void overvoltage2_enable()
 {
     uint32_t value;
 
-    value = reg_la1_data | OV2_ENABLE;
-    reg_la1_data = value;
+    value = reg_la2_data | OV2_ENABLE;
+    reg_la2_data = value;
     value = reg_la3_data | SEL_1P2_BIAS;
     reg_la3_data = value;
 }
@@ -553,8 +553,8 @@ void overvoltage2_disable()
 {
     uint32_t value;
 
-    value = reg_la1_data & ~OV2_ENABLE;
-    reg_la1_data = value;
+    value = reg_la2_data & ~OV2_ENABLE;
+    reg_la2_data = value;
 }
 
 void overvoltage2_bias_enable()
