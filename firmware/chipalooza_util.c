@@ -852,6 +852,22 @@ void brownout_powerdown()
     reg_la2_data = value;
 }
 	
+void brownout_enable()
+{
+    uint32_t value;
+
+    value = reg_la3_data | BRNOUT_ENABLE;
+    reg_la3_data = value;
+}
+
+void brownout_disable()
+{
+    uint32_t value;
+
+    value = reg_la3_data & ~BRNOUT_ENABLE;
+    reg_la3_data = value;
+}
+
 void brownout_vbg_enable()
 {
     uint32_t value;

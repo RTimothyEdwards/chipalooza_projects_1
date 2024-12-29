@@ -122,6 +122,8 @@ uint8_t overvoltage1_get_trippoint();
 
 void brownout_powerup();
 void brownout_powerdown();
+void brownout_enable();
+void brownout_disable();
 void brownout_vbg_enable();
 void brownout_vbg_disable();
 void brownout_bias_enable();

@@ -79,10 +79,9 @@
  * Force RC oscillator always off: (1 bit) GPIO 33
  *
  * Capture timed-out signal from la_data_out[117]
- * and output on GPIO 34.
+ * and output on GPIO 36.
  *
- * One-shot and continuous mode triggers on GPIO 36 and
- * GPIO 37, respectively.
+ * One-shot mode triggers on GPIO 34.
  *
  */
 
@@ -114,8 +113,8 @@ void config_io() {
     reg_mprj_io_3 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
     reg_mprj_io_4 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
 
-    reg_mprj_io_5 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_6 = GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_5 = GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_6 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_7 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_8 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_9 = GPIO_MODE_MGMT_STD_ANALOG;
@@ -144,10 +143,10 @@ void config_io() {
     reg_mprj_io_31 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_32 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_33 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_34 = GPIO_MODE_MGMT_STD_OUTPUT;
+    reg_mprj_io_34 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_35 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_36 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_37 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_36 = GPIO_MODE_MGMT_STD_OUTPUT;
+    reg_mprj_io_37 = GPIO_MODE_MGMT_STD_ANALOG;
 }
 
 
@@ -183,6 +182,9 @@ void main()
 
     // Enable the bias current to the brownout detector
     brownout_bias_enable();
+
+    // Enable the brownout detector itself
+    brownout_enable();
 
     // Set brownout detector 1st trip point
     brownout_set_otrippoint(0);
@@ -245,7 +247,7 @@ void main()
 	value = ((allgpio >> 28) & 0x7);
 	if (value != vtrip) {
 	    vtrip = value;
-	    brownout_set_otrippoint(vtrip);
+	    brownout_set_vtrippoint(vtrip);
 	}
 
 	/* Sample one-shot mode, applied externally on GPIO 34 */
