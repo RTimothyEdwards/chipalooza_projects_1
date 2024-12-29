@@ -37,6 +37,8 @@
  * GPIO 31	isel
  * GPIO 32	force rc on
  * GPIO 33	force rc off
+ * GPIO 34	one-shot mode
+ * GPIO 36	timeout (digital output)
  *
  *-----------------------------------------------------------
  * 1st test:  Check brownout detector
@@ -76,8 +78,11 @@
  * Force RC oscillator always on: (1 bit) GPIO 32
  * Force RC oscillator always off: (1 bit) GPIO 33
  *
- * To do:  capture timed-out signal from la_data_out[117]
- * and output on a GPIO.
+ * Capture timed-out signal from la_data_out[117]
+ * and output on GPIO 34.
+ *
+ * One-shot and continuous mode triggers on GPIO 36 and
+ * GPIO 37, respectively.
  *
  */
 
@@ -112,12 +117,12 @@ void config_io() {
     reg_mprj_io_5 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_6 = GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_7 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_8 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_8 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_9 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_10 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_11 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_12 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_13 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_10 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_11 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_12 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_13 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_14 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_15 = GPIO_MODE_MGMT_STD_ANALOG;
     reg_mprj_io_16 = GPIO_MODE_MGMT_STD_ANALOG;
@@ -139,16 +144,16 @@ void config_io() {
     reg_mprj_io_31 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_32 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
     reg_mprj_io_33 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
-    reg_mprj_io_34 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_34 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_35 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_36 = GPIO_MODE_MGMT_STD_ANALOG;
-    reg_mprj_io_37 = GPIO_MODE_MGMT_STD_ANALOG;
+    reg_mprj_io_36 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
+    reg_mprj_io_37 = GPIO_MODE_MGMT_STD_INPUT_PULLDOWN;
 }
 
 
 void main()
 {
-    uint8_t isel, trip;
+    uint8_t isel, otrip, vtrip, oneshot, timeout;
     uint32_t value, allgpio;
 
     reg_gpio_mode1 = 1;
@@ -179,8 +184,11 @@ void main()
     // Enable the bias current to the brownout detector
     brownout_bias_enable();
 
-    // Set brownout detector trip point
-    brownout_set_trippoint(0);
+    // Set brownout detector 1st trip point
+    brownout_set_otrippoint(0);
+
+    // Set brownout detector 2nd trip point
+    brownout_set_vtrippoint(0);
 
     // Set brownout detector current source select
     brownout_select_internal_bias();
@@ -199,7 +207,8 @@ void main()
     reg_mprj_datah = 0x00000000;
 
     isel = 0;
-    trip = 0;
+    otrip = 0;
+    vtrip = 0;
 
     while(1) {
 
@@ -211,10 +220,10 @@ void main()
 	delay(1000000);
 
 	/* Sample current source select value, applied externally */
-	/* on GPIO 8						  */
+	/* on GPIO 31						  */
 
 	allgpio = reg_mprj_datal;
-        value = ((allgpio >> 8) & 0x1);
+        value = ((allgpio >> 31) & 0x1);
 	if (value != isel) {
 	    isel = value;
 	    if (isel == 1)
@@ -223,12 +232,38 @@ void main()
 		brownout_select_internal_bias();
 	}
 
-	/* Sample trip point value, applied externally on GPIO 13->10 */
+	/* Sample 1st trip point value, applied externally on GPIO 27->25 */
 
-	value = ((allgpio >> 10) & 0xf);
-	if (value != trip) {
-	    trip = value;
-	    brownout_set_trippoint(trip);
+	value = ((allgpio >> 25) & 0x7);
+	if (value != otrip) {
+	    otrip = value;
+	    brownout_set_otrippoint(otrip);
+	}
+
+	/* Sample 2nd trip point value, applied externally on GPIO 30->28 */
+
+	value = ((allgpio >> 28) & 0x7);
+	if (value != vtrip) {
+	    vtrip = value;
+	    brownout_set_otrippoint(vtrip);
+	}
+
+	/* Sample one-shot mode, applied externally on GPIO 34 */
+	allgpio = reg_mprj_datah;
+	value = ((allgpio >> 2) & 0x1);
+	if (value != oneshot) {
+	    oneshot = value;
+	    if (oneshot == 1)
+		brownout_oneshot_mode();
+	    else
+		brownout_continuous_mode();
+	}
+
+	/* Sample timeout, and apply externally to GPIO 36 */
+	value = brownout_get_timeout();
+	if (value != timeout) {
+	    timeout = value;
+	    reg_mprj_datah = (timeout & 0x1) << 4;
 	}
     }
 }
