@@ -824,18 +824,12 @@ void overvoltage1_select_internal_bias()
 
 void overvoltage1_set_trippoint(uint8_t value)
 {
+    uint32_t ovalue;
     uint32_t maskval = ((uint32_t)value & 0xf) << 6;
 
-    value = reg_la3_data & ~OV1_TRIP_MASK;
-    value |= maskval;
-    reg_la3_data = value;
-}
-
-uint8_t overvoltage1_get_trippoint()
-{
-    uint32_t maskval = reg_la3_data;
-    maskval = (maskval & OV1_TRIP_MASK) >> 6;
-    return (uint8_t)(maskval & 0xff);
+    ovalue = reg_la3_data & ~OV1_TRIP_MASK;
+    ovalue |= maskval;
+    reg_la3_data = ovalue;
 }
 
 /*----------------------------------------------------------------------*/
