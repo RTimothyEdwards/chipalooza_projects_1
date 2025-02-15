@@ -1,0 +1,24 @@
+The LSXO and HSXO on the test chip will perform poorly unless the
+crystals and their load caps are placed close to the package pins
+where the crystal inputs and outputs are located.  The existing
+M.2 daughtercard for the chipIgnite development board does not
+have pads for additional components.
+
+This alternative daughter card is specifically for use with this
+project and has pads for the low speed (32kHz) crystal on the
+front side (X2), and pads for a surface mount high-speed crystal
+(8-16 MHz) on the back side (X1) with a footprint that will
+accommodate several sizes (2x1.6, 2.5x2, or 3.2x2.5).  For the
+lower speeds (4 and 6 MHz), an additonal through-hole mount
+(X3) is provided (requires zero-ohm resistors on JP1 and JP2).
+
+Thanks to Brady Etz (who designed the LSXO for Chipalooza) for
+the daughterboard design.
+
+For the LSXO:
+Suggested vendor:  Mouser Electronics
+Suggested parts:
+	ECS-.327-12.5-12R-C [CL=12.5pF]
+	LFXTAL062558 [CL=9pF]
+	ABS06-32.768KHZ-6-1 [CL=6pF]
+

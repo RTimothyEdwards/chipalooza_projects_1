@@ -1,0 +1,373 @@
+Chipalooza Test Chip #1 test plan
+---------------------------------------------
+
+--------------------------------
+A. Infrastructure
+--------------------------------
+
+1. Smoke tests
+
+	a. General comment:  All power FETs are connected to analog
+	   pads without ESD protection.  Use caution when handling
+	   parts.
+
+	b. Test that circuitry does not interfere with the Caravel
+	   management processor.
+
+	c. With all logic analyzer bits off, the two user analog power
+	   supplies should be able to be set to 3.3V and there should
+	   be no additional power draw, because all circuits are
+	   disconnected from the power supplies.
+
+	   NOTE:  The current bias generator is connected directly to
+	   VDDA1 and does not pass through a power FET;  it is the
+	   only circuit other than the switches that is so connected.
+	   However, it has numerous enable signals and should not draw
+	   any supply current when everything is disabled.  The
+	   switches likewise do not consume power (other than
+	   negligible leakage power).
+
+	d. The user digital power supplies should not create additional
+	   power draw either, because all digital controls should either
+	   be driving level shifters in each circuit, except for those
+	   circuits which operate at 1.8V, for which the 1.8V supply is
+	   drawn through a power FET.
+
+2. Communication
+
+	The brownout detector and the POR have test outputs connected
+	to GPIO pins 1 to 4;  the brownout and overvoltage detectors
+	have test outputs on GPIO pins 5 and 6.  This makes these
+	signals difficult to manage;  all other projects can be reached
+	by software through either UART or housekeeping SPI.
+
+	Recommended:  Use the otherwise unused pin GPIO[36] as an input
+	switch to toggle between the user project and the UART.  Use
+	GPIO[37] as an input switch to toggle between the user project
+	and the housekeeping SPI.
+
+	Because the housekeeping SPI does not have direct access to the
+	logic analyzer, control of the chip will have to be done through
+	a program running on the management processor which may either
+	communicate through UART or through the housekeeping SPI (by
+	monitoring an inactive register such as the DLL trim).  
+
+	The vast majority of logic analyzer signals are outputs
+	driving block configuration.  A simple interface can simply
+	specify a logic analyzer bit (see README.md for a list of
+	bits used) to be set or cleared.  A handful of bits in the
+	upper register range are inputs that need to be queried;
+	these can be sampled and redirected to an unused output.
+	Another approach would be to have a test program for each
+	circuit;  however, the more general approach is better
+	because it is only necessary to run a script to drive the
+	UART or housekeeping SPI, not to program the flash.
+
+3. Ground-isolated analog switch
+
+	Many circuit outputs are routed through switches because the
+	number of pads on the Caravel chip is too limited to test all
+	of the necessary signals.  This particular test chip does not
+	have a loopback test that can be used to measure the switch
+	resistance (the 2nd test chip has that, and it will be measured
+	later).  It is probably possible to get a reasonable estimate
+	of the switch resistance from the bias generator test outputs
+	(test TBD).
+
+4. Power FET
+
+	Every test circuit operates on its own power FET, isolating
+	it from the power pads and from other test circuits.
+
+	Each power FET (except for a few) has its output connected
+	by a small wire to one of the bare analog pads.  This pad
+	can be used to monitor the voltage at the power FET's output.
+	By measuring current through the analog power supply (or
+	in a few cases, digital power supply) and measuring the
+	difference between the voltage at the power supply input
+	and the voltage at the power FET monitoring pin, the
+	resistance of the power FET can be calculated.
+
+	A few power FETs are not being used;  however, these do not
+	have monitor pins and so their output cannot be either
+	connected to anything or measured.  They have enable signals
+	but should not be enabled.
+
+5. Bias current generator
+
+	The bias current generator supplied bias currents to many of
+	the other blocks.  The bias currents are in multiple units
+	of a nominal unit current of 50nA, which can be either a
+	source or a sink.
+
+	To ensure correct operation of the test circuits, the bias
+	generator has test outputs to check the output at different
+	magnitudes and source and sink.
+
+	The bias generator has multiple enable controls:
+
+	Enable bias generator:  la_data_in[79] = 1
+	
+	This enables both sources and sinks.  The sources have an
+	additional disable signal:  la_data_in[48] = 1.  This does
+	not affect current sinks.
+
+	Note that all sources have a "disable" signal rather than
+	an "enable" signal.
+
+	There are 6 test currents that should be enabled and
+	measured (see README.md):
+
+	Current test point			resistor
+	100nA source (two testpoints)		10Mohms to ground
+	100nA sink				10Mohms to 3.3V
+	3.7uA sink				270kohms to 3.3V
+	5.0uA sink				200kohms to 3.3V
+	100nA sink				10Mohms to 3.3V
+
+	The two 100nA sources are on opposite ends of the bias generator
+	and can be used to measure any current difference across the
+	length of the circuit.
+
+	Sources should be connected with a resistor to ground.  Sinks
+	should be connected with a resistor to power (3.3V).  Resistor
+	values producing a 1V drop across the resistor are given in
+	the table above;  these are just suggestions.
+
+	TEST:  Measure currents at all test points and compare to
+	expected value, and compare across samples.
+
+6. Bandgap (CW)
+
+	This bandgap circuit has no enable signal and is self-biased.
+	It will be powered on when the corresponding power FET is
+	enabled.  NOTE:  The power supply for this circuit is 1.8V
+	and comes from the digital supply (vccd2).
+
+	Measure current draw of the circuit
+	Measure voltage drop at the power FET monitor pin
+	Measure the bandgap output voltage at selected trim values
+	(16-bit trim).
+
+	Apply sinusoid at 1kHz to the power supply and measure
+	rejection at the bandgap output
+
+	Load output with resistances and measure load regulation.
+
+	Measure output vs. power supply voltage.
+
+	(With temperature force unit) Measure output vs. temperature.
+
+--------------------------------
+B. Power system
+--------------------------------
+
+7. Overvoltage detector (VBL)
+
+	The overvoltage detector is a straightforward implementation
+	with a voltage divider with a selection of voltages,
+	compared against the bandgap voltage, making the circuit
+	output independent of the voltage both driving the circuit
+	and being tested.
+
+	The "bandgap voltage" should be applied externally from a
+	1.2V source.
+
+	There are four trim bits to select the voltage trip point.
+	These should each be tested independently.  At trim 4'b0000,
+	the trip point is 3.3V, up to trim 4'b1111 with a trip point
+	of 5.5V.
+
+	5.5V is the maximum rating of the I/O pads and care should be
+	taken when operating in this range.
+
+	For each trim value, measure both the voltage needed to trigger
+	the overvoltage alarm, and the voltage needed to turn it off.
+
+	Measure the current used by the circuit both when enabled and
+	disabled.
+	
+8. Brownout detector
+
+	This circuit is designed to produce an alarm signal `out` (asserted low)
+	when the power supply `avdd` falls below a selectable trip voltage via
+	`otrip[2:0]`, ranging from 2.4V to 3.0V.
+
+	May need to contact designer for details of some of the test signals.
+	Most test signals are connected, although some are only available
+	through the logic analoger.
+
+	The circuit has its own bias generator and internal clock generator.
+	The internal bias generator can be overridden in favor of an
+	external bias (irsc_sel) which is connected to the on-chip bias
+	generator.
+
+	The circuit is designed to have two separate detectors at two
+	different voltages.  Once can be used to produce an alarm while
+	the other can be used to force a brownout reset through an interrupt.
+	For the purposes of testing, these are two independent detectors.
+
+	The two main outputs are "vunder" and "brout_filt".  The latter
+	has a schmitt trigger to provide some hysteresis.  The unfiltered
+	version of "brout_filt" is the signal "dcomp".  All output signals
+	are in the 1.8V digital domain.
+
+	The "vunder" trip point is controlled by setting "vtrip[2:0]".  The
+	"brout_filt" trip point is controlled by setting "otrip[2:0]".
+
+	Measure the three outputs vs. voltage over trip point settings.
+	Measure glitch rejection.
+	Measure current consumption in enabled and disabled modes.
+
+
+9. Overvoltage detector (AJACCI)
+
+	The overvoltage detector is a straightforward implementation
+	with a voltage divider with a selection of voltages,
+	compared against the bandgap voltage, making the circuit
+	output independent of the voltage both driving the circuit
+	and being tested.  The circuit has its own current bias,
+	or the current bias can be applied from an external source
+	(in the test chip, this comes from the bias current generator).
+
+	The "bandgap voltage" should be applied externally from a
+	1.2V source.
+
+	There are four trim bits to select the voltage trip point.
+	These should each be tested independently.  At trim 4'b0000,
+	the trip point is 3.3V, up to trim 4'b1111 with a trip point
+	of 5.5V.
+
+	5.5V is the maximum rating of the I/O pads and care should be
+	taken when operating in this range.
+
+	For each trim value, measure both the voltage needed to trigger
+	the overvoltage alarm, and the voltage needed to turn it off.
+
+	Measure the current used by the circuit both when enabled and
+	disabled.
+
+10. Power-on-reset
+
+	The power-on-reset circuit is essentially the same circuit as
+	the brownout detector (see above) without the second channel
+	and output.  All measurements should be the same as for the
+	brownout detector.  However, unlike the brownout detector,
+	the circuit startup is important:
+
+	Measure circuit behavior as the power supply ramps from 0 to
+	(full range = 2.5 to 3.3?).  Check behavior for slow ramps
+	(10ms or more) and fast ramps (up to 2us).  Check behavior
+	when analog supply is raised first, and check behavior when
+	digital supply is raised first, and when both operate
+	simultaneously.
+
+	Use the bandgap from the test chip to provide the bandgap
+	voltage to reflect the delay in the bandgap voltage due
+	to the powering of the bandgap.  This should be done with
+	the bandgap power supply being raised along with the 3.3V
+	power supply, with varying delay between the 3.3V power
+	supply and the 1.8V bandgap power supply (which should be
+	considered independent of the 1.8V digital power supply).
+
+--------------------------------
+C. Timing system
+--------------------------------
+
+11. High-speed crystal oscillator
+
+	Requires a crystal and load capacitors.  Need to check for
+	multiple crystals in the range 4 to 16 MHz.
+
+	Controls are "enable" and "standby".
+
+	When "standby" is on, it should be possible to measure
+	the current draw on the supply (the oscillator is running)
+	but no output should be present.  If "standby" is released,
+	operation should be immediate.
+
+	Measure startup time of the oscillator when "standby" is
+	not used ("enable" only).
+
+	Measure current draw of the oscillator in disabled, standby,
+	and enabled modes.
+
+	Check startup and operation over power supply variation of +/-10%
+
+	(With temperature force unit) Check startup and operation over
+	commercial temperature range (-40C to 100C).
+
+12. Low-speed crystal oscillator
+
+	Tests are same as above for the high-speed crystal oscillator,
+	except that the external crystal is 32.768kHz and is a fixed
+	value.
+
+--------------------------------
+D. Amplifiers
+--------------------------------
+
+13. Low power operational amplifier
+
+	This circuit has 3.3V enable and enable-bar which are handled
+	outside of the circuit with a level shifter buffer and inverter.
+	There are no controls other than the enable.  Inputs and outputs
+	are connected directly to GPIO pins (analog function).
+
+	Measure under conditions of varying power supply and temperature
+	(when a temperature force unit is available):
+
+	Input offset, gain, PSRR, CMRR, total current on supply (enabled
+	and disabled), total current to output (source and sink).
+	
+
+14. High gain-bandwidth operational amplifier
+
+	There are no controls other than enable.  Inputs and outputs
+	are connected directly to GPIO pins (analog function).
+
+	Measure under conditions of varying power supply and temperature
+	(when a temperature force unit is available):
+
+	Input offset, gain, PSRR, CMRR, total current on supply (enabled
+	and disabled), total current to output (source and sink).  
+
+15. Comparator
+
+	In addition to the enable, this circuit has two bits of
+	hysteresis control and six bits of trim control.  The trim
+	function is in two sets of 3 bits.  Trim[2:0] controls trim
+	of the N-side while trim[5:3] controls trim of the P-side.
+
+	Measure hysteresis:  00 = none, 01 = 10mV, 11 = 50mV (10 = ??)
+
+	Like the amplifiers, inputs and output are connected directly
+	to GPIO pins, although the output, being in the digital domain,
+	is connected to a digital output buffer.
+
+	Measure under conditions of varying power supply and temperature
+	(when a temperature force unit is available):
+
+	Input offset (vs. trim), hysteresis (vs. hyst. trim), gain, PSRR,
+	CMRR, total current on supply (enabled and disabled).
+
+--------------------------------
+E. Sensors
+--------------------------------
+
+16. Temperature sensor
+
+	The temperature sensor operates on a 1.8V supply.
+
+	The temperature sensor has two low-voltage outputs.
+	Temperature must be calculated from the two outputs Vbe1 and Vbe2.
+	Both outputs are in the range of around 1/2V to 1V.
+
+	T = 714.015 * ((10.7906 / (10.7906 + (Vbe1 / (Vbe2 - Vbe1)))) - 259.802)
+
+	Temperature reading should be stable if the bandgap voltage is
+	stable.  Measure temperature output over supply voltage.  With
+	temperature force unit, measure over temperature.  Without
+	temperature force unit, use a hot air blower and estimate
+	temperature from the ambient reading with a thermocouple.
+
